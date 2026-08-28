@@ -1,0 +1,19 @@
+{
+  "name": "hadrons-electricals",
+  "version": "1.0.0",
+  "description": "Hadrons Electricals Official Corporate Website - Deep Blue Identity",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve . -p 3000",
+    "dev": "npx serve . -p 3000"
+  },
+  "keywords": [
+    "electrical",
+    "hadrons",
+    "copper-wires",
+    "ev-chargers",
+    "extension-boards"
+  ],
+  "author": "Hadrons Electricals",
+  "license": "ISC"
+}

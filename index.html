@@ -4,24 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hadrons Electricals — Powering Connections. Energizing Futures.</title>
-  <meta name="description" content="Hadrons Electricals is a leading Indian electrical and engineering manufacturer producing high quality copper wires & cables, EV chargers, extension boards, and OEM components.">
-  <meta name="theme-color" content="#061224">
+  <meta name="description" content="Hadrons Electricals — Advanced Electrical Engineering. High-purity copper wires & cables, extension boards, modular switches, fast GaN chargers, EV chargers, and OEM custom manufacturing.">
+  <meta name="theme-color" content="#0B3E8C">
   
+  <!-- Favicon Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=logo_v1">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64x64.png?v=logo_v1">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=logo_v1">
+  <link rel="shortcut icon" href="favicon.ico?v=logo_v1">
+
   <!-- CSS Stylesheet -->
-  <link rel="stylesheet" href="styles.css?v=14">
+  <link rel="stylesheet" href="styles.css?v=350">
 
   <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-
-  <!-- Clean Corporate White Navbar -->
+  <!-- =========================================================================
+       1. Top Corporate White Navbar with Icon Navigation
+       ========================================================================= -->
   <header class="navbar" id="navbar">
-    <div class="container">
-      <a href="#home" class="nav-brand">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="nav-brand" aria-label="Hadrons Electricals Home">
         <div class="nav-logo-wrapper">
-          <img src="assets/hadrons_logo.png?v=4" alt="Hadrons Electricals Official Logo" class="nav-logo">
+          <img src="assets/hadrons_official_logo.png" alt="Hadrons Electricals Logo" class="nav-logo">
         </div>
         <div class="nav-brand-text">
           <span class="brand-title">HADRONS</span>
@@ -29,526 +38,593 @@
         </div>
       </a>
 
+      <!-- 7 Navigation Links with Icons (Exact Mockup Layout) -->
       <nav class="nav-menu" id="navMenu">
-        <a href="#home" class="nav-link active">Home</a>
-        <a href="#about" class="nav-link">About Us</a>
-        <a href="#products" class="nav-link">Products</a>
-        <a href="#evolution" class="nav-link">Our Evolution</a>
-        <a href="#quality" class="nav-link">Quality</a>
-        <a href="#oem" class="nav-link">OEM & Custom</a>
-        <a href="#contact" class="nav-link">Contact Us</a>
+        <a href="index.html" class="nav-link active">
+          <i data-lucide="home" class="nav-icon"></i>
+          <span>Home</span>
+        </a>
+        <a href="about.html" class="nav-link">
+          <i data-lucide="user" class="nav-icon"></i>
+          <span>About Us</span>
+        </a>
+        <a href="products.html" class="nav-link">
+          <i data-lucide="package" class="nav-icon"></i>
+          <span>Products</span>
+        </a>
+        <a href="evolution.html" class="nav-link">
+          <i data-lucide="sparkles" class="nav-icon"></i>
+          <span>Our Evolution</span>
+        </a>
+        <a href="quality.html" class="nav-link">
+          <i data-lucide="shield-check" class="nav-icon"></i>
+          <span>Quality</span>
+        </a>
+        <a href="oem.html" class="nav-link">
+          <i data-lucide="layers" class="nav-icon"></i>
+          <span>OEM &amp; Custom</span>
+        </a>
+        <a href="contact.html" class="nav-link">
+          <i data-lucide="phone" class="nav-icon"></i>
+          <span>Contact Us</span>
+        </a>
       </nav>
 
-      <div style="display: flex; gap: 12px; align-items: center;">
-        <a href="#contact" class="btn btn-primary">
-          <span>GET IN TOUCH</span> <i data-lucide="arrow-right"></i>
+      <!-- Nav CTA Button & Mobile Menu Toggle -->
+      <div class="nav-cta-wrapper">
+        <a href="#contact" class="btn btn-primary btn-nav-cta">
+          <span>GET IN TOUCH</span>
+          <i data-lucide="arrow-right"></i>
         </a>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
           <i data-lucide="menu"></i>
         </button>
       </div>
+
     </div>
   </header>
 
-  <!-- Hero Section with Official UI.png Background -->
+  <!-- =========================================================================
+       2. Hero Section (Futuristic White & Electric Blue Theme)
+       ========================================================================= -->
   <section class="hero-section" id="home">
-    <div class="container">
+    <!-- Ambient Circuit & High-Tech Glowing Background -->
+    <div class="hero-ambient-glow"></div>
+    <div class="hero-circuit-bg"></div>
+
+    <div class="container hero-container">
       <div class="hero-grid">
-        <!-- Left Content Area -->
+        
+        <!-- Left Content Column -->
         <div class="hero-content">
+          <!-- Subtitle / Tagline Badge -->
           <div class="hero-category-tag">
             ADVANCED ELECTRICAL ENGINEERING
           </div>
           
+          <!-- Main Headline (Navy & Electric Blue) -->
           <h1 class="hero-main-title">
             POWERING<br>
             CONNECTIONS.<br>
-            <span class="hero-title-blue">ENERGIZING FUTURES.</span>
+            <span class="hero-title-blue">ENERGIZING<br>FUTURES.</span>
           </h1>
           
-          <div class="hero-subhead">
-            <span class="hero-subhead-line"></span>
-            <span>Hadron Wires — Power Flows Without Fire.</span>
+          <!-- Product Tagline Callout -->
+          <div class="hero-tagline">
+            <span class="tagline-icon-wrap">
+              <i data-lucide="zap" class="tagline-zap"></i>
+            </span>
+            <span class="tagline-text">Hadron Wires — Power flows without fire.</span>
           </div>
 
+          <!-- 4 Trust Badges (Horizontal Inline) -->
+          <div class="hero-trust-badges">
+            <div class="trust-badge-item">
+              <i data-lucide="shield-check" class="badge-icon"></i>
+              <div class="badge-text">SAFE &amp;<br>RELIABLE</div>
+            </div>
+            <div class="trust-badge-item">
+              <i data-lucide="gem" class="badge-icon"></i>
+              <div class="badge-text">PREMIUM<br>QUALITY</div>
+            </div>
+            <div class="trust-badge-item">
+              <i data-lucide="leaf" class="badge-icon"></i>
+              <div class="badge-text">FUTURE<br>READY</div>
+            </div>
+            <div class="trust-badge-item">
+              <i data-lucide="map-pin" class="badge-icon"></i>
+              <div class="badge-text">MADE IN<br>INDIA</div>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
           <div class="hero-actions">
-            <a href="#products" class="btn btn-primary btn-hero-explore">
-              <span>EXPLORE PRODUCTS</span> <i data-lucide="arrow-right"></i>
+            <a href="products.html" class="btn btn-primary btn-hero-explore">
+              <span>EXPLORE PRODUCTS</span>
+              <i data-lucide="arrow-right"></i>
             </a>
-            <a href="#about" class="btn btn-secondary btn-hero-about">
+            <a href="about.html" class="btn btn-secondary btn-hero-about">
               <span>ABOUT US</span>
             </a>
           </div>
         </div>
 
-        <!-- Right Side Space (Displays the stage artwork from UI.png background) -->
-        <div class="hero-image-spacer"></div>
+        <!-- Right Visual Column: High-Tech 3D Product Stage & Network Dome -->
+        <div class="hero-visual-stage" id="heroVisualStage">
+          <div class="hero-stage-card">
+            <!-- High-Res 3D Electrical Products Stage Image from LOGO/hero image -->
+            <div class="stage-image-container">
+              <img src="assets/hero_image_main.png" alt="Hadrons 3D Electrical Engineering Showcase" class="stage-main-img" id="heroStageImg">
+              <div class="stage-pedestal-glow"></div>
+            </div>
+          </div>
+        </div>
+
       </div>
+
+      <!-- =====================================================================
+           3. Bottom Product Grid Showcase (11 Cards in 2 Rows — Exact Mockup)
+           ===================================================================== -->
+      <div class="hero-products-showcase">
+        
+        <!-- Row 1: 6 Cards -->
+        <div class="hero-cards-row row-6-cards">
+          
+          <!-- Card 1: Wires & Cables -->
+          <div class="hero-card" onclick="filterAndScroll('wires', 'Wires & Cables')">
+            <div class="hero-card-img-wrap">
+              <img src="assets/products/prod_wires.png" alt="Wires & Cables" class="hero-card-img">
+            </div>
+            <div class="hero-card-title">
+              WIRES &amp;<br>CABLES
+            </div>
+          </div>
+
+          <!-- Card 2: Extension Boards -->
+          <div class="hero-card" onclick="filterAndScroll('extension', 'Extension Boards')">
+            <div class="hero-card-img-wrap">
+              <img src="assets/products/prod_extension.png" alt="Extension Boards" class="hero-card-img">
+            </div>
+            <div class="hero-card-title">
+              EXTENSION<br>BOARDS
+            </div>
+          </div>
+
+          <!-- Card 3: Modular Switches -->
+          <div class="hero-card" onclick="filterAndScroll('switches', 'Modular Switches')">
+            <div class="hero-card-img-wrap">
+              <img src="assets/products/prod_switches.png" alt="Modular Switches" class="hero-card-img">
+            </div>
+            <div class="hero-card-title">
+              MODULAR<br>SWITCHES
+            </div>
+          </div>
+
+          <!-- Card 4: Laptop Chargers -->
+          <div class="hero-card" onclick="filterAndScroll('chargers', 'Laptop Chargers')">
+            <div class="hero-card-img-wrap">
+              <img src="assets/products/prod_laptop.png" alt="Laptop Chargers" class="hero-card-img">
+            </div>
+            <div class="hero-card-title">
+              LAPTOP<br>CHARGERS
+            </div>
+          </div>
+
+          <!-- Card 5: AC Grills & Fans -->
+          <div class="hero-card" onclick="filterAndScroll('components', 'AC Grills & Fans')">
+            <div class="hero-card-img-wrap">
+              <img src="assets/products/prod_ac_grill.png" alt="AC Grills & Fans" class="hero-card-img">
+            </div>
+            <div class="hero-card-title">
+              AC GRILLS<br>&amp; FANS
+            </div>
+          </div>
+
+          <!-- Card 6: Coolers (Body & Fans) -->
+          <div class="hero-card" onclick="filterAndScroll('components', 'Coolers (Body & Fans)')">
+            <div class="hero-card-img-wrap">
+              <img src="assets/products/prod_cooler.png" alt="Coolers (Body & Fans)" class="hero-card-img">
+            </div>
+            <div class="hero-card-title">
+              COOLERS<br>(BODY &amp; FANS)
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Row 2: 5 Cards -->
+        <div class="hero-cards-row row-5-cards">
+          
+          <!-- Card 7: Power Cord 3 Pin -->
+          <div class="hero-card" onclick="filterAndScroll('cords', 'Power Cord 3 Pin')">
+            <div class="hero-card-img-wrap">
+              <img src="assets/products/prod_power_cord.png" alt="Power Cord 3 Pin" class="hero-card-img">
+            </div>
+            <div class="hero-card-title">
+              POWER CORD<br>3 PIN
+            </div>
+          </div>
+
+          <!-- Card 8: Data Center Power Cord -->
+          <div class="hero-card" onclick="filterAndScroll('cords', 'Data Center Power Cord')">
+            <div class="hero-card-img-wrap">
+              <img src="assets/products/prod_datacenter.png" alt="Data Center Power Cord" class="hero-card-img">
+            </div>
+            <div class="hero-card-title">
+              DATA CENTER<br>POWER CORD
+            </div>
+          </div>
+
+          <!-- Card 9: USB & Data Cables -->
+          <div class="hero-card" onclick="filterAndScroll('networking', 'USB & Data Cables')">
+            <div class="hero-card-img-wrap">
+              <img src="assets/products/prod_usb.png" alt="USB & Data Cables" class="hero-card-img">
+            </div>
+            <div class="hero-card-title">
+              USB &amp;<br>DATA CABLES
+            </div>
+          </div>
+
+          <!-- Card 10: Fast/PD Charger 65W (GaN) -->
+          <div class="hero-card" onclick="filterAndScroll('chargers', 'Fast/PD Charger 65W (GaN)')">
+            <div class="hero-card-img-wrap">
+              <img src="assets/products/prod_gan.png" alt="Fast/PD Charger 65W (GaN)" class="hero-card-img">
+            </div>
+            <div class="hero-card-title">
+              FAST/PD<br>CHARGER<br>65W (GaN)
+            </div>
+          </div>
+
+          <!-- Card 11: Electrical Charger For 2 Wheelers -->
+          <div class="hero-card" onclick="filterAndScroll('ev', 'Electrical Charger for 2 Wheelers')">
+            <div class="hero-card-img-wrap">
+              <img src="assets/products/prod_ev_2w.png" alt="Electrical Charger For 2 Wheelers" class="hero-card-img">
+            </div>
+            <div class="hero-card-title">
+              ELECTRICAL CHARGER<br>FOR 2 WHEELERS
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
   </section>
 
-  <!-- Floating White Capability Strip (Hero Bottom) -->
-  <div class="container">
-    <div class="trust-bar capability-strip">
-      <div class="trust-grid">
-        <div class="trust-item">
-          <div class="trust-icon"><i data-lucide="shield-check"></i></div>
-          <div class="trust-info">
-            <h4>PREMIUM QUALITY</h4>
-            <p>Tested for Safety & Performance</p>
-          </div>
-        </div>
-
-        <div class="trust-item">
-          <div class="trust-icon"><i data-lucide="layout-grid"></i></div>
-          <div class="trust-info">
-            <h4>WIDE PRODUCT RANGE</h4>
-            <p>Complete Electrical Solutions</p>
-          </div>
-        </div>
-
-        <div class="trust-item">
-          <div class="trust-icon"><i data-lucide="cpu"></i></div>
-          <div class="trust-info">
-            <h4>OEM & CUSTOM MANUFACTURING</h4>
-            <p>Tailored to Your Requirements</p>
-          </div>
-        </div>
-
-        <div class="trust-item">
-          <div class="trust-icon"><i data-lucide="lightbulb"></i></div>
-          <div class="trust-info">
-            <h4>INNOVATION & RELIABILITY</h4>
-            <p>Built for Today, Ready for Tomorrow</p>
-          </div>
-        </div>
-
-        <div class="trust-item">
-          <div class="trust-icon"><i data-lucide="truck"></i></div>
-          <div class="trust-info">
-            <h4>PAN-INDIA SUPPLY</h4>
-            <p>Strong Network. On-time Delivery</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Product Section -->
+  <!-- =========================================================================
+       4. Comprehensive Product Catalog & Technical Portfolio (4 Flagship Cards)
+       ========================================================================= -->
   <section class="products-section" id="products">
     <div class="container">
-      <div style="text-align: center;">
-        <div class="section-tag"><i data-lucide="grid"></i> Product Portfolio</div>
-        <h2 class="section-heading">OUR PRODUCT <span>RANGE</span></h2>
-        <p class="section-sub">Engineered to perfection. Explore our comprehensive portfolio of electrical wiring, connectivity accessories, EV charging infrastructure, and custom engineering components.</p>
+      <div class="section-header-center">
+        <div class="section-tag"><i data-lucide="grid"></i> Product Ecosystem</div>
+        <h2 class="section-heading">COMPLETE <span>PRODUCT ECOSYSTEM</span></h2>
+        <p class="section-sub">Engineered to perfection with 99.99% high-purity electrolytic copper, fire-retardant FRLS polymers, and high-efficiency power electronics.</p>
       </div>
 
-      <!-- Filter Buttons -->
-      <div class="products-filter">
-        <button class="filter-btn active" data-filter="all">All Products</button>
-        <button class="filter-btn" data-filter="wires">Wires & Cables</button>
-        <button class="filter-btn" data-filter="networking">Networking Cables</button>
-        <button class="filter-btn" data-filter="chargers">Chargers & Power</button>
-        <button class="filter-btn" data-filter="extension">Extension Boards</button>
-        <button class="filter-btn" data-filter="ev">EV Solutions</button>
-        <button class="filter-btn" data-filter="components">Components & OEM</button>
+      <!-- Filter Tabs / Horizontal Scrollable Category Track -->
+      <div class="products-filter-wrapper">
+        <button class="filter-scroll-arrow left" id="filterScrollLeft" aria-label="Scroll categories left" onclick="scrollFilterTrack(-220)">
+          <i data-lucide="chevron-left"></i>
+        </button>
+
+        <div class="products-filter" id="productsFilterTrack">
+          <a href="products.html" class="filter-btn active">All Products (11+)</a>
+          <a href="products.html?cat=wires" class="filter-btn">Wires &amp; Cables</a>
+          <a href="products.html?cat=switches" class="filter-btn">Modular Switches</a>
+          <a href="products.html?cat=powercord" class="filter-btn">Power Cords &amp; Data Center</a>
+          <a href="products.html?cat=chargers" class="filter-btn">Laptop &amp; GaN Chargers</a>
+          <a href="products.html?cat=ev" class="filter-btn">EV Charging Stations</a>
+          <a href="products.html?cat=coolers" class="filter-btn">HVAC &amp; Plastic Moulding</a>
+        </div>
+
+        <button class="filter-scroll-arrow right" id="filterScrollRight" aria-label="Scroll categories right" onclick="scrollFilterTrack(220)">
+          <i data-lucide="chevron-right"></i>
+        </button>
       </div>
 
-      <!-- Product Grid -->
-      <div class="product-grid" id="productGrid">
+      <!-- 4 Flagship Product Cards Grid -->
+      <div class="product-grid" id="productGrid" style="grid-template-columns: repeat(4, 1fr);">
         
-        <!-- Product 01 -->
+        <!-- 01. Wires & Cables -->
         <div class="product-card" data-category="wires">
           <span class="product-badge">01</span>
           <div class="product-img-wrapper">
-            <img src="assets/wires_cables.jpg" alt="Wires & Cables">
+            <img src="assets/products/prod_wires.png" alt="Wires & Cables">
           </div>
           <div class="product-body">
             <div class="product-icon-wrap">
               <i data-lucide="zap" class="product-icon"></i>
-              <span style="font-size: 0.8rem; font-weight: 700; color: var(--hadrons-blue-royal);">ELECTRICAL WIRING</span>
+              <span>ELECTRICAL WIRING</span>
             </div>
-            <h3 class="product-title">Wires & Cables</h3>
-            <p class="product-desc">High-purity electrolytic copper wires with flame retardant FRLS PVC insulation for residential, commercial & industrial safety.</p>
+            <h3 class="product-title">Wires &amp; Cables</h3>
+            <p class="product-desc">High-purity electrolytic copper multi-core industrial cables and building wires with FRLS PVC insulation.</p>
             <div class="product-footer">
-              <button class="product-action" onclick="openModal('Wires & Cables', 'FRLS Copper House Wires & Industrial Armoured Cables. Voltage rating up to 1100V with 100% pure electrolytic copper standard.')">
-                <span>View Details</span> <i data-lucide="arrow-right"></i>
-              </button>
+              <a href="products.html" class="product-action">
+                <span>View Full Catalog</span> <i data-lucide="arrow-right"></i>
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Product 02 -->
-        <div class="product-card" data-category="networking">
+        <!-- 02. Modular Switches -->
+        <div class="product-card" data-category="switches">
           <span class="product-badge">02</span>
           <div class="product-img-wrapper">
-            <img src="assets/networking_cables.jpg" alt="Networking & Data Cables">
+            <img src="assets/products/prod_modular_switches.png" alt="Modular Switches">
           </div>
           <div class="product-body">
             <div class="product-icon-wrap">
-              <i data-lucide="network" class="product-icon"></i>
-              <span style="font-size: 0.8rem; font-weight: 700; color: var(--hadrons-blue-royal);">DATA CONNECTIVITY</span>
+              <i data-lucide="toggle-right" class="product-icon"></i>
+              <span>ARCHITECTURAL SWITCHES</span>
             </div>
-            <h3 class="product-title">Networking & Data Cables</h3>
-            <p class="product-desc">Cat6 ethernet cables and high-speed data transmission lines with copper shielding for seamless network performance.</p>
+            <h3 class="product-title">Modular Switches</h3>
+            <p class="product-desc">Sleek, ergonomic white glossy modular switch panels and sockets with silver contact tips for 100,000+ clicks.</p>
             <div class="product-footer">
-              <button class="product-action" onclick="openModal('Networking & Data Cables', 'Gigabit Cat6 UTP/FTP patch cords and twisted pair LAN cables for data centers and smart offices.')">
-                <span>View Details</span> <i data-lucide="arrow-right"></i>
-              </button>
+              <a href="products.html" class="product-action">
+                <span>View Full Catalog</span> <i data-lucide="arrow-right"></i>
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Product 03 -->
-        <div class="product-card" data-category="chargers">
+        <!-- 03. Data Center & Power Cords -->
+        <div class="product-card" data-category="cords">
           <span class="product-badge">03</span>
           <div class="product-img-wrapper">
-            <img src="assets/chargers_cables.jpg" alt="Chargers & Charging Cables">
+            <img src="assets/products/prod_datacenter.png" alt="Data Center Power Cord">
           </div>
           <div class="product-body">
             <div class="product-icon-wrap">
-              <i data-lucide="smartphone" class="product-icon"></i>
-              <span style="font-size: 0.8rem; font-weight: 700; color: var(--hadrons-blue-royal);">POWER ACCESSORIES</span>
+              <i data-lucide="server" class="product-icon"></i>
+              <span>DATA CENTER &amp; CORDS</span>
             </div>
-            <h3 class="product-title">Chargers & Charging Cables</h3>
-            <p class="product-desc">GaN fast mobile wall chargers, USB-C Power Delivery adapters, and high-durability braided charging cables.</p>
+            <h3 class="product-title">Power Cords &amp; Data Center</h3>
+            <p class="product-desc">IEC 60320 C13/C19 server rack PDU locking cables, and ISI-certified 6A/16A moulded 3-pin appliance power cords.</p>
             <div class="product-footer">
-              <button class="product-action" onclick="openModal('Chargers & Charging Cables', 'Fast 65W & 100W GaN technology wall power adapters and heavy duty Type-C braided sync cables.')">
-                <span>View Details</span> <i data-lucide="arrow-right"></i>
-              </button>
+              <a href="products.html" class="product-action">
+                <span>View Full Catalog</span> <i data-lucide="arrow-right"></i>
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Product 04 -->
-        <div class="product-card" data-category="extension">
+        <!-- 04. EV Charging Solutions -->
+        <div class="product-card" data-category="ev">
           <span class="product-badge">04</span>
           <div class="product-img-wrapper">
-            <img src="assets/extension_boards.jpg" alt="Electrical Extension Boards">
-          </div>
-          <div class="product-body">
-            <div class="product-icon-wrap">
-              <i data-lucide="plug" class="product-icon"></i>
-              <span style="font-size: 0.8rem; font-weight: 700; color: var(--hadrons-blue-royal);">POWER STRIPS</span>
-            </div>
-            <h3 class="product-title">Electrical Extension Boards</h3>
-            <p class="product-desc">Heavy-duty multi-socket extension boards equipped with surge protection, master switches, and high-speed USB ports.</p>
-            <div class="product-footer">
-              <button class="product-action" onclick="openModal('Electrical Extension Boards', 'Heavy-duty surge-protected power distribution strips with fire-resistant poly-carbonate housing.')">
-                <span>View Details</span> <i data-lucide="arrow-right"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 05 -->
-        <div class="product-card" data-category="ev">
-          <span class="product-badge">05</span>
-          <div class="product-img-wrapper">
-            <img src="assets/ev_charging.jpg" alt="EV Charging Solutions">
+            <img src="assets/products/prod_ev_2w.png" alt="EV Charging Station">
           </div>
           <div class="product-body">
             <div class="product-icon-wrap">
               <i data-lucide="battery-charging" class="product-icon"></i>
-              <span style="font-size: 0.8rem; font-weight: 700; color: var(--hadrons-blue-royal);">E-MOBILITY</span>
+              <span>EV CHARGING STATIONS</span>
             </div>
             <h3 class="product-title">EV Charging Solutions</h3>
-            <p class="product-desc">AC Fast Chargers & commercial DC charging equipment built with smart load balancing and IP65 weatherproofing.</p>
+            <p class="product-desc">Smart AC wallbox EV chargers with IP65 weatherproof housing and dynamic load balancing for electric two-wheelers.</p>
             <div class="product-footer">
-              <button class="product-action" onclick="openModal('EV Charging Solutions', '7.4kW to 22kW AC Wallbox Chargers & High-Power DC Commercial Fast Chargers for Electric Vehicles.')">
-                <span>View Details</span> <i data-lucide="arrow-right"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 06 -->
-        <div class="product-card" data-category="components">
-          <span class="product-badge">06</span>
-          <div class="product-img-wrapper">
-            <img src="assets/ac_components.jpg" alt="AC Components">
-          </div>
-          <div class="product-body">
-            <div class="product-icon-wrap">
-              <i data-lucide="wind" class="product-icon"></i>
-              <span style="font-size: 0.8rem; font-weight: 700; color: var(--hadrons-blue-royal);">HVAC SYSTEMS</span>
-            </div>
-            <h3 class="product-title">AC Components</h3>
-            <p class="product-desc">Heavy-duty HVAC motor capacitors, pre-formed wiring harnesses, relays, and climate control electrical assemblies.</p>
-            <div class="product-footer">
-              <button class="product-action" onclick="openModal('AC Components', 'Capacitors, contactors, copper connection kits, and wiring looms engineered for air conditioning units.')">
-                <span>View Details</span> <i data-lucide="arrow-right"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 07 -->
-        <div class="product-card" data-category="components">
-          <span class="product-badge">07</span>
-          <div class="product-img-wrapper">
-            <img src="assets/air_cooler_components.jpg" alt="Air Cooler Components">
-          </div>
-          <div class="product-body">
-            <div class="product-icon-wrap">
-              <i data-lucide="fan" class="product-icon"></i>
-              <span style="font-size: 0.8rem; font-weight: 700; color: var(--hadrons-blue-royal);">APPLIANCE PARTS</span>
-            </div>
-            <h3 class="product-title">Air Cooler Components</h3>
-            <p class="product-desc">High-efficiency cooler fan motors, submersible water pumps, aerodynamic fan blades, and heavy-duty rotary switches.</p>
-            <div class="product-footer">
-              <button class="product-action" onclick="openModal('Air Cooler Components', 'Submersible pumps, high-torque copper motors, plastic fan blades, and control switches for OEM cooling appliances.')">
-                <span>View Details</span> <i data-lucide="arrow-right"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 08 -->
-        <div class="product-card" data-category="components">
-          <span class="product-badge">08</span>
-          <div class="product-img-wrapper">
-            <img src="assets/oem_manufacturing.jpg" alt="OEM & Custom Manufacturing">
-          </div>
-          <div class="product-body">
-            <div class="product-icon-wrap">
-              <i data-lucide="cog" class="product-icon"></i>
-              <span style="font-size: 0.8rem; font-weight: 700; color: var(--hadrons-blue-royal);">PRECISION ENGINEERING</span>
-            </div>
-            <h3 class="product-title">OEM & Custom Manufacturing</h3>
-            <p class="product-desc">Large injection moulding, custom electrical enclosures, automotive wire harnesses, and bespoke component manufacturing.</p>
-            <div class="product-footer">
-              <button class="product-action" onclick="openModal('OEM & Custom Manufacturing', 'End-to-end custom injection moulding, tooling, and electrical assembly tailored to OEM client specifications.')">
-                <span>View Details</span> <i data-lucide="arrow-right"></i>
-              </button>
+              <a href="products.html" class="product-action">
+                <span>View Full Catalog</span> <i data-lucide="arrow-right"></i>
+              </a>
             </div>
           </div>
         </div>
 
       </div>
 
-      <div style="text-align: center; margin-top: 50px;">
-        <a href="#contact" class="btn btn-secondary">
-          <span>REQUEST FULL PRODUCT CATALOGUE</span> <i data-lucide="file-text"></i>
+      <!-- Big Redirection Action CTA -->
+      <div style="display: flex; justify-content: center; gap: 16px; margin-top: 45px; flex-wrap: wrap;">
+        <a href="products.html" class="btn btn-primary btn-lg" style="padding: 16px 36px; font-size: 1.02rem; box-shadow: 0 10px 25px rgba(0, 102, 255, 0.35);">
+          <span>EXPLORE ALL 11+ PRODUCTS &amp; TECHNICAL SPECS</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+        <a href="contact.html" class="btn btn-secondary" style="padding: 16px 28px;">
+          <span>REQUEST OEM QUOTATION</span>
+          <i data-lucide="file-text"></i>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Our Evolution (Timeline Section) -->
-  <section class="timeline-section" id="evolution">
+  <!-- =========================================================================
+       5. About Us & Manufacturing Standards
+       ========================================================================= -->
+  <section class="about-section" id="about">
     <div class="container">
-      <div style="text-align: center;">
-        <div class="section-tag light"><i data-lucide="history"></i> Journey of Growth</div>
-        <h2 class="section-heading">OUR <span>EVOLUTION</span></h2>
-        <p class="section-sub">A decade of continuous innovation, expanding capabilities, and engineering excellence across electrical connectivity and manufacturing.</p>
-      </div>
-
-      <div class="timeline-container">
-        <!-- Connecting Line -->
-        <div class="timeline-line"></div>
-
-        <!-- Timeline Nodes -->
-        <div class="timeline-track">
+      <div class="about-grid">
+        
+        <div class="about-content">
+          <div class="section-tag"><i data-lucide="shield"></i> About Hadrons</div>
+          <h2 class="section-heading">ENGINEERING <span>ELECTRICAL EXCELLENCE</span></h2>
+          <p class="about-lead">
+            <strong>Hadrons Electricals</strong> is an industry leader in electrical conductors, power connectivity systems, EV charging infrastructure, and custom engineering manufacturing in India.
+          </p>
+          <p style="color: var(--text-body); margin-bottom: 20px; line-height: 1.7;">
+            Our manufacturing facility incorporates automated rod breakdown wire drawing machines, high-speed bunching, inline continuous vulcanization, and computer-controlled plastic injection moulding.
+          </p>
           
-          <!-- Milestone 1 -->
-          <div class="timeline-node active" onclick="selectMilestone(2014, 'Connect', 'Started with the core business of copper wires and cables, building a foundation of quality and high-purity electrical conductors.')">
-            <div class="timeline-marker-wrap">
-              <div class="timeline-marker"><i data-lucide="zap"></i></div>
+          <div class="about-metrics">
+            <div class="metric-box">
+              <span class="metric-num">99.99%</span>
+              <span class="metric-label">Pure ETP Copper</span>
             </div>
-            <span class="timeline-year">2014</span>
-            <h4 class="timeline-title">Connect</h4>
-            <p class="timeline-desc">Started with core business of copper wires & cables.</p>
+            <div class="metric-box">
+              <span class="metric-num">100%</span>
+              <span class="metric-label">Spark Tested</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-num">11+</span>
+              <span class="metric-label">Product Lines</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-num">Pan-India</span>
+              <span class="metric-label">Supply Network</span>
+            </div>
           </div>
 
-          <!-- Milestone 2 -->
-          <div class="timeline-node" onclick="selectMilestone(2016, 'Automate', 'Expanded into automotive wiring harnesses and electrical assemblies for leading industrial manufacturers.')">
-            <div class="timeline-marker-wrap">
-              <div class="timeline-marker"><i data-lucide="cpu"></i></div>
-            </div>
-            <span class="timeline-year">2016</span>
-            <h4 class="timeline-title">Automate</h4>
-            <p class="timeline-desc">Expanded into automotive wiring harnesses & assemblies.</p>
-          </div>
-
-          <!-- Milestone 3 -->
-          <div class="timeline-node" onclick="selectMilestone(2018, 'Communicate', 'Entered the rapidly growing data and networking cable market with Cat6 ethernet and high-frequency communication lines.')">
-            <div class="timeline-marker-wrap">
-              <div class="timeline-marker"><i data-lucide="network"></i></div>
-            </div>
-            <span class="timeline-year">2018</span>
-            <h4 class="timeline-title">Communicate</h4>
-            <p class="timeline-desc">Entered data & networking cable market.</p>
-          </div>
-
-          <!-- Milestone 4 -->
-          <div class="timeline-node" onclick="selectMilestone(2020, 'Power', 'Expanded into mobile chargers, GaN power adapters, and durable charging cable accessories for consumer electronics.')">
-            <div class="timeline-marker-wrap">
-              <div class="timeline-marker"><i data-lucide="battery"></i></div>
-            </div>
-            <span class="timeline-year">2020</span>
-            <h4 class="timeline-title">Power</h4>
-            <p class="timeline-desc">Expanded into mobile chargers & power cables.</p>
-          </div>
-
-          <!-- Milestone 5 -->
-          <div class="timeline-node" onclick="selectMilestone(2025, 'Expand', 'Entered electrical extension boards and power distribution accessories with built-in surge protection.')">
-            <div class="timeline-marker-wrap">
-              <div class="timeline-marker"><i data-lucide="plug"></i></div>
-            </div>
-            <span class="timeline-year">2025</span>
-            <h4 class="timeline-title">Expand</h4>
-            <p class="timeline-desc">Entered extension boards & power accessories.</p>
-          </div>
-
-          <!-- Milestone 6 -->
-          <div class="timeline-node" onclick="selectMilestone(2026, 'Electrify & Engineer', 'Entered EV charging solutions (AC Wallbox & DC Chargers) and large precision injection moulding components.')">
-            <div class="timeline-marker-wrap">
-              <div class="timeline-marker"><i data-lucide="battery-charging"></i></div>
-            </div>
-            <span class="timeline-year">2026</span>
-            <h4 class="timeline-title">Electrify & Engineer</h4>
-            <p class="timeline-desc">Entered EV charging & large injection moulding.</p>
-          </div>
-
+          <a href="about.html" class="btn btn-primary" style="margin-top: 24px;">
+            <span>LEARN MORE ABOUT US</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
         </div>
 
-        <!-- Selected Milestone Detail Display -->
-        <div class="milestone-detail-card" id="milestoneDetailCard">
-          <div class="milestone-detail-year" id="detailYear">2026</div>
-          <div class="milestone-detail-info">
-            <h4 id="detailTitle">Electrify & Engineer</h4>
-            <p id="detailDesc">Entered EV charging solutions (AC Wallbox & DC Chargers) and large precision injection moulding components to support sustainable e-mobility infrastructure.</p>
+        <div class="about-visual">
+          <div class="about-image-card">
+            <img src="assets/manufacturing_plant.jpg" alt="Hadrons Electricals Advanced Manufacturing Plant" class="about-plant-img">
+            <div class="about-glow-badge">
+              <i data-lucide="award"></i>
+              <div>
+                <strong>ISO 9001:2015</strong>
+                <span>Certified Production Quality</span>
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Quality Commitments Section -->
+  <!-- =========================================================================
+       7. Quality Standards & Certifications
+       ========================================================================= -->
   <section class="quality-section" id="quality">
     <div class="container">
       <div class="quality-grid">
+        
         <div>
-          <div class="section-tag"><i data-lucide="shield"></i> Standards of Excellence</div>
-          <h2 class="section-heading">QUALITY AT <span>HADRONS ELECTRICALS</span></h2>
+          <div class="section-tag"><i data-lucide="shield-check"></i> Standards of Excellence</div>
+          <h2 class="section-heading">ZERO COMPROMISE <span>ON SAFETY</span></h2>
           <p style="color: var(--text-body); font-size: 1.05rem; margin-bottom: 24px; line-height: 1.7;">
-            Quality is built into every stage—from raw material selection to final dispatch. We follow 12 key quality commitments to ensure safe, reliable & consistent products across all manufacturing lines.
+            At Hadrons Electricals, safety is paramount. Every coil of wire, extension board, power cord, and charger undergoes multi-stage automated validation before leaving our factory floor.
           </p>
-          <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 30px;">
-            <div style="display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--hadrons-navy-deep);">
-              <i data-lucide="check-circle" style="color: var(--hadrons-blue-royal);"></i> 100% Electrolytic High-Purity Copper Conductors
+          
+          <div class="quality-checklist">
+            <div class="check-item">
+              <i data-lucide="check-circle-2" class="check-icon"></i>
+              <span>100% Electrolytic ETP Grade High-Purity Copper Conductors</span>
             </div>
-            <div style="display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--hadrons-navy-deep);">
-              <i data-lucide="check-circle" style="color: var(--hadrons-blue-royal);"></i> Flame Retardant Low Smoke (FRLS) Grade PVC Insulation
+            <div class="check-item">
+              <i data-lucide="check-circle-2" class="check-icon"></i>
+              <span>Flame Retardant Low Smoke (FRLS) Self-Extinguishing Insulation</span>
             </div>
-            <div style="display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--hadrons-navy-deep);">
-              <i data-lucide="check-circle" style="color: var(--hadrons-blue-royal);"></i> Automated Spark & Insulation Breakdown Testing
+            <div class="check-item">
+              <i data-lucide="check-circle-2" class="check-icon"></i>
+              <span>10kV Inline Spark & Dielectric Breakdown Testing</span>
             </div>
-            <div style="display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--hadrons-navy-deep);">
-              <i data-lucide="check-circle" style="color: var(--hadrons-blue-royal);"></i> Strict Adherence to IS/IEC & Bureau of Indian Standards
+            <div class="check-item">
+              <i data-lucide="check-circle-2" class="check-icon"></i>
+              <span>Strict Conformance with IS/IEC, BIS, CE & RoHS Directives</span>
             </div>
           </div>
-          <a href="#contact" class="btn btn-primary">
-            <span>DISCOVER OUR QUALITY COMMITMENTS</span> <i data-lucide="arrow-right"></i>
+
+          <a href="#contact" class="btn btn-primary" style="margin-top: 28px;">
+            <span>REQUEST TEST CERTIFICATES</span>
+            <i data-lucide="arrow-right"></i>
           </a>
         </div>
 
         <div class="quality-card-list">
           <div class="quality-box">
             <div class="quality-icon"><i data-lucide="check-square"></i></div>
-            <h4>Raw Material Test</h4>
-            <p>Spectrometer inspection of pure electrolytic copper & virgin PVC compounds.</p>
+            <h4>Spectrometer Purity Test</h4>
+            <p>Optical emission spectrometry verifies 99.99% pure copper conductivity.</p>
           </div>
 
           <div class="quality-box">
             <div class="quality-icon"><i data-lucide="flame"></i></div>
-            <h4>FRLS Protection</h4>
-            <p>Self-extinguishing, oxygen-index certified flame retardant insulation.</p>
+            <h4>FRLS Thermal Barrier</h4>
+            <p>High oxygen-index PVC prevents fire spread and releases non-toxic low smoke.</p>
           </div>
 
           <div class="quality-box">
             <div class="quality-icon"><i data-lucide="zap"></i></div>
-            <h4>High Voltage Spark Test</h4>
-            <p>100% inline spark testing at 10kV to eliminate microscopic pinhole defects.</p>
+            <h4>10kV Spark Validation</h4>
+            <p>100% continuous spark testing eliminates any microscopic insulation pinholes.</p>
           </div>
 
           <div class="quality-box">
             <div class="quality-icon"><i data-lucide="settings"></i></div>
-            <h4>Precision Injection Tooling</h4>
-            <p>Micron-accurate CNC tooling for OEM plastic components & enclosures.</p>
+            <h4>CNC Injection Tooling</h4>
+            <p>Micron-precision CNC tooling guarantees perfect fit for all moulded components.</p>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- OEM & Custom Manufacturing Banner -->
-  <section class="container" id="oem">
+  <!-- =========================================================================
+       8. OEM & Custom Engineering
+       ========================================================================= -->
+  <section class="container" id="oem" style="margin-top: 40px; margin-bottom: 60px;">
     <div class="oem-section">
-      <div class="container">
-        <div class="oem-grid">
-          <div class="oem-content">
-            <span class="section-tag light"><i data-lucide="sliders"></i> B2B & OEM Manufacturing</span>
-            <h2>CUSTOM ENGINEERING & INJECTION MOULDING</h2>
-            <p>Partner with Hadrons Electricals for custom wiring harnesses, precision plastic injection moulding, and bespoke power distribution assemblies built precisely to your technical drawings.</p>
-            
-            <div class="oem-features">
-              <div class="oem-feature-item">
-                <i data-lucide="check-circle-2"></i> Custom Wire Harnesses
-              </div>
-              <div class="oem-feature-item">
-                <i data-lucide="check-circle-2"></i> High-Capacity Injection Moulding
-              </div>
-              <div class="oem-feature-item">
-                <i data-lucide="check-circle-2"></i> Rapid Tooling & Prototyping
-              </div>
-              <div class="oem-feature-item">
-                <i data-lucide="check-circle-2"></i> Dedicated Quality Assurance
-              </div>
+      <div class="oem-grid">
+        <div class="oem-content">
+          <span class="section-tag light"><i data-lucide="sliders"></i> B2B & OEM Manufacturing</span>
+          <h2>CUSTOM ENGINEERING & INJECTION MOULDING</h2>
+          <p>Partner with Hadrons Electricals for bespoke wire harnesses, heavy-duty injection moulding, custom power cords, and tailor-made electrical assemblies built precisely to your CAD specifications.</p>
+          
+          <div class="oem-features">
+            <div class="oem-feature-item">
+              <i data-lucide="check-circle-2"></i> Custom Moulded Cords & Connectors
             </div>
-
-            <a href="#contact" class="btn btn-secondary">
-              <span>GET AN OEM QUOTE</span> <i data-lucide="arrow-right"></i>
-            </a>
+            <div class="oem-feature-item">
+              <i data-lucide="check-circle-2"></i> High-Tonnage Plastic Injection Moulding
+            </div>
+            <div class="oem-feature-item">
+              <i data-lucide="check-circle-2"></i> Rapid Prototyping & Custom Tooling
+            </div>
+            <div class="oem-feature-item">
+              <i data-lucide="check-circle-2"></i> Private Label & White-Label Manufacturing
+            </div>
           </div>
 
-          <div>
-            <img src="assets/oem_manufacturing.jpg" alt="OEM Manufacturing" style="border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.4); border: 1px solid rgba(155,190,230,0.3);">
-          </div>
+          <a href="#contact" class="btn btn-secondary" style="margin-top: 15px;">
+            <span>GET AN OEM QUOTATION</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="oem-img-wrap">
+          <img src="assets/oem_manufacturing.jpg" alt="OEM Custom Manufacturing Plant" class="oem-photo">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact & Plant Section -->
+  <!-- =========================================================================
+       9. Contact & Inquiries Section
+       ========================================================================= -->
   <section class="contact-section" id="contact">
     <div class="container">
-      <div style="text-align: center;">
+      <div class="section-header-center">
         <div class="section-tag"><i data-lucide="headphones"></i> Connect With Us</div>
         <h2 class="section-heading">GET IN <span>TOUCH</span></h2>
-        <p class="section-sub">Have an inquiry or requirement for wires, extension boards, EV chargers, or OEM components? Speak directly with our technical sales team.</p>
+        <p class="section-sub">Have a requirement for wires, extension boards, modular switches, EV chargers, or OEM assemblies? Talk directly with our engineering sales team.</p>
       </div>
 
       <div class="contact-grid">
-        <!-- Contact Info & Manufacturing Plant Card -->
+        
+        <!-- Contact Info Card -->
         <div class="contact-info-card">
           <h3>HADRONS ELECTRICALS</h3>
-          <p>Official Corporate Headquarters & Manufacturing Facility</p>
+          <p style="color: var(--hadrons-blue-silver); margin-bottom: 24px;">Official Corporate Headquarters & Production Facility</p>
 
           <div class="contact-details-list">
             <div class="contact-detail-item">
               <div class="contact-detail-icon"><i data-lucide="phone"></i></div>
               <div class="contact-detail-text">
-                <label>Call Us</label>
-                <a href="tel:+918826722400">8826722400</a>
+                <label>Call Sales Department</label>
+                <a href="tel:+918826722400">+91 8826722400</a>
               </div>
             </div>
 
             <div class="contact-detail-item">
               <div class="contact-detail-icon"><i data-lucide="mail"></i></div>
               <div class="contact-detail-text">
-                <label>Email Us</label>
+                <label>Official Email</label>
                 <a href="mailto:gaurav.gautam@hadronpower.com">gaurav.gautam@hadronpower.com</a>
               </div>
             </div>
@@ -556,14 +632,14 @@
             <div class="contact-detail-item">
               <div class="contact-detail-icon"><i data-lucide="message-square"></i></div>
               <div class="contact-detail-text">
-                <label>WhatsApp Support</label>
-                <a href="https://wa.me/9188267400" target="_blank">88267400</a>
+                <label>WhatsApp Sales Support</label>
+                <a href="https://wa.me/9188267400" target="_blank">+91 88267400</a>
               </div>
             </div>
           </div>
 
           <div style="margin-top: 30px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(155,190,230,0.2);">
-            <img src="assets/manufacturing_plant.jpg" alt="Hadrons Electrical Manufacturing Plant">
+            <img src="assets/manufacturing_plant.jpg" alt="Hadrons Plant Facility">
           </div>
         </div>
 
@@ -575,12 +651,12 @@
             <div class="form-row">
               <div class="form-group">
                 <label for="fullName">Full Name *</label>
-                <input type="text" id="fullName" class="form-control" placeholder="e.g. Rajesh Kumar" required>
+                <input type="text" id="fullName" class="form-control" placeholder="e.g. Rajesh Sharma" required>
               </div>
 
               <div class="form-group">
                 <label for="companyName">Company / Organization</label>
-                <input type="text" id="companyName" class="form-control" placeholder="e.g. Apex Electricals Ltd">
+                <input type="text" id="companyName" class="form-control" placeholder="e.g. Apex Engineering Ltd">
               </div>
             </div>
 
@@ -600,21 +676,26 @@
               <label for="productCategory">Interested Product Category</label>
               <select id="productCategory" class="form-control">
                 <option value="wires">Wires & Cables (FRLS Copper Wires)</option>
-                <option value="networking">Networking & Data Cables (Cat6)</option>
-                <option value="chargers">Chargers & Power Adapters</option>
-                <option value="extension">Electrical Extension Boards</option>
-                <option value="ev">EV Charging Solutions</option>
+                <option value="extension">Extension Boards (Surge Power Strips)</option>
+                <option value="switches">Modular Switches & Sockets</option>
+                <option value="laptop">Laptop Chargers & Power Adapters</option>
+                <option value="fans">AC Grills & Air Cooler Components</option>
+                <option value="cords">Power Cords & Data Center Cords</option>
+                <option value="usb">USB & Data Cables (Cat6 / Braided)</option>
+                <option value="gan">Fast/PD Charger 65W (GaN)</option>
+                <option value="ev">Electrical Charger for 2 Wheelers (EV)</option>
                 <option value="oem">OEM & Custom Injection Moulding</option>
               </select>
             </div>
 
             <div class="form-group">
-              <label for="messageText">Your Requirement / Message *</label>
-              <textarea id="messageText" class="form-control" rows="4" placeholder="Please specify your product quantities, specifications or inquiries..." required></textarea>
+              <label for="messageText">Your Requirement / Specifications *</label>
+              <textarea id="messageText" class="form-control" rows="4" placeholder="Please specify required quantities, technical requirements or project specifications..." required></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary" style="width: 100%;">
-              <span>SUBMIT INQUIRY</span> <i data-lucide="send"></i>
+              <span>SUBMIT INQUIRY</span>
+              <i data-lucide="send"></i>
             </button>
           </form>
 
@@ -625,57 +706,74 @@
     </div>
   </section>
 
-  <!-- Footer Section -->
+  <!-- =========================================================================
+       10. Corporate Footer
+       ========================================================================= -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         
         <div class="footer-brand">
           <div class="footer-logo-wrap">
-            <img src="assets/hadrons_logo.png?v=3" alt="Hadrons Logo" class="footer-logo">
+            <img src="assets/hadrons_official_logo.png" alt="Hadrons Logo" class="footer-logo">
+            <div class="footer-brand-text">
+              <span class="footer-brand-title">HADRONS</span>
+              <span class="footer-brand-subtitle">ELECTRICALS</span>
+            </div>
           </div>
           <p class="footer-desc">
-            Hadrons Electricals is an established Indian electrical and engineering manufacturing company dedicated to high-safety copper wiring, EV chargers, data networking, extension boards, and custom OEM manufacturing.
+            Hadrons Electricals is an established Indian electrical and engineering manufacturer producing high-safety copper wires & cables, modular switches, power cords, EV chargers, and OEM components.
           </p>
-          <div style="display: flex; gap: 12px; color: var(--hadrons-blue-silver); margin-top: 10px;">
-            <a href="#" style="background: rgba(255,255,255,0.06); padding: 8px; border-radius: 6px;"><i data-lucide="linkedin"></i></a>
-            <a href="#" style="background: rgba(255,255,255,0.06); padding: 8px; border-radius: 6px;"><i data-lucide="facebook"></i></a>
-            <a href="#" style="background: rgba(255,255,255,0.06); padding: 8px; border-radius: 6px;"><i data-lucide="twitter"></i></a>
-            <a href="#" style="background: rgba(255,255,255,0.06); padding: 8px; border-radius: 6px;"><i data-lucide="instagram"></i></a>
+          <div class="footer-social-links">
+            <a href="https://linkedin.com" target="_blank" class="footer-social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45c-.91 0-1.64.73-1.64 1.64s.73 1.64 1.64 1.64 1.64-.73 1.64-1.64-.73-1.64-1.64-1.64Z"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" class="footer-social-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02Z"/></svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="footer-social-btn" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="footer-social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://wa.me/9188267400" target="_blank" class="footer-social-btn" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.29z"/></svg>
+            </a>
           </div>
         </div>
 
         <div>
-          <h4 class="footer-title">Quick Links</h4>
+          <h4 class="footer-title">Navigation</h4>
           <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#products">Product Range</a>
-            <a href="#evolution">Our Evolution</a>
-            <a href="#quality">Quality Standards</a>
-            <a href="#oem">OEM & Custom</a>
-            <a href="#contact">Contact Us</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Product Ecosystem</a>
+            <a href="evolution.html">Our Evolution</a>
+            <a href="quality.html">Quality Standards</a>
+            <a href="oem.html">OEM &amp; Custom</a>
+            <a href="contact.html">Contact Us</a>
           </div>
         </div>
 
         <div>
-          <h4 class="footer-title">Products</h4>
+          <h4 class="footer-title">Product Portfolio</h4>
           <div class="footer-links">
             <a href="#products">Wires & Cables</a>
-            <a href="#products">Networking Cables</a>
-            <a href="#products">Mobile Chargers</a>
             <a href="#products">Extension Boards</a>
-            <a href="#products">EV Charging Solutions</a>
-            <a href="#products">AC Components</a>
-            <a href="#products">Air Cooler Parts</a>
+            <a href="#products">Modular Switches</a>
+            <a href="#products">Laptop Chargers</a>
+            <a href="#products">Power Cords (3 Pin / Data Center)</a>
+            <a href="#products">Fast 65W GaN Chargers</a>
+            <a href="#products">EV 2-Wheeler Chargers</a>
           </div>
         </div>
 
         <div>
-          <h4 class="footer-title">Contact Information</h4>
+          <h4 class="footer-title">Contact Us</h4>
           <div style="display: flex; flex-direction: column; gap: 14px; font-size: 0.9rem;">
             <div>
-              <strong style="color: var(--hadrons-white); display: block;">Sales Phone:</strong>
+              <strong style="color: var(--hadrons-white); display: block;">Sales Helpline:</strong>
               <span>+91 8826722400</span>
             </div>
             <div>
@@ -683,7 +781,7 @@
               <span>gaurav.gautam@hadronpower.com</span>
             </div>
             <div>
-              <strong style="color: var(--hadrons-white); display: block;">WhatsApp Direct:</strong>
+              <strong style="color: var(--hadrons-white); display: block;">WhatsApp Support:</strong>
               <span>+91 88267400</span>
             </div>
           </div>
@@ -692,51 +790,71 @@
       </div>
 
       <div class="footer-bottom">
-        <div>
-          © 2026 Hadrons Electricals. All Rights Reserved. Designed with Deep Hadrons Blue Identity.
-        </div>
-        <div>
-          <span>Privacy Policy</span> • <span>Terms of Service</span> • <span>IS/IEC Compliance</span>
-        </div>
+        <p>&copy; 2026 Hadrons Electricals Pvt. Ltd. All rights reserved.</p>
+        <p>
+          <a href="privacy-policy.html" style="color: var(--hadrons-blue-silver); text-decoration: none;">Privacy Policy</a> • 
+          <a href="terms.html" style="color: var(--hadrons-blue-silver); text-decoration: none;">Terms of Service</a> • 
+          <a href="compliance.html" style="color: var(--hadrons-blue-silver); text-decoration: none;">BIS / IS / IEC Compliant</a>
+        </p>
       </div>
     </div>
   </footer>
 
-  <!-- Technical Spec / Product Modal -->
+  <!-- =========================================================================
+       11. Technical Spec & Product Detail Modal
+       ========================================================================= -->
   <div class="modal-overlay" id="productModal">
     <div class="modal-card">
       <button class="modal-close" onclick="closeModal()">✕</button>
       <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
-        <div style="background: var(--hadrons-blue-ice); color: var(--hadrons-blue-royal); width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+        <div style="background: var(--hadrons-blue-ice); color: var(--hadrons-blue-royal); width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
           <i data-lucide="shield-check"></i>
         </div>
-        <h3 id="modalTitle" style="font-size: 1.5rem; color: var(--hadrons-navy-deep);">Product Title</h3>
+        <h3 id="modalTitle" style="font-size: 1.45rem; color: var(--hadrons-navy-deep); font-weight: 700;">Product Title</h3>
       </div>
       <p id="modalDesc" style="color: var(--text-body); font-size: 1rem; line-height: 1.6; margin-bottom: 24px;">
         Product details and technical specifications will be loaded here.
       </p>
 
-      <div style="background: var(--hadrons-bg-light); padding: 16px; border-radius: 8px; margin-bottom: 24px; border: 1px solid var(--border-blue);">
-        <h4 style="font-size: 0.9rem; text-transform: uppercase; color: var(--hadrons-navy-deep); margin-bottom: 8px;">Technical Standards:</h4>
-        <ul style="font-size: 0.88rem; color: var(--text-muted); list-style: disc; padding-left: 20px;">
-          <li>100% High-Purity Electrolytic Copper</li>
-          <li>FRLS Insulation (Flame Retardant Low Smoke)</li>
+      <div style="background: var(--hadrons-bg-light); padding: 16px; border-radius: 10px; margin-bottom: 24px; border: 1px solid var(--border-blue);">
+        <h4 style="font-size: 0.9rem; text-transform: uppercase; color: var(--hadrons-navy-deep); margin-bottom: 8px; font-weight: 700;">Quality & Compliance Standards:</h4>
+        <ul style="font-size: 0.88rem; color: var(--text-muted); list-style: disc; padding-left: 20px; line-height: 1.7;">
+          <li>100% High-Purity Electrolytic Copper & Virgin Insulation Compounds</li>
+          <li>FRLS Fire Retardant Low Smoke Self-Extinguishing Grade</li>
           <li>ISO 9001:2015 & BIS Certification Compliant</li>
         </ul>
       </div>
 
-      <div style="display: flex; gap: 12px;">
-        <a href="#contact" onclick="closeModal()" class="btn btn-primary" style="flex: 1;">
-          <span>REQUEST QUOTE FOR THIS PRODUCT</span>
-        </a>
-      </div>
+      <div class="footer-social-links">
+            <a href="https://linkedin.com" target="_blank" class="footer-social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45c-.91 0-1.64.73-1.64 1.64s.73 1.64 1.64 1.64 1.64-.73 1.64-1.64-.73-1.64-1.64-1.64Z"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" class="footer-social-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02Z"/></svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="footer-social-btn" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="footer-social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://wa.me/9188267400" target="_blank" class="footer-social-btn" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.29z"/></svg>
+            </a>
+          </div>
     </div>
   </div>
 
   <!-- JavaScript -->
-  <script src="app.js?v=2"></script>
+  <script src="app.js?v=350"></script>
   <script>
     lucide.createIcons();
   </script>
+
+    <!-- Floating WhatsApp Quick Connect Button (Pure Circular FAB) -->
+  <a href="https://wa.me/918826722400?text=Hello%20Hadrons%20Electricals,%20I%20have%20an%20inquiry" target="_blank" class="whatsapp-floating-btn" aria-label="Chat with Hadrons Electricals on WhatsApp" title="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.29z"/></svg>
+  </a>
+
 </body>
 </html>

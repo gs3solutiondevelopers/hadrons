@@ -1,0 +1,3346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products — Hadrons Electricals | Powering Connections. Energizing Futures.</title>
+  <meta name="description" content="Explore Hadrons Electricals complete product portfolio: Wires & Cables, Wiring Harness, Extension Boards, Modular Switches, Laptop Chargers, AC Grills, Power Cords, and EV Chargers.">
+  <meta name="theme-color" content="#0B3E8C">
+  
+  <!-- Favicon Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=logo_v1">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64x64.png?v=logo_v1">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=logo_v1">
+  <link rel="shortcut icon" href="favicon.ico?v=logo_v1">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css?v=350">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. Top Corporate White Navbar with Icon Navigation
+       ========================================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="nav-brand" aria-label="Hadrons Electricals Home">
+        <div class="nav-logo-wrapper">
+          <img src="assets/hadrons_official_logo.png" alt="Hadrons Electricals Logo" class="nav-logo">
+        </div>
+        <div class="nav-brand-text">
+          <span class="brand-title">HADRONS</span>
+          <span class="brand-subtitle">ELECTRICALS</span>
+        </div>
+      </a>
+
+      <!-- 7 Navigation Links with Icons (Active on Products) -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">
+          <i data-lucide="home" class="nav-icon"></i>
+          <span>Home</span>
+        </a>
+        <a href="about.html" class="nav-link">
+          <i data-lucide="user" class="nav-icon"></i>
+          <span>About Us</span>
+        </a>
+        <a href="products.html" class="nav-link active">
+          <i data-lucide="package" class="nav-icon"></i>
+          <span>Products</span>
+        </a>
+        <a href="evolution.html" class="nav-link">
+          <i data-lucide="sparkles" class="nav-icon"></i>
+          <span>Our Evolution</span>
+        </a>
+        <a href="quality.html" class="nav-link">
+          <i data-lucide="shield-check" class="nav-icon"></i>
+          <span>Quality</span>
+        </a>
+        <a href="oem.html" class="nav-link">
+          <i data-lucide="layers" class="nav-icon"></i>
+          <span>OEM &amp; Custom</span>
+        </a>
+        <a href="contact.html" class="nav-link">
+          <i data-lucide="phone" class="nav-icon"></i>
+          <span>Contact Us</span>
+        </a>
+      </nav>
+
+      <!-- Nav CTA Button & Mobile Menu Toggle -->
+      <div class="nav-cta-wrapper">
+        <a href="contact.html" class="btn btn-primary btn-nav-cta">
+          <span>GET IN TOUCH</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       2. Products Page Header / Hero Bar (Toggled per category)
+       ========================================================================= -->
+  <!-- Top Banner 1: All Products General Banner (Default) -->
+  <section class="products-hero-bar" id="topBannerAll">
+    <div class="container">
+      <div class="products-hero-flex">
+        
+        <!-- Left Title & Intro -->
+        <div class="products-hero-intro">
+          <h1 class="products-page-title">PRODUCTS</h1>
+          <h2 class="products-page-tagline">
+            POWERING CONNECTIONS.<br>
+            <span>ENERGIZING FUTURES.</span>
+          </h2>
+          <p class="products-page-desc">
+            A wide range of high-quality electrical solutions designed for safety, reliability and performance. Built to power every connection, every day.
+          </p>
+        </div>
+
+        <!-- Center Circuit Decorative Traces -->
+        <div class="products-hero-circuit"></div>
+
+        <!-- Right 4 Trust Badges -->
+        <div class="products-hero-badges">
+          <div class="p-badge-item">
+            <i data-lucide="shield-check" class="p-badge-icon"></i>
+            <div class="p-badge-text">SAFE &amp;<br>RELIABLE</div>
+          </div>
+          <div class="p-badge-item">
+            <i data-lucide="gem" class="p-badge-icon"></i>
+            <div class="p-badge-text">PREMIUM<br>QUALITY</div>
+          </div>
+          <div class="p-badge-item">
+            <i data-lucide="leaf" class="p-badge-icon"></i>
+            <div class="p-badge-text">FUTURE<br>READY</div>
+          </div>
+          <div class="p-badge-item">
+            <i data-lucide="map-pin" class="p-badge-icon"></i>
+            <div class="p-badge-text">MADE IN<br>INDIA</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Banner 2: Wires & Cables Dedicated Top Banner (Active when Wires & Cables is selected) -->
+  <section class="wires-hero-banner-section" id="topBannerWires" style="display:none;">
+    <div class="container">
+      
+      <!-- Breadcrumb Bar -->
+      <div class="category-breadcrumb-bar">
+        <div class="breadcrumb-trail">
+          <a href="javascript:void(0)" onclick="filterCatalog('all', document.querySelector('[data-cat=\'all\']'))">Home</a> <span>&gt;</span>
+          <a href="javascript:void(0)" onclick="filterCatalog('all', document.querySelector('[data-cat=\'all\']'))">Products</a> <span>&gt;</span>
+          <span class="trail-current">Wires &amp; Cables</span>
+        </div>
+      </div>
+
+      <div class="wires-hero-grid">
+        
+        <!-- Left Title & Narrative -->
+        <div class="wires-hero-content">
+          <h1 class="wires-hero-title">WIRES &amp; CABLES</h1>
+          <h2 class="wires-hero-subtitle">PREMIUM QUALITY. MAXIMUM SAFETY. SUPERIOR PERFORMANCE.</h2>
+          <p class="wires-hero-desc">
+            Our wires and cables are manufactured using high-grade raw materials and advanced technology to ensure durability, reliability and consistent performance for every connection.
+          </p>
+        </div>
+
+        <!-- Center 3D Wire Spool Drum Visual -->
+        <div class="wires-hero-visual">
+          <img src="assets/wires/wire_hero_banner.png" alt="Hadrons Wires and Cables Spool Drum" class="wires-drum-img">
+        </div>
+
+        <!-- Right 4 Trust Badges (Vertical Stack matching Mockup) -->
+        <div class="wires-hero-badges-col">
+          <div class="p-badge-item">
+            <i data-lucide="shield-check" class="p-badge-icon"></i>
+            <div class="p-badge-text">SAFE &amp; RELIABLE</div>
+          </div>
+          <div class="p-badge-item">
+            <i data-lucide="gem" class="p-badge-icon"></i>
+            <div class="p-badge-text">PREMIUM QUALITY</div>
+          </div>
+          <div class="p-badge-item">
+            <i data-lucide="leaf" class="p-badge-icon"></i>
+            <div class="p-badge-text">FUTURE READY</div>
+          </div>
+          <div class="p-badge-item">
+            <i data-lucide="map-pin" class="p-badge-icon"></i>
+            <div class="p-badge-text">MADE IN INDIA</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Top Banner 3: Wiring Harness & Battery Cable Dedicated Top Banner (Active when Harness is selected) -->
+  <section class="wires-hero-banner-section harness-hero-banner-section" id="topBannerHarness" style="display:none;">
+    <div class="container">
+      
+      <!-- Breadcrumb Bar -->
+      <div class="category-breadcrumb-bar">
+        <div class="breadcrumb-trail">
+          <a href="javascript:void(0)" onclick="filterCatalog('all', document.querySelector('[data-cat=\'all\']'))">Home</a> <span>&gt;</span>
+          <a href="javascript:void(0)" onclick="filterCatalog('all', document.querySelector('[data-cat=\'all\']'))">Products</a> <span>&gt;</span>
+          <span class="trail-current">Wiring Harness &amp; Battery Cable</span>
+        </div>
+      </div>
+
+      <div class="harness-hero-grid">
+        
+        <!-- Left Title, Subtitle, and Narrative -->
+        <div class="harness-hero-content">
+          <h1 class="harness-hero-title">WIRING HARNESS &amp;<br>BATTERY CABLE</h1>
+          <span class="harness-title-line"></span>
+          <h2 class="harness-hero-subtitle">Engineered for performance. Built for reliability.</h2>
+          <p class="harness-hero-desc">
+            Our wiring harnesses and battery cables deliver safe, efficient and long-lasting connections for critical applications.
+          </p>
+        </div>
+
+        <!-- Right 3D Wiring Harness Studio Visual -->
+        <div class="harness-hero-visual">
+          <img src="assets/harness/harness_hero_main.png?v=logo_hd_v1" alt="Hadrons Wiring Harness and Battery Cables" class="harness-hero-img">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Top Banner 4: Extension Boards Dedicated Top Banner (Active when Extension Boards is selected) -->
+  <section class="wires-hero-banner-section extension-hero-banner-section" id="topBannerExtension" style="display:none;">
+    <div class="container">
+      
+      <!-- Breadcrumb Bar -->
+      <div class="category-breadcrumb-bar">
+        <div class="breadcrumb-trail">
+          <a href="javascript:void(0)" onclick="filterCatalog('all', document.querySelector('[data-cat=\'all\']'))">Home</a> <span>&gt;</span>
+          <a href="javascript:void(0)" onclick="filterCatalog('all', document.querySelector('[data-cat=\'all\']'))">Products</a> <span>&gt;</span>
+          <span class="trail-current">Extension Boards</span>
+        </div>
+      </div>
+
+      <div class="extension-hero-grid">
+        
+        <!-- Left Title, Slogan, Narrative & 4 Badges -->
+        <div class="extension-hero-content">
+          <span class="extension-hero-tag">ELECTRICAL</span>
+          <h1 class="extension-hero-title">EXTENSION BOARDS</h1>
+          <h2 class="extension-hero-slogan">Hadrons wires &ldquo;Power Flows without fire&rdquo;</h2>
+          <p class="extension-hero-desc">
+            <strong>Safe connections. Smart design. Superior performance.</strong><br>
+            Our extension boards are designed using high quality materials, advanced technology and strict quality standards to ensure maximum safety for your everyday needs.
+          </p>
+
+          <!-- 4 Round Badges at bottom-left -->
+          <div class="extension-hero-badges-row">
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="shield-check"></i></div>
+              <div class="ext-badge-label">Safe &amp;<br>Reliable</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="flame"></i></div>
+              <div class="ext-badge-label">Fire<br>Retardant</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="shield-alert"></i></div>
+              <div class="ext-badge-label">Overload<br>Protection</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="link"></i></div>
+              <div class="ext-badge-label">Durable<br>&amp; Long Lasting</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right 3D Extension Boards Visual -->
+        <div class="extension-hero-visual">
+          <img src="assets/extension/extension_hero_main.png?v=user_hd_bord_v2" alt="Hadrons Electrical Extension Boards" class="extension-hero-img">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Top Banner 5: Laptop Chargers Dedicated Top Banner (Active when Laptop Chargers is selected) -->
+  <section class="wires-hero-banner-section laptop-hero-banner-section" id="topBannerLaptop" style="display:none;">
+    <div class="container">
+      
+      <!-- Breadcrumb Bar -->
+      <div class="category-breadcrumb-bar">
+        <div class="breadcrumb-trail">
+          <a href="javascript:void(0)" onclick="filterCatalog('all', document.querySelector('[data-cat=\'all\']'))">Home</a> <span>&gt;</span>
+          <a href="javascript:void(0)" onclick="filterCatalog('all', document.querySelector('[data-cat=\'all\']'))">Products</a> <span>&gt;</span>
+          <span class="trail-current">Laptop Chargers</span>
+        </div>
+      </div>
+
+      <div class="laptop-hero-grid">
+        
+        <!-- Left Title, Slogan, Narrative, 5 Badges -->
+        <div class="laptop-hero-content">
+          <h1 class="laptop-hero-title">LAPTOP<br>CHARGERS</h1>
+          <h2 class="laptop-hero-slogan">Powering Productivity. Delivering Trust.</h2>
+          <span class="laptop-title-line"></span>
+          <p class="laptop-hero-desc">
+            <strong>Engineered for performance. Built for safety.</strong><br>
+            Hadrons Laptop Chargers deliver intelligent power, maximum efficiency and uncompromised reliability for your laptops, every time.
+          </p>
+
+          <!-- 5 Round Trust Badges -->
+          <div class="laptop-hero-badges-row">
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="shield-check"></i></div>
+              <div class="ext-badge-label">Safe &amp;<br>Reliable</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="shield-alert"></i></div>
+              <div class="ext-badge-label">Overload<br>Protection</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="thermometer"></i></div>
+              <div class="ext-badge-label">Heat<br>Resistant</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="zap"></i></div>
+              <div class="ext-badge-label">Energy<br>Efficient</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="leaf"></i></div>
+              <div class="ext-badge-label">Eco<br>Friendly</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right 3D Laptop Charger Visual -->
+        <div class="laptop-hero-visual">
+          <img src="assets/laptop/laptop_hero_main.png?v=user_laptop_charger_v1" alt="Hadrons Laptop Chargers" class="laptop-hero-img">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Top Banner 6: AC Grills & Fans Dedicated Top Banner (Active when AC Grills is selected) -->
+  <section class="wires-hero-banner-section ac-hero-banner-section" id="topBannerAC" style="display:none;">
+    <div class="container">
+      
+      <!-- Breadcrumb Bar -->
+      <div class="category-breadcrumb-bar">
+        <div class="breadcrumb-trail">
+          <a href="javascript:void(0)" onclick="filterCatalog('all', document.querySelector('[data-cat=\'all\']'))">Home</a> <span>&gt;</span>
+          <a href="javascript:void(0)" onclick="filterCatalog('all', document.querySelector('[data-cat=\'all\']'))">Products</a> <span>&gt;</span>
+          <span class="trail-current">AC Grills &amp; Fans</span>
+        </div>
+      </div>
+
+      <div class="ac-hero-grid">
+        
+        <!-- Left Title, Subtitle, Pill, Narrative, 6 Badges -->
+        <div class="ac-hero-content">
+          <h1 class="ac-hero-title">AC GRILLS &amp; FANS<br><span class="ac-title-subline">WITH OTHER AC COMPONENTS</span></h1>
+          <h2 class="ac-hero-subtitle">Engineered for Efficiency. Built for Scale.</h2>
+          
+          <div class="ac-hero-pill-badge">
+            <span>POWERING PERFORMANCE EVERY TIME</span>
+          </div>
+
+          <p class="ac-hero-desc">
+            Precision engineered AC components designed for superior airflow, durability and aesthetics. Trusted by leading AC brands for quality, consistency and large scale performance.
+          </p>
+
+          <!-- 6 Round Trust Badges -->
+          <div class="ac-hero-badges-row">
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="shield-check"></i></div>
+              <div class="ext-badge-label">Premium<br>Quality</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="fan"></i></div>
+              <div class="ext-badge-label">High Airflow<br>Efficiency</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="link"></i></div>
+              <div class="ext-badge-label">Strong &amp;<br>Durable</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="compass"></i></div>
+              <div class="ext-badge-label">Precision<br>Manufacturing</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="settings"></i></div>
+              <div class="ext-badge-label">OEM Grade<br>Excellence</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="leaf"></i></div>
+              <div class="ext-badge-label">Sustainable<br>Solutions</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right 3D AC Grills & Components Visual -->
+        <div class="ac-hero-visual-wrap">
+          <img src="assets/ac/ac_hero_main.png?v=ac_fan_v2" alt="Hadrons AC Grills and Fans with AC Components" class="ac-hero-img">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Top Banner 7: Coolers (Body & Fans) Dedicated Top Banner (Active when Coolers is selected) -->
+  <section class="wires-hero-banner-section cooler-hero-banner-section" id="topBannerCoolers" style="display:none;">
+    <div class="container">
+      
+      <!-- Breadcrumb Bar -->
+      <div class="category-breadcrumb-bar">
+        <div class="breadcrumb-trail">
+          <a href="javascript:void(0)" onclick="filterCatalog('all', document.querySelector('[data-cat=\'all\']'))">Home</a> <span>&gt;</span>
+          <a href="javascript:void(0)" onclick="filterCatalog('all', document.querySelector('[data-cat=\'all\']'))">Products</a> <span>&gt;</span>
+          <span class="trail-current">Coolers (Body &amp; Fans)</span>
+        </div>
+      </div>
+
+      <div class="cooler-hero-grid">
+        
+        <!-- Left Title, Subtitle, Pill, Narrative, 6 Badges -->
+        <div class="cooler-hero-content">
+          <h1 class="cooler-hero-title">COOLER PARTS</h1>
+          <h2 class="cooler-hero-subtitle">ENGINEERED FOR COMFORT.<br>BUILT FOR PERFORMANCE.</h2>
+          
+          <div class="cooler-hero-pill-badge">
+            <i data-lucide="zap" style="width: 14px; height: 14px; fill: #FFFFFF; stroke: #FFFFFF; margin-right: 6px;"></i>
+            <span>POWERING PERFORMANCE EVERY TIME</span>
+          </div>
+
+          <p class="cooler-hero-desc">
+            High quality cooler parts and bodies, precision engineered for superior airflow, durability and aesthetics. Trusted by leading cooler manufacturers and OEMs across India.
+          </p>
+
+          <!-- 6 Round Trust Badges -->
+          <div class="cooler-hero-badges-row">
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="shield-check"></i></div>
+              <div class="ext-badge-label">Premium<br>Quality</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="fan"></i></div>
+              <div class="ext-badge-label">High Airflow<br>Efficiency</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="link"></i></div>
+              <div class="ext-badge-label">Strong &amp;<br>Durable</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="compass"></i></div>
+              <div class="ext-badge-label">Precision<br>Manufacturing</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="award"></i></div>
+              <div class="ext-badge-label">OEM Grade<br>Excellence</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="leaf"></i></div>
+              <div class="ext-badge-label">Sustainable<br>Solutions</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right 3D Cooler Parts Visual -->
+        <div class="cooler-hero-visual-wrap">
+          <img src="assets/coolers/cooler_hero_main.png?v=cooler_v1" alt="Hadrons Cooler Parts, Bodies and Fans" class="cooler-hero-img">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Top Banner 8: Power Cords (6A & 16A) Dedicated Top Banner (Active when Power Cords is selected) -->
+  <section class="wires-hero-banner-section powercord-hero-banner-section" id="topBannerPowerCord" style="display:none;">
+    <div class="container">
+      
+      <!-- Breadcrumb Bar -->
+      <div class="category-breadcrumb-bar">
+        <div class="breadcrumb-trail">
+          <a href="javascript:void(0)" onclick="filterCatalog('all', document.querySelector('[data-cat=\'all\']'))">Home</a> <span>&gt;</span>
+          <a href="javascript:void(0)" onclick="filterCatalog('all', document.querySelector('[data-cat=\'all\']'))">Products</a> <span>&gt;</span>
+          <span class="trail-current">Power Cord (6A &amp; 16A)</span>
+        </div>
+      </div>
+
+      <div class="cooler-hero-grid">
+        
+        <!-- Left Title, Subtitle, Pill, Narrative, 6 Badges -->
+        <div class="cooler-hero-content">
+          <h1 class="cooler-hero-title">POWER CORDS</h1>
+          <h2 class="cooler-hero-subtitle">BUILT TO CONNECT.<br>BUILT TO PERFORM.</h2>
+          
+          <div class="cooler-hero-pill-badge">
+            <i data-lucide="zap" style="width: 14px; height: 14px; fill: #FFFFFF; stroke: #FFFFFF; margin-right: 6px;"></i>
+            <span>POWERING PERFORMANCE EVERY TIME</span>
+          </div>
+
+          <p class="cooler-hero-desc">
+            High performance power cords designed for safety, durability and long lasting reliability. Trusted by leading OEMs across India and around the world.
+          </p>
+
+          <!-- 6 Round Trust Badges -->
+          <div class="cooler-hero-badges-row">
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="shield-check"></i></div>
+              <div class="ext-badge-label">Safe &amp;<br>Reliable</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="zap"></i></div>
+              <div class="ext-badge-label">High Current<br>Capacity</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="flame"></i></div>
+              <div class="ext-badge-label">Flame<br>Retardant</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="link"></i></div>
+              <div class="ext-badge-label">Flexible &amp;<br>Durable</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="leaf"></i></div>
+              <div class="ext-badge-label">RoHS<br>Compliant</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="award"></i></div>
+              <div class="ext-badge-label">OEM Grade<br>Quality</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right 3D Power Cords Visual -->
+        <div class="cooler-hero-visual-wrap">
+          <img src="assets/power_cords/power_cords_hero_main.png?v=power_cord_v1" alt="Hadrons Power Cords 6A and 16A" class="cooler-hero-img">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Top Banner 9: Data Center Power Cords Dedicated Top Banner (Active when Data Center is selected) -->
+  <section class="wires-hero-banner-section datacenter-hero-banner-section" id="topBannerDataCenter" style="display:none;">
+    <div class="container">
+      
+      <!-- Breadcrumb Bar -->
+      <div class="category-breadcrumb-bar">
+        <div class="breadcrumb-trail">
+          <a href="javascript:void(0)" onclick="filterCatalog('all', document.querySelector('[data-cat=\'all\']'))">Home</a> <span>&gt;</span>
+          <a href="javascript:void(0)" onclick="filterCatalog('all', document.querySelector('[data-cat=\'all\']'))">Products</a> <span>&gt;</span>
+          <span class="trail-current">Data Center Power Cords</span>
+        </div>
+      </div>
+
+      <div class="cooler-hero-grid">
+        
+        <!-- Left Title, Subtitle, Pill, Narrative, 6 Badges -->
+        <div class="cooler-hero-content">
+          <h1 class="cooler-hero-title">DATA CENTER<br>POWER CORDS</h1>
+          <h2 class="cooler-hero-subtitle">BUILT FOR RELIABILITY.<br>ENGINEERED FOR UPTIME.</h2>
+          
+          <div class="cooler-hero-pill-badge">
+            <i data-lucide="zap" style="width: 14px; height: 14px; fill: #FFFFFF; stroke: #FFFFFF; margin-right: 6px;"></i>
+            <span>POWERING PERFORMANCE EVERY TIME.</span>
+          </div>
+
+          <p class="cooler-hero-desc">
+            High performance power cords specifically designed for data centers and mission critical environments. Built for safety, efficiency and continuous performance.
+          </p>
+
+          <!-- 6 Round Trust Badges -->
+          <div class="cooler-hero-badges-row">
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="shield-check"></i></div>
+              <div class="ext-badge-label">Safe &amp;<br>Reliable</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="zap"></i></div>
+              <div class="ext-badge-label">High Current<br>Capacity</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="lock"></i></div>
+              <div class="ext-badge-label">Secure<br>Connections</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="thermometer"></i></div>
+              <div class="ext-badge-label">Heat<br>Resistant</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="leaf"></i></div>
+              <div class="ext-badge-label">RoHS<br>Compliant</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="award"></i></div>
+              <div class="ext-badge-label">Tested for<br>Excellence</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right 3D Data Center Power Cords Visual -->
+        <div class="cooler-hero-visual-wrap">
+          <img src="assets/datacenter/datacenter_hero_main.png?v=dc_v1" alt="Hadrons Data Center Power Cords and PDU Locking Cables" class="cooler-hero-img">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Top Banner 10: 2 Wheeler EV Chargers Dedicated Top Banner (Active when EV is selected) -->
+  <section class="wires-hero-banner-section ev-hero-banner-section" id="topBannerEV" style="display:none;">
+    <div class="container">
+      
+      <!-- Breadcrumb Bar -->
+      <div class="category-breadcrumb-bar">
+        <div class="breadcrumb-trail">
+          <a href="javascript:void(0)" onclick="filterCatalog('all', document.querySelector('[data-cat=\'all\']'))">Home</a> <span>&gt;</span>
+          <a href="javascript:void(0)" onclick="filterCatalog('all', document.querySelector('[data-cat=\'all\']'))">Products</a> <span>&gt;</span>
+          <span class="trail-current">2 Wheeler Electric Charger</span>
+        </div>
+      </div>
+
+      <div class="cooler-hero-grid">
+        
+        <!-- Left Title, Subtitle, Pill, Checklist, 6 Badges -->
+        <div class="cooler-hero-content">
+          <h1 class="cooler-hero-title">2 WHEELER<br>ELECTRIC CHARGER</h1>
+          <h2 class="cooler-hero-subtitle">BUILT TO CHARGE.<br>BUILT TO PERFORM.</h2>
+          
+          <div class="cooler-hero-pill-badge">
+            <i data-lucide="zap" style="width: 14px; height: 14px; fill: #FFFFFF; stroke: #FFFFFF; margin-right: 6px;"></i>
+            <span>POWERING PERFORMANCE EVERY TIME.</span>
+          </div>
+
+          <ul class="ev-hero-checklist" style="list-style: none; padding: 0; margin: 16px 0 20px 0; display: flex; flex-direction: column; gap: 8px;">
+            <li style="display: flex; align-items: center; gap: 8px; font-size: 0.95rem; color: var(--hadrons-navy-deep); font-weight: 500;">
+              <i data-lucide="check" style="width: 18px; height: 18px; color: var(--hadrons-blue-royal); stroke-width: 3;"></i>
+              <span>High efficiency, safe &amp; reliable charger with 3 pin 6A power cord.</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 8px; font-size: 0.95rem; color: var(--hadrons-navy-deep); font-weight: 500;">
+              <i data-lucide="check" style="width: 18px; height: 18px; color: var(--hadrons-blue-royal); stroke-width: 3;"></i>
+              <span>Engineered for today's electric two wheelers.</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 8px; font-size: 0.95rem; color: var(--hadrons-navy-deep); font-weight: 500;">
+              <i data-lucide="check" style="width: 18px; height: 18px; color: var(--hadrons-blue-royal); stroke-width: 3;"></i>
+              <span>Built for durability, compactness and consistent performance.</span>
+            </li>
+          </ul>
+
+          <!-- 6 Round Trust Badges -->
+          <div class="cooler-hero-badges-row">
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="shield-check"></i></div>
+              <div class="ext-badge-label">Safe &amp;<br>Reliable</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="zap"></i></div>
+              <div class="ext-badge-label">Fast &amp; Efficient<br>Charging</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="thermometer"></i></div>
+              <div class="ext-badge-label">Overheat<br>Protection</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="shield-alert"></i></div>
+              <div class="ext-badge-label">Short Circuit<br>Protection</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="leaf"></i></div>
+              <div class="ext-badge-label">RoHS<br>Compliant</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="award"></i></div>
+              <div class="ext-badge-label">Tested for<br>Excellence</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right 3D EV Charger Visual -->
+        <div class="cooler-hero-visual-wrap">
+          <img src="assets/ev/ev_hero_main.png?v=ev_v1" alt="Hadrons 2 Wheeler Electric Charger" class="cooler-hero-img">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Top Banner 11: Large Injection Moulded Components Dedicated Top Banner (Active when Moulded is selected) -->
+  <section class="wires-hero-banner-section moulded-hero-banner-section" id="topBannerMoulded" style="display:none;">
+    <div class="container">
+      
+      <!-- Breadcrumb Bar -->
+      <div class="category-breadcrumb-bar">
+        <div class="breadcrumb-trail">
+          <a href="javascript:void(0)" onclick="filterCatalog('all', document.querySelector('[data-cat=\'all\']'))">Home</a> <span>&gt;</span>
+          <a href="javascript:void(0)" onclick="filterCatalog('all', document.querySelector('[data-cat=\'all\']'))">Products</a> <span>&gt;</span>
+          <span class="trail-current">Large Injection Moulded Components</span>
+        </div>
+      </div>
+
+      <div class="cooler-hero-grid">
+        
+        <!-- Left Title, Subtitle, Pill, Narrative, 7 Badges -->
+        <div class="cooler-hero-content">
+          <h1 class="cooler-hero-title">LARGE INJECTION<br>MOULD PARTS</h1>
+          <h2 class="cooler-hero-subtitle">PRECISION ENGINEERED.<br>BUILT TO PERFORM.</h2>
+          
+          <div class="cooler-hero-pill-badge">
+            <i data-lucide="settings" style="width: 14px; height: 14px; fill: #FFFFFF; stroke: #FFFFFF; margin-right: 6px;"></i>
+            <span>HIGH STRENGTH. LONG LIFE. ZERO COMPROMISE.</span>
+          </div>
+
+          <p class="cooler-hero-desc">
+            We manufacture high-quality, large-size injection moulded parts for power, energy storage and industrial applications using advanced technology and high tonnage machines.
+          </p>
+
+          <!-- 7 Round Trust Badges -->
+          <div class="cooler-hero-badges-row" style="flex-wrap: wrap;">
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="target"></i></div>
+              <div class="ext-badge-label">High Dimensional<br>Accuracy</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="shield-check"></i></div>
+              <div class="ext-badge-label">Strong &amp;<br>Impact Resistant</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="layers"></i></div>
+              <div class="ext-badge-label">High Quality<br>Engineering Plastics</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="thermometer"></i></div>
+              <div class="ext-badge-label">Heat &amp; Weather<br>Resistant</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="cpu"></i></div>
+              <div class="ext-badge-label">Consistent<br>Performance</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="feather"></i></div>
+              <div class="ext-badge-label">Lightweight<br>&amp; Durable</div>
+            </div>
+            <div class="ext-badge-item">
+              <div class="ext-badge-circle"><i data-lucide="refresh-cw"></i></div>
+              <div class="ext-badge-label">Corrosion<br>Resistant</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right 3D Moulded Components Visual -->
+        <div class="cooler-hero-visual-wrap">
+          <img src="assets/moulded/moulded_hero_main.png?v=moulded_v1" alt="Hadrons Large Injection Moulded Components, Battery Containers and Industrial Crates" class="cooler-hero-img">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. Main Products Two-Column Layout (Sidebar + 11 Product Cards)
+       ========================================================================= -->
+  <section class="products-catalog-section">
+    <div class="container">
+      <div class="products-catalog-layout">
+        
+        <!-- Left Sidebar: Product Categories & Custom Solutions -->
+        <aside class="products-sidebar">
+          
+          <!-- Category Card -->
+          <div class="sidebar-categories-card">
+            <div class="sidebar-header">
+              <i data-lucide="layers" style="width: 18px; height: 18px;"></i>
+              <h3>PRODUCT CATEGORIES</h3>
+            </div>
+            
+            <div class="sidebar-menu-list">
+              <button class="sidebar-cat-btn active" data-cat="all" onclick="filterCatalog('all', this)">
+                <div class="cat-btn-left">
+                  <i data-lucide="grid"></i>
+                  <span>All Products</span>
+                </div>
+                <i data-lucide="chevron-right" class="cat-chevron"></i>
+              </button>
+
+              <button class="sidebar-cat-btn" data-cat="wires" onclick="filterCatalog('wires', this)">
+                <div class="cat-btn-left">
+                  <i data-lucide="zap"></i>
+                  <span>Wires &amp; Cables</span>
+                </div>
+                <i data-lucide="chevron-right" class="cat-chevron"></i>
+              </button>
+
+              <button class="sidebar-cat-btn" data-cat="harness" onclick="filterCatalog('harness', this)">
+                <div class="cat-btn-left">
+                  <i data-lucide="cable"></i>
+                  <span>Wiring Harness & Battery Cable</span>
+                </div>
+                <span class="cat-badge-new">NEW</span>
+                <i data-lucide="chevron-right" class="cat-chevron"></i>
+              </button>
+
+              <button class="sidebar-cat-btn" data-cat="extension" onclick="filterCatalog('extension', this)">
+                <div class="cat-btn-left">
+                  <i data-lucide="plug"></i>
+                  <span>Extension Boards</span>
+                </div>
+                <i data-lucide="chevron-right" class="cat-chevron"></i>
+              </button>
+
+              <button class="sidebar-cat-btn" data-cat="switches" onclick="filterCatalog('switches', this)">
+                <div class="cat-btn-left">
+                  <i data-lucide="toggle-right"></i>
+                  <span>Modular Switches</span>
+                </div>
+                <i data-lucide="chevron-right" class="cat-chevron"></i>
+              </button>
+
+              <button class="sidebar-cat-btn" data-cat="chargers" onclick="filterCatalog('chargers', this)">
+                <div class="cat-btn-left">
+                  <i data-lucide="laptop"></i>
+                  <span>Laptop Chargers</span>
+                </div>
+                <i data-lucide="chevron-right" class="cat-chevron"></i>
+              </button>
+
+              <button class="sidebar-cat-btn" data-cat="fans" onclick="filterCatalog('fans', this)">
+                <div class="cat-btn-left">
+                  <i data-lucide="wind"></i>
+                  <span>AC Grills & Fans</span>
+                </div>
+                <i data-lucide="chevron-right" class="cat-chevron"></i>
+              </button>
+
+              <button class="sidebar-cat-btn" data-cat="coolers" onclick="filterCatalog('coolers', this)">
+                <div class="cat-btn-left">
+                  <i data-lucide="fan"></i>
+                  <span>Coolers (Body & Fans)</span>
+                </div>
+                <i data-lucide="chevron-right" class="cat-chevron"></i>
+              </button>
+
+              <button class="sidebar-cat-btn" data-cat="powercord" onclick="filterCatalog('powercord', this)">
+                <div class="cat-btn-left">
+                  <i data-lucide="power"></i>
+                  <span>Power Cord (6A & 16A)</span>
+                </div>
+                <i data-lucide="chevron-right" class="cat-chevron"></i>
+              </button>
+
+              <button class="sidebar-cat-btn" data-cat="datacenter" onclick="filterCatalog('datacenter', this)">
+                <div class="cat-btn-left">
+                  <i data-lucide="server"></i>
+                  <span>Data Center Power Cords</span>
+                </div>
+                <i data-lucide="chevron-right" class="cat-chevron"></i>
+              </button>
+
+              <button class="sidebar-cat-btn" data-cat="ev" onclick="filterCatalog('ev', this)">
+                <div class="cat-btn-left">
+                  <i data-lucide="bike"></i>
+                  <span>2 Wheeler EV Chargers</span>
+                </div>
+                <i data-lucide="chevron-right" class="cat-chevron"></i>
+              </button>
+
+              <button class="sidebar-cat-btn" data-cat="moulded" onclick="filterCatalog('moulded', this)">
+                <div class="cat-btn-left">
+                  <i data-lucide="box"></i>
+                  <span>Large Injection Moulded Components</span>
+                </div>
+                <i data-lucide="chevron-right" class="cat-chevron"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Looking for Custom Solutions Box -->
+          <div class="sidebar-custom-card">
+            <h4>LOOKING FOR CUSTOM SOLUTIONS?</h4>
+            <p>We provide OEM & Custom solutions tailored to your needs.</p>
+            <a href="contact.html" class="btn-sidebar-enquire">
+              <span>ENQUIRE NOW</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+
+        </aside>
+
+        <!-- Right Main Products Cards Area -->
+        <main class="products-cards-area">
+          
+          <!-- View 1: All Ecosystem Products (Default) -->
+          <div id="viewAllProducts">
+            <!-- Row 1: 5 Cards -->
+            <div class="catalog-row catalog-row-5">
+              
+              <!-- Card 01: Wires & Cables -->
+              <div class="catalog-item-card" data-cat="wires">
+                <div class="card-top-header">
+                  <span class="card-num-badge">01</span>
+                  <h4 class="card-header-title">WIRES &amp; CABLES</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <a href="javascript:void(0)" onclick="filterCatalog('wires', document.querySelector('[data-cat=\'wires\']'))" style="display:contents;">
+                    <img src="assets/product_page/prod_01_wires.png" alt="Wires and Cables">
+                  </a>
+                </div>
+                <ul class="card-features-list">
+                  <li>High conductivity copper</li>
+                  <li>Flame retardant PVC</li>
+                  <li>Durable &amp; safe</li>
+                  <li>10 Specialized Cable Categories</li>
+                </ul>
+                <button class="card-details-btn" onclick="filterCatalog('wires', document.querySelector('[data-cat=\'wires\']'))">
+                  <span>VIEW 10 CABLE TYPES</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 02: Wiring Harness & Battery Cable -->
+              <div class="catalog-item-card" data-cat="harness">
+                <div class="card-top-header">
+                  <span class="card-num-badge">02</span>
+                  <h4 class="card-header-title">WIRING HARNESS &amp;<br>BATTERY CABLE <span class="badge-new-pill">NEW</span></h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/product_page/prod_02_harness.png" alt="Wiring Harness and Battery Cable">
+                </div>
+                <ul class="card-features-list">
+                  <li>Customised wiring harness</li>
+                  <li>High performance battery cables</li>
+                  <li>For automotive &amp; earth movers industry</li>
+                  <li>Reliable &amp; durable</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Wiring Harness & Battery Cable', 'Heavy-duty bespoke automotive wiring looms, battery power cables, and industrial harnesses built with flame-retardant connectors and high-current endurance.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 03: Extension Boards -->
+              <div class="catalog-item-card" data-cat="extension">
+                <div class="card-top-header">
+                  <span class="card-num-badge">03</span>
+                  <h4 class="card-header-title">EXTENSION BOARDS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/product_page/prod_03_extension.png" alt="Extension Boards">
+                </div>
+                <ul class="card-features-list">
+                  <li>Multiple socket options</li>
+                  <li>Safety shutters</li>
+                  <li>Overload protection</li>
+                  <li>Stylish &amp; durable design</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Extension Boards', 'Surge-protected multi-socket power distribution strips with USB ports, master circuit breakers, and unbreakable fire-retardant poly-carbonate body.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 04: Modular Switches -->
+              <div class="catalog-item-card" data-cat="switches">
+                <div class="card-top-header">
+                  <span class="card-num-badge">04</span>
+                  <h4 class="card-header-title">MODULAR SWITCHES</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/product_page/prod_04_switches.png" alt="Modular Switches">
+                </div>
+                <ul class="card-features-list">
+                  <li>Premium finish</li>
+                  <li>Long life performance</li>
+                  <li>Safe &amp; reliable</li>
+                  <li>Modular design</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Modular Switches', 'Architectural switch panels and sockets crafted with silver contact tips and arc-quenching chambers for 100,000+ clicks and high-voltage endurance.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 05: Laptop Chargers -->
+              <div class="catalog-item-card" data-cat="chargers">
+                <div class="card-top-header">
+                  <span class="card-num-badge">05</span>
+                  <h4 class="card-header-title">LAPTOP CHARGERS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/product_page/prod_05_laptop.png" alt="Laptop Chargers">
+                </div>
+                <ul class="card-features-list">
+                  <li>Fast &amp; efficient charging</li>
+                  <li>Multiple power ratings</li>
+                  <li>Overvoltage protection</li>
+                  <li>Compact &amp; reliable</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Laptop Chargers', 'Universal and OEM replacement laptop power adapters engineered with high-frequency transformers, heavy duty DC cables, and 90%+ energy conversion efficiency.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+            </div>
+
+            <!-- Row 2: 6 Cards -->
+            <div class="catalog-row catalog-row-6">
+              
+              <!-- Card 06: AC Grills & Fans -->
+              <div class="catalog-item-card" data-cat="fans">
+                <div class="card-top-header">
+                  <span class="card-num-badge">06</span>
+                  <h4 class="card-header-title">AC GRILLS &amp; FANS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/product_page/prod_06_ac_fans.png" alt="AC Grills and Fans">
+                </div>
+                <ul class="card-features-list">
+                  <li>High air flow design</li>
+                  <li>Strong &amp; durable</li>
+                  <li>Precision moulded</li>
+                  <li>Multiple sizes</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('AC Grills & Fans', 'Aerodynamically balanced fan grills, ventilation diffusers, and copper motor coils engineered for high-performance HVAC and cooling dynamics.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 07: Coolers (Body & Fans) -->
+              <div class="catalog-item-card" data-cat="coolers">
+                <div class="card-top-header">
+                  <span class="card-num-badge">07</span>
+                  <h4 class="card-header-title">COOLERS<br>(BODY &amp; FANS)</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/product_page/prod_07_coolers.png" alt="Coolers Body and Fans">
+                </div>
+                <ul class="card-features-list">
+                  <li>Sturdy &amp; stylish bodies</li>
+                  <li>Efficient cooling</li>
+                  <li>High quality material</li>
+                  <li>Customised solutions</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Coolers (Body & Fans)', 'UV-stabilized engineered plastic cooler bodies, submersible pumps, and high-thrust fan assemblies built for severe summer conditions.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 08: Power Cord (6A & 16A) -->
+              <div class="catalog-item-card" data-cat="powercord">
+                <div class="card-top-header">
+                  <span class="card-num-badge">08</span>
+                  <h4 class="card-header-title">POWER CORD<br>(6A &amp; 16A)</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/product_page/prod_08_power_cord.png" alt="Power Cord 6A and 16A">
+                </div>
+                <ul class="card-features-list">
+                  <li>6A &amp; 16A options</li>
+                  <li>3 Pin - with earthing</li>
+                  <li>High quality PVC</li>
+                  <li>Safe &amp; durable</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Power Cord (6A & 16A)', 'ISI-certified 3-pin moulded power cords available in custom lengths and gauge thicknesses (0.75 sq mm to 2.5 sq mm) with nickel-plated solid brass pins.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 09: Data Center Power Cords -->
+              <div class="catalog-item-card" data-cat="datacenter">
+                <div class="card-top-header">
+                  <span class="card-num-badge">09</span>
+                  <h4 class="card-header-title">DATA CENTER<br>POWER CORDS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/product_page/prod_09_datacenter.png" alt="Data Center Power Cords">
+                </div>
+                <ul class="card-features-list">
+                  <li>IEC C13, C19 options</li>
+                  <li>High current capacity</li>
+                  <li>Flame retardant</li>
+                  <li>Reliable performance</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Data Center Power Cords', 'IEC 60320 server rack PDU power cables with locking connectors and heavy copper conductors for high-reliability data center infrastructure.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 10: 2 Wheeler EV Chargers -->
+              <div class="catalog-item-card" data-cat="ev">
+                <div class="card-top-header">
+                  <span class="card-num-badge">10</span>
+                  <h4 class="card-header-title">2 WHEELER<br>EV CHARGERS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/product_page/prod_10_ev_charger.png" alt="2 Wheeler EV Chargers">
+                </div>
+                <ul class="card-features-list">
+                  <li>Safe &amp; smart charging</li>
+                  <li>Overload protection</li>
+                  <li>Compact &amp; portable</li>
+                  <li>Compatible with multiple EVs</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('2 Wheeler EV Chargers', 'Smart AC wallbox chargers for electric two-wheelers with RFID security, flame-retardant gun holster, auto cut-off, and weatherproofing.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 11: Large Injection Moulded Components -->
+              <div class="catalog-item-card" data-cat="moulded">
+                <div class="card-top-header">
+                  <span class="card-num-badge">11</span>
+                  <h4 class="card-header-title">LARGE INJECTION<br>MOULDED COMPONENTS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/product_page/prod_11_moulded.png" alt="Large Injection Moulded Components">
+                </div>
+                <ul class="card-features-list">
+                  <li>For AC, Coolers &amp; Appliances</li>
+                  <li>Precision moulded</li>
+                  <li>High strength</li>
+                  <li>Customised solutions</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Large Injection Moulded Components', 'High-tonnage CNC plastic injection moulding, bespoke component tooling, and custom electrical enclosures engineered to customer CAD drawings.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- View 2: 10 Dedicated Wires & Cables Products (Activated when Wires & Cables is selected) -->
+          <div id="viewWiresCables" style="display:none; flex-direction: column; gap: 14px;">
+            
+            <!-- 10 Cards in 2 Rows of 5 -->
+            <div class="catalog-row catalog-row-5">
+              
+              <!-- Card 01: House Wiring Cables -->
+              <div class="catalog-item-card">
+                <div class="card-top-header">
+                  <span class="card-num-badge">01</span>
+                  <h4 class="card-header-title">HOUSE WIRING CABLES</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/wires/wire_01_house_wiring.png" alt="House Wiring Cables">
+                </div>
+                <ul class="card-features-list">
+                  <li>PVC insulated</li>
+                  <li>Single &amp; multi-core</li>
+                  <li>0.5 Sq.mm to 6 Sq.mm</li>
+                  <li>IS: 694 Compliant</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('House Wiring Cables', 'Flame Retardant (FR/FRLS) 100% pure electrolytic copper single core and multi core cables engineered for residential, commercial and architectural wiring.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 02: Flexible Cables -->
+              <div class="catalog-item-card">
+                <div class="card-top-header">
+                  <span class="card-num-badge">02</span>
+                  <h4 class="card-header-title">FLEXIBLE CABLES</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/wires/wire_02_flexible.png" alt="Flexible Cables">
+                </div>
+                <ul class="card-features-list">
+                  <li>High flexibility</li>
+                  <li>Tinned / Annealed copper</li>
+                  <li>0.5 Sq.mm to 50 Sq.mm</li>
+                  <li>IS: 694 Compliant</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Flexible Cables', 'Multi-strand annealed and tinned electrolytic copper flexible conductors with high thermal insulation for switchgear panels, appliances, and industrial conduit wiring.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 03: Multi Core Cables -->
+              <div class="catalog-item-card">
+                <div class="card-top-header">
+                  <span class="card-num-badge">03</span>
+                  <h4 class="card-header-title">MULTI CORE CABLES</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/wires/wire_03_multicore.png" alt="Multi Core Cables">
+                </div>
+                <ul class="card-features-list">
+                  <li>2 Core to 61 Core</li>
+                  <li>Control &amp; power applications</li>
+                  <li>PVC / FR / FRLS options</li>
+                  <li>IS: 1554 (Part 1)</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Multi Core Cables', 'Heavy-duty industrial round PVC sheathed multi-core power and control cables engineered with color-coded cores and high current endurance.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 04: Armoured Cables -->
+              <div class="catalog-item-card">
+                <div class="card-top-header">
+                  <span class="card-num-badge">04</span>
+                  <h4 class="card-header-title">ARMOURED CABLES</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/wires/wire_04_armoured.png" alt="Armoured Cables">
+                </div>
+                <ul class="card-features-list">
+                  <li>Robust &amp; mechanical protection</li>
+                  <li>Power &amp; control applications</li>
+                  <li>PVC / XLPE insulation</li>
+                  <li>IS: 7098 (Part 1)</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Armoured Cables', 'Galvanized steel wire and strip armoured cables providing extreme mechanical protection against crushing and underground harsh environment for power utilities.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 05: Signal & Control Cables -->
+              <div class="catalog-item-card">
+                <div class="card-top-header">
+                  <span class="card-num-badge">05</span>
+                  <h4 class="card-header-title">SIGNAL &amp; CONTROL CABLES</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/wires/wire_05_signal_control.png" alt="Signal and Control Cables">
+                </div>
+                <ul class="card-features-list">
+                  <li>Shielded / Unshielded</li>
+                  <li>Excellent signal transmission</li>
+                  <li>Industrial &amp; automation use</li>
+                  <li>IS: 1554 (Part 1)</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Signal & Control Cables', 'Aluminium mylar tape and tinned copper braid shielded multi-pair instrumentation cables preventing electromagnetic interference (EMI) in industrial automation.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+            </div>
+
+            <!-- Row 2: Cards 06 to 10 -->
+            <div class="catalog-row catalog-row-5">
+              
+              <!-- Card 06: Flat Cables -->
+              <div class="catalog-item-card">
+                <div class="card-top-header">
+                  <span class="card-num-badge">06</span>
+                  <h4 class="card-header-title">FLAT CABLES</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/wires/wire_06_flat.png" alt="Flat Cables">
+                </div>
+                <ul class="card-features-list">
+                  <li>Space saving design</li>
+                  <li>Easy installation</li>
+                  <li>2 Core to 24 Core</li>
+                  <li>IS: 694 Compliant</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Flat Cables', 'Parallel flat flexible multicore cables engineered for space-constrained industrial cable drag chains, elevators, and automated machinery routing.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 07: Submersible Cables -->
+              <div class="catalog-item-card">
+                <div class="card-top-header">
+                  <span class="card-num-badge">07</span>
+                  <h4 class="card-header-title">SUBMERSIBLE CABLES</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/wires/wire_07_submersible.png" alt="Submersible Cables">
+                </div>
+                <ul class="card-features-list">
+                  <li>Suitable for submersible pumps</li>
+                  <li>Water &amp; moisture resistant</li>
+                  <li>PVC / FR options</li>
+                  <li>IS: 694 Compliant</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Submersible Cables', '3-Core flat waterproof PVC jacketed cables engineered specifically for deep-well submersible pumps with high hydrostatic pressure resistance.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 08: Solar Cables -->
+              <div class="catalog-item-card">
+                <div class="card-top-header">
+                  <span class="card-num-badge">08</span>
+                  <h4 class="card-header-title">SOLAR CABLES</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/wires/wire_08_solar.png" alt="Solar Cables">
+                </div>
+                <ul class="card-features-list">
+                  <li>UV &amp; weather resistant</li>
+                  <li>Tinned copper conductor</li>
+                  <li>DC applications</li>
+                  <li>IS: 694 Compliant</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Solar Cables', 'Cross-linked polyolefin (XLPO) insulated and sheathed solar DC cables with 25+ years UV, ozone and weather resistance for solar photovoltaic installations.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 09: Coaxial Cables -->
+              <div class="catalog-item-card">
+                <div class="card-top-header">
+                  <span class="card-num-badge">09</span>
+                  <h4 class="card-header-title">COAXIAL CABLES</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/wires/wire_09_coaxial.png" alt="Coaxial Cables">
+                </div>
+                <ul class="card-features-list">
+                  <li>Low signal loss</li>
+                  <li>High frequency performance</li>
+                  <li>CCTV, Antenna &amp; Communication</li>
+                  <li>IS Compliant</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Coaxial Cables', 'High-bandwidth RG6 and RG11 coaxial communication cables featuring foam dielectric, bonded aluminium foil and dense copper shielding for minimal signal attenuation.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 10: Special Cables -->
+              <div class="catalog-item-card">
+                <div class="card-top-header">
+                  <span class="card-num-badge">10</span>
+                  <h4 class="card-header-title">SPECIAL CABLES</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/wires/wire_10_special.png" alt="Special Cables">
+                </div>
+                <ul class="card-features-list">
+                  <li>Customized solutions</li>
+                  <li>Special insulation &amp; sheathing</li>
+                  <li>Industrial applications</li>
+                  <li>As per customer requirement</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Special Cables', 'Bespoke high-temperature silicone, zero-halogen flame-retardant (ZHFR), and customized composite cables tailored to strict industrial engineering specifications.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- View 3: Dedicated Wiring Harness & Battery Cable Products (Activated when Harness is selected) -->
+          <div id="viewHarnessCables" style="display:none; flex-direction: column; gap: 20px;">
+            
+            <div class="harness-catalog-layout">
+              
+              <!-- Section 1: WIRING HARNESSES -->
+              <div class="harness-group-section">
+                <div class="harness-group-header">
+                  <span class="group-line"></span>
+                  <h3 class="group-title">WIRING HARNESSES</h3>
+                  <span class="group-line"></span>
+                </div>
+
+                <div class="harness-subcards-grid">
+                  
+                  <!-- Card 1: For AC - IDU -->
+                  <div class="harness-single-card">
+                    <div class="harness-card-content">
+                      <h4 class="harness-item-title">For AC – IDU (Indoor Unit)</h4>
+                      <p class="harness-item-desc">Reliable wiring harness solutions for indoor units ensuring safe, secure and efficient performance.</p>
+                    </div>
+                    <div class="harness-card-img-wrap">
+                      <img src="assets/harness/harness_idu.png?v=perfect_edge_v5" alt="Wiring Harness for AC IDU" class="harness-card-img">
+                    </div>
+                    <button class="card-details-btn" onclick="openModal('Wiring Harness for AC – IDU (Indoor Unit)', 'Reliable wiring harness solutions for air conditioner indoor units engineered with flame-retardant multi-pin sockets and high-conductivity copper wires.')">
+                      <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                    </button>
+                  </div>
+
+                  <!-- Card 2: For AC - ODU -->
+                  <div class="harness-single-card">
+                    <div class="harness-card-content">
+                      <h4 class="harness-item-title">For AC – ODU (Outdoor Unit)</h4>
+                      <p class="harness-item-desc">Built to withstand tough outdoor conditions with high durability and weather resistance.</p>
+                    </div>
+                    <div class="harness-card-img-wrap">
+                      <img src="assets/harness/harness_odu.png?v=perfect_edge_v5" alt="Wiring Harness for AC ODU" class="harness-card-img">
+                    </div>
+                    <button class="card-details-btn" onclick="openModal('Wiring Harness for AC – ODU (Outdoor Unit)', 'Heavy-duty wiring harness engineered for air conditioner outdoor units to withstand harsh weather, vibration, thermal stress, and moisture.')">
+                      <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                    </button>
+                  </div>
+
+                  <!-- Card 3: For Home Appliances -->
+                  <div class="harness-single-card">
+                    <div class="harness-card-content">
+                      <h4 class="harness-item-title">For Home Appliances</h4>
+                      <p class="harness-item-desc">Custom wiring harnesses for a wide range of home appliances ensuring safety, efficiency and long life.</p>
+                    </div>
+                    <div class="harness-card-img-wrap">
+                      <img src="assets/harness/harness_appliances.png?v=user_appliances_v1" alt="Wiring Harness for Home Appliances" class="harness-card-img">
+                    </div>
+                    <button class="card-details-btn" onclick="openModal('Wiring Harness for Home Appliances', 'Custom precision wiring harnesses tailored for refrigerators, washing machines, microwaves, and home appliances with 100% automated continuity testing.')">
+                      <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Section 2: BATTERY CABLES -->
+              <div class="harness-group-section harness-battery-section">
+                <div class="harness-group-header battery-header">
+                  <h3 class="group-title">BATTERY CABLES</h3>
+                  <span class="battery-title-bar"></span>
+                </div>
+
+                <div class="harness-single-card harness-battery-card">
+                  <div class="harness-card-content">
+                    <h4 class="harness-item-title">For Earth Movers</h4>
+                    <p class="harness-item-desc">High performance battery cables for earth movers and heavy equipment applications.</p>
+                  </div>
+                  <div class="harness-card-img-wrap">
+                    <img src="assets/harness/harness_earthmovers.png?v=user_earthmovers_v1" alt="Battery Cables for Earth Movers" class="harness-card-img">
+                  </div>
+                  <button class="card-details-btn" onclick="openModal('Battery Cables for Earth Movers', 'High-current flexible battery cables up to 90 sq mm with heavy-duty crimped copper terminal lugs, engineered for earth movers and heavy construction equipment.')">
+                    <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- Bottom: WHY CHOOSE US? Feature Box -->
+            <div class="harness-why-choose-box">
+              <div class="harness-group-header">
+                <span class="group-line"></span>
+                <h3 class="group-title">WHY CHOOSE US?</h3>
+                <span class="group-line"></span>
+              </div>
+
+              <div class="harness-why-grid">
+                
+                <!-- Item 1: Engineered for Safety -->
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap">
+                    <i data-lucide="shield-check" class="harness-why-icon"></i>
+                  </div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Engineered for Safety</h4>
+                    <p class="harness-why-desc">Designed to ensure maximum safety.</p>
+                  </div>
+                </div>
+
+                <!-- Item 2: Long Lasting Durability -->
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap">
+                    <i data-lucide="shield" class="harness-why-icon"></i>
+                  </div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Long Lasting Durability</h4>
+                    <p class="harness-why-desc">High quality materials for extended life.</p>
+                  </div>
+                </div>
+
+                <!-- Item 3: Advanced Manufacturing -->
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap">
+                    <i data-lucide="factory" class="harness-why-icon"></i>
+                  </div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Advanced Manufacturing</h4>
+                    <p class="harness-why-desc">State-of-the-art process and test equipment.</p>
+                  </div>
+                </div>
+
+                <!-- Item 4: 100% Tested -->
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap">
+                    <i data-lucide="clipboard-check" class="harness-why-icon"></i>
+                  </div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">100% Tested</h4>
+                    <p class="harness-why-desc">Every product is tested for performance and reliability.</p>
+                  </div>
+                </div>
+
+                <!-- Item 5: Customer Centric -->
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap">
+                    <i data-lucide="users" class="harness-why-icon"></i>
+                  </div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Customer Centric</h4>
+                    <p class="harness-why-desc">Solutions tailored to your needs.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- View 3: EXTENSION BOARDS DEDICATED CATALOG (Active when Extension Boards is selected) -->
+          <div class="category-catalog-view extension-catalog-view" id="viewExtensionBoards" style="display:none;">
+            
+            <div class="harness-group-header" style="margin-bottom: 20px;">
+              <span class="group-line"></span>
+              <h3 class="group-title">OUR EXTENSION BOARD RANGE</h3>
+              <span class="group-line"></span>
+            </div>
+
+            <!-- 6 Extension Board Cards Grid -->
+            <div class="products-grid extension-products-grid">
+              
+              <!-- Card 01: Basic Extension Boards -->
+              <div class="catalog-item-card" data-cat="extension">
+                <div class="card-top-header">
+                  <span class="card-num-badge">01</span>
+                  <h4 class="card-header-title">BASIC EXTENSION BOARDS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/extension/ext_01_basic.png?v=range_v1" alt="Basic Extension Boards">
+                </div>
+                <ul class="card-features-list">
+                  <li>Multiple socket options (3/4/5/6)</li>
+                  <li>6A rating</li>
+                  <li>Indicator with ON/OFF switch</li>
+                  <li>Safe for home &amp; office use</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Basic Extension Boards', 'Multiple socket options (3/4/5/6), 6A rating, master indicator with ON/OFF switch, engineered safe for everyday home and office use.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 02: Multi Socket Extension Boards -->
+              <div class="catalog-item-card" data-cat="extension">
+                <div class="card-top-header">
+                  <span class="card-num-badge">02</span>
+                  <h4 class="card-header-title">MULTI SOCKET EXTENSION BOARDS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/extension/ext_02_multisocket.png?v=range_v1" alt="Multi Socket Extension Boards">
+                </div>
+                <ul class="card-features-list">
+                  <li>6A / 16A rating options</li>
+                  <li>Multiple universal sockets</li>
+                  <li>Individual switches</li>
+                  <li>Ideal for home &amp; office</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Multi Socket Extension Boards', '6A / 16A rating options with multiple universal sockets and individual power switches for independent control.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 03: Extension Boards with USB Ports -->
+              <div class="catalog-item-card" data-cat="extension">
+                <div class="card-top-header">
+                  <span class="card-num-badge">03</span>
+                  <h4 class="card-header-title">EXTENSION BOARDS WITH USB PORTS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/extension/ext_03_usb.png?v=range_v1" alt="Extension Boards with USB Ports">
+                </div>
+                <ul class="card-features-list">
+                  <li>2 / 4 USB ports (2.4A)</li>
+                  <li>Smart IC for fast charging</li>
+                  <li>Overload &amp; surge protection</li>
+                  <li>Charge multiple devices</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Extension Boards with USB Ports', 'Features 2 / 4 high-speed USB ports (2.4A) with Smart IC fast charging, overload and surge protection for charging mobile devices safely.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 04: Spike Guard Extension Boards -->
+              <div class="catalog-item-card" data-cat="extension">
+                <div class="card-top-header">
+                  <span class="card-num-badge">04</span>
+                  <h4 class="card-header-title">SPIKE GUARD EXTENSION BOARDS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/extension/ext_04_spikeguard.png?v=range_v1" alt="Spike Guard Extension Boards">
+                </div>
+                <ul class="card-features-list">
+                  <li>Built-in spike &amp; surge protection</li>
+                  <li>Overload protection</li>
+                  <li>Indicator for power &amp; spike</li>
+                  <li>Protects your appliances</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Spike Guard Extension Boards', 'Built-in metal oxide varistor (MOV) spike and surge suppression, overload protection and dual indicators to safeguard sensitive home and office appliances.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 05: Power Strips (Slim Design) -->
+              <div class="catalog-item-card" data-cat="extension">
+                <div class="card-top-header">
+                  <span class="card-num-badge">05</span>
+                  <h4 class="card-header-title">POWER STRIPS (SLIM DESIGN)</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/extension/ext_05_powerstrip.png?v=range_v1" alt="Power Strips (Slim Design)">
+                </div>
+                <ul class="card-features-list">
+                  <li>Slim &amp; compact design</li>
+                  <li>3/4/5 socket options</li>
+                  <li>Easy to mount &amp; carry</li>
+                  <li>Perfect for modern spaces</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Power Strips (Slim Design)', 'Ultra-sleek space-saving slim profile power strips with 3/4/5 socket options, wall-mounting keyholes and fire-retardant casing.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 06: Heavy Duty Extension Boards -->
+              <div class="catalog-item-card" data-cat="extension">
+                <div class="card-top-header">
+                  <span class="card-num-badge">06</span>
+                  <h4 class="card-header-title">HEAVY DUTY EXTENSION BOARDS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/extension/ext_06_heavyduty.png?v=range_v1" alt="Heavy Duty Extension Boards">
+                </div>
+                <ul class="card-features-list">
+                  <li>16A heavy duty rating</li>
+                  <li>High quality thick cable</li>
+                  <li>Suitable for AC, Coolers &amp; high power appliances</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Heavy Duty Extension Boards', 'Heavy-duty 16A high-wattage extension board with pure electrolytic copper 3-core thick power cable, engineered for AC, room coolers, and high-power appliances.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+            </div>
+
+            <!-- Bottom WHY CHOOSE US? Box in Extension Boards View -->
+            <div class="harness-why-choose-box" style="margin-top: 24px;">
+              <div class="harness-group-header">
+                <span class="group-line"></span>
+                <h3 class="group-title">WHY CHOOSE US?</h3>
+                <span class="group-line"></span>
+              </div>
+
+              <div class="harness-why-grid">
+                
+                <!-- Item 1: Engineered for Safety -->
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap">
+                    <i data-lucide="shield-check" class="harness-why-icon"></i>
+                  </div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Engineered for Safety</h4>
+                    <p class="harness-why-desc">Designed to ensure maximum safety.</p>
+                  </div>
+                </div>
+
+                <!-- Item 2: Long Lasting Durability -->
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap">
+                    <i data-lucide="shield" class="harness-why-icon"></i>
+                  </div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Long Lasting Durability</h4>
+                    <p class="harness-why-desc">High quality materials for extended life.</p>
+                  </div>
+                </div>
+
+                <!-- Item 3: Advanced Manufacturing -->
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap">
+                    <i data-lucide="factory" class="harness-why-icon"></i>
+                  </div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Advanced Manufacturing</h4>
+                    <p class="harness-why-desc">State-of-the-art process and test equipment.</p>
+                  </div>
+                </div>
+
+                <!-- Item 4: 100% Tested -->
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap">
+                    <i data-lucide="clipboard-check" class="harness-why-icon"></i>
+                  </div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">100% Tested</h4>
+                    <p class="harness-why-desc">Every product is tested for performance and reliability.</p>
+                  </div>
+                </div>
+
+                <!-- Item 5: Customer Centric -->
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap">
+                    <i data-lucide="users" class="harness-why-icon"></i>
+                  </div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Customer Centric</h4>
+                    <p class="harness-why-desc">Solutions tailored to your needs.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- View 4: LAPTOP CHARGERS DEDICATED CATALOG (Active when Laptop Chargers is selected) -->
+          <div class="category-catalog-view laptop-catalog-view" id="viewLaptopChargers" style="display:none;">
+            
+            <div class="harness-group-header" style="margin-bottom: 20px;">
+              <span class="group-line"></span>
+              <h3 class="group-title">OUR LAPTOP CHARGER RANGE</h3>
+              <span class="group-line"></span>
+            </div>
+
+            <!-- 5 Laptop Charger Cards Grid -->
+            <div class="products-grid laptop-products-grid">
+              
+              <!-- Card 01: Standard Laptop Chargers -->
+              <div class="catalog-item-card" data-cat="chargers">
+                <div class="card-top-header">
+                  <span class="card-num-badge">01</span>
+                  <h4 class="card-header-title">STANDARD LAPTOP CHARGERS<br><span class="card-wattage-pill">65W – 90W</span></h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/laptop/laptop_01_standard.png?v=range_v1" alt="Standard Laptop Chargers">
+                </div>
+                <ul class="card-features-list">
+                  <li>Stable &amp; efficient power output</li>
+                  <li>Multiple connector options</li>
+                  <li>Ideal for everyday use</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Standard Laptop Chargers (65W – 90W)', 'Engineered for everyday laptops with stable and efficient power delivery, high-grade copper internal coil, and multiple pin connector options.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 02: Premium Laptop Chargers -->
+              <div class="catalog-item-card" data-cat="chargers">
+                <div class="card-top-header">
+                  <span class="card-num-badge">02</span>
+                  <h4 class="card-header-title">PREMIUM LAPTOP CHARGERS<br><span class="card-wattage-pill">90W – 120W</span></h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/laptop/laptop_02_premium.png?v=range_v1" alt="Premium Laptop Chargers">
+                </div>
+                <ul class="card-features-list">
+                  <li>High efficiency &amp; low power loss</li>
+                  <li>Advanced safety protection</li>
+                  <li>Durable &amp; compact design</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Premium Laptop Chargers (90W – 120W)', 'Heavy-duty 90W–120W power adapter engineered for high-performance laptops with ultra-low thermal dissipation, active surge clamping, and flame-retardant chassis.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 03: Fast Charge Laptop Chargers (PD) -->
+              <div class="catalog-item-card" data-cat="chargers">
+                <div class="card-top-header">
+                  <span class="card-num-badge">03</span>
+                  <h4 class="card-header-title">FAST CHARGE LAPTOP CHARGERS (PD)<br><span class="card-wattage-pill">65W – 100W</span></h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/laptop/laptop_03_fastpd.png?v=range_v1" alt="Fast Charge Laptop Chargers (PD)">
+                </div>
+                <ul class="card-features-list">
+                  <li>USB-C Power Delivery (PD)</li>
+                  <li>Fast &amp; intelligent charging</li>
+                  <li>Compatible with latest laptops</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Fast Charge Laptop Chargers PD (65W – 100W)', 'Next-generation USB-C Power Delivery adapter featuring Smart IC dynamic voltage negotiation for rapid and safe laptop recharging.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 04: Universal Laptop Chargers -->
+              <div class="catalog-item-card" data-cat="chargers">
+                <div class="card-top-header">
+                  <span class="card-num-badge">04</span>
+                  <h4 class="card-header-title">UNIVERSAL LAPTOP CHARGERS<br><span class="card-wattage-pill">120W – 150W</span></h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/laptop/laptop_04_universal.png?v=range_v1" alt="Universal Laptop Chargers">
+                </div>
+                <ul class="card-features-list">
+                  <li>Universal compatibility</li>
+                  <li>Multiple DC tips included</li>
+                  <li>Perfect for multi-device use</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Universal Laptop Chargers (120W – 150W)', 'All-in-one multi-voltage laptop power supply featuring interchangeable precision DC connector tips compatible with all major laptop brands.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 05: Type-C PD Chargers -->
+              <div class="catalog-item-card" data-cat="chargers">
+                <div class="card-top-header">
+                  <span class="card-num-badge">05</span>
+                  <h4 class="card-header-title">TYPE-C PD CHARGERS<br><span class="card-wattage-pill">45W – 100W</span></h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/laptop/laptop_05_typec.png?v=range_v1" alt="Type-C PD Chargers">
+                </div>
+                <ul class="card-features-list">
+                  <li>Compact &amp; travel friendly</li>
+                  <li>PD 3.0/PPS support</li>
+                  <li>Smart chip for device protection</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Type-C PD Chargers (45W – 100W)', 'Ultra-compact GaN-enabled Type-C fast charger with PD 3.0 and PPS protocol support for ultrabooks, MacBooks, tablets, and mobile devices.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+            </div>
+
+            <!-- Bottom WHY CHOOSE US? Box in Laptop Chargers View -->
+            <div class="harness-why-choose-box" style="margin-top: 24px;">
+              <div class="harness-group-header">
+                <span class="group-line"></span>
+                <h3 class="group-title">WHY CHOOSE US?</h3>
+                <span class="group-line"></span>
+              </div>
+
+              <div class="harness-why-grid">
+                
+                <!-- Item 1: Engineered for Safety -->
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap">
+                    <i data-lucide="shield-check" class="harness-why-icon"></i>
+                  </div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Engineered for Safety</h4>
+                    <p class="harness-why-desc">Designed to ensure maximum safety.</p>
+                  </div>
+                </div>
+
+                <!-- Item 2: Long Lasting Durability -->
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap">
+                    <i data-lucide="shield" class="harness-why-icon"></i>
+                  </div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Long Lasting Durability</h4>
+                    <p class="harness-why-desc">High quality materials for extended life.</p>
+                  </div>
+                </div>
+
+                <!-- Item 3: Advanced Manufacturing -->
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap">
+                    <i data-lucide="factory" class="harness-why-icon"></i>
+                  </div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Advanced Manufacturing</h4>
+                    <p class="harness-why-desc">State-of-the-art process and test equipment.</p>
+                  </div>
+                </div>
+
+                <!-- Item 4: 100% Tested -->
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap">
+                    <i data-lucide="clipboard-check" class="harness-why-icon"></i>
+                  </div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">100% Tested</h4>
+                    <p class="harness-why-desc">Every product is tested for performance and reliability.</p>
+                  </div>
+                </div>
+
+                <!-- Item 5: Customer Centric -->
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap">
+                    <i data-lucide="users" class="harness-why-icon"></i>
+                  </div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Customer Centric</h4>
+                    <p class="harness-why-desc">Solutions tailored to your needs.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- View 5: AC GRILLS & FANS DEDICATED CATALOG (Active when AC Grills is selected) -->
+          <div class="category-catalog-view ac-catalog-view" id="viewACGrills" style="display:none;">
+            
+            <div class="harness-group-header" style="margin-bottom: 20px;">
+              <span class="group-line"></span>
+              <h3 class="group-title">OUR AC COMPONENTS RANGE</h3>
+              <span class="group-line"></span>
+            </div>
+
+            <!-- 7 AC Component Cards Grid -->
+            <div class="products-grid ac-products-grid">
+              
+              <!-- Card 01: AC Outdoor Unit Grills -->
+              <div class="catalog-item-card" data-cat="fans">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">AC OUTDOOR UNIT GRILLS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/ac/ac_01_grill.png?v=ac_range_v1" alt="AC Outdoor Unit Grills">
+                </div>
+                <ul class="card-features-list">
+                  <li>Robust &amp; UV Resistant</li>
+                  <li>High Air Flow Design</li>
+                  <li>Aesthetic Finish</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('AC Outdoor Unit Grills', 'Heavy-duty weather-proof, UV-stabilized virgin polymer outdoor AC grills engineered for optimal aerodynamic air dispersion and condenser protection.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 02: AC Fan Blades -->
+              <div class="catalog-item-card" data-cat="fans">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">AC FAN BLADES</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/ac/ac_02_fanblade.png?v=ac_range_v1" alt="AC Fan Blades">
+                </div>
+                <ul class="card-features-list">
+                  <li>Aerodynamic Design</li>
+                  <li>High Air Delivery</li>
+                  <li>Low Noise Operation</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('AC Fan Blades', 'Dynamically balanced 3-blade and 4-blade axial fan impellers delivering maximum CFM airflow with ultra-quiet acoustic performance.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 03: AC Louvers & Air Outlets -->
+              <div class="catalog-item-card" data-cat="fans">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">AC LOUVERS &amp; AIR OUTLETS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/ac/ac_03_louvers.png?v=ac_range_v1" alt="AC Louvers & Air Outlets">
+                </div>
+                <ul class="card-features-list">
+                  <li>Uniform Air Distribution</li>
+                  <li>High Strength Material</li>
+                  <li>Easy Installation</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('AC Louvers & Air Outlets', 'Linear air diffuser louvers providing uniform airflow throw and multi-directional draft distribution for residential and commercial split ACs.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 04: AC Motor Covers & Supports -->
+              <div class="catalog-item-card" data-cat="fans">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">AC MOTOR COVERS &amp; SUPPORTS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/ac/ac_04_motorcover.png?v=ac_range_v1" alt="AC Motor Covers & Supports">
+                </div>
+                <ul class="card-features-list">
+                  <li>Precision Fit</li>
+                  <li>Vibration &amp; Heat Resistant</li>
+                  <li>Long Lasting Performance</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('AC Motor Covers & Supports', 'Engineered motor mounting brackets and vibration-damped bracket housings designed to endure continuous thermal and mechanical stress.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 05: AC Side Panels & Casing Parts -->
+              <div class="catalog-item-card" data-cat="fans">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">AC SIDE PANELS &amp; CASING PARTS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/ac/ac_05_sidepanel.png?v=ac_range_v1" alt="AC Side Panels & Casing Parts">
+                </div>
+                <ul class="card-features-list">
+                  <li>High Dimensional Accuracy</li>
+                  <li>Strong &amp; Durable</li>
+                  <li>Corrosion Resistant</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('AC Side Panels & Casing Parts', 'Reinforced side panels and modular enclosure frames built to high dimensional tolerances for seamless chassis assembly.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 06: AC Base Pans -->
+              <div class="catalog-item-card" data-cat="fans">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">AC BASE PANS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/ac/ac_06_basepan.png?v=ac_range_v1" alt="AC Base Pans">
+                </div>
+                <ul class="card-features-list">
+                  <li>Sturdy &amp; Leak Resistant</li>
+                  <li>Corrosion Protection</li>
+                  <li>Customizable Options</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('AC Base Pans', 'Heavy-duty molded drain base pans featuring advanced drainage slopes, anti-rust coatings, and high structural load capacities.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 07: Other Custom Components -->
+              <div class="catalog-item-card" data-cat="fans">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">OTHER CUSTOM COMPONENTS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/ac/ac_07_customparts.png?v=ac_range_v1" alt="Other Custom Components">
+                </div>
+                <ul class="card-features-list">
+                  <li>Brackets, Clamps, Supports &amp; More</li>
+                  <li>As per OEM Requirement</li>
+                  <li>Large Scale Supply</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('Other Custom AC Components', 'Tailor-made custom molded HVAC components, precision pipe brackets, condenser mounts, and custom parts manufactured to strict OEM blueprints.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+            </div>
+
+            <!-- Bottom WHY CHOOSE US? Box in AC View -->
+            <div class="harness-why-choose-box" style="margin-top: 24px;">
+              <div class="harness-group-header">
+                <span class="group-line"></span>
+                <h3 class="group-title">WHY CHOOSE US?</h3>
+                <span class="group-line"></span>
+              </div>
+
+              <div class="harness-why-grid">
+                
+                <!-- Item 1: Engineered for Safety -->
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap">
+                    <i data-lucide="shield-check" class="harness-why-icon"></i>
+                  </div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Engineered for Safety</h4>
+                    <p class="harness-why-desc">Designed to ensure maximum safety.</p>
+                  </div>
+                </div>
+
+                <!-- Item 2: Long Lasting Durability -->
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap">
+                    <i data-lucide="shield" class="harness-why-icon"></i>
+                  </div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Long Lasting Durability</h4>
+                    <p class="harness-why-desc">High quality materials for extended life.</p>
+                  </div>
+                </div>
+
+                <!-- Item 3: Advanced Manufacturing -->
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap">
+                    <i data-lucide="factory" class="harness-why-icon"></i>
+                  </div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Advanced Manufacturing</h4>
+                    <p class="harness-why-desc">State-of-the-art process and test equipment.</p>
+                  </div>
+                </div>
+
+                <!-- Item 4: 100% Tested -->
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap">
+                    <i data-lucide="clipboard-check" class="harness-why-icon"></i>
+                  </div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">100% Tested</h4>
+                    <p class="harness-why-desc">Every product is tested for performance and reliability.</p>
+                  </div>
+                </div>
+
+                <!-- Item 5: Customer Centric -->
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap">
+                    <i data-lucide="users" class="harness-why-icon"></i>
+                  </div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Customer Centric</h4>
+                    <p class="harness-why-desc">Solutions tailored to your needs.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- View 7: Dedicated Coolers (Body & Fans) Catalog (8 Flagship Products) -->
+          <div id="viewCoolers" style="display:none;">
+            
+            <div class="harness-group-header">
+              <span class="group-line"></span>
+              <h3 class="group-title">COOLERS (BODY &amp; FANS) RANGE</h3>
+              <span class="group-line"></span>
+            </div>
+
+            <!-- 8 Product Cards Grid (Responsive 4 columns) -->
+            <div class="ac-products-grid" style="grid-template-columns: repeat(4, 1fr);">
+              
+              <!-- Card 01: COOLER BODIES -->
+              <div class="catalog-item-card" data-cat="coolers">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">COOLER BODIES</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/coolers/cooler_prod_body.png" alt="Cooler Bodies">
+                </div>
+                <ul class="card-features-list">
+                  <li>Strong &amp; Durable Body</li>
+                  <li>Premium Finish</li>
+                  <li>Customizable Designs</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('COOLER BODIES', 'Heavy-duty UV-stabilized engineered thermoplastic air cooler cabinets with high impact resistance, modular structural design, and anti-corrosive properties for residential, commercial and industrial desert coolers.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 02: FRONT GRILLS -->
+              <div class="catalog-item-card" data-cat="coolers">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">FRONT GRILLS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/coolers/cooler_prod_front_grill.png" alt="Front Grills">
+                </div>
+                <ul class="card-features-list">
+                  <li>High Airflow Design</li>
+                  <li>UV Resistant Material</li>
+                  <li>Sturdy Construction</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('FRONT GRILLS', 'Aerodynamic injection-moulded cooler front discharge grills designed for high CFM airflow throw, low acoustic drag, and high structural rigidity.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 03: FAN BLADES -->
+              <div class="catalog-item-card" data-cat="coolers">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">FAN BLADES</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/coolers/cooler_prod_fan_blades.png" alt="Fan Blades">
+                </div>
+                <ul class="card-features-list">
+                  <li>Aerodynamic Design</li>
+                  <li>Balanced &amp; Low Noise</li>
+                  <li>High Performance</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('COOLER FAN BLADES', 'Precision balanced 3-blade high-thrust aerodynamic fan blades tested for low acoustic noise, maximum air displacement, and energy-efficient motor coupling.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 04: LOUVERS & AIR OUTLETS -->
+              <div class="catalog-item-card" data-cat="coolers">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">LOUVERS &amp; AIR OUTLETS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/coolers/cooler_prod_louvers.png" alt="Louvers & Air Outlets">
+                </div>
+                <ul class="card-features-list">
+                  <li>Uniform Air Distribution</li>
+                  <li>Smooth Operation</li>
+                  <li>Easy Installation</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('LOUVERS & AIR OUTLETS', 'Multi-directional horizontal and vertical motorized swing louvers for uniform 360-degree air delivery and smooth silent operation.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 05: WATER TANKS -->
+              <div class="catalog-item-card" data-cat="coolers">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">WATER TANKS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/coolers/cooler_prod_water_tank.png" alt="Water Tanks">
+                </div>
+                <ul class="card-features-list">
+                  <li>Leak Proof Design</li>
+                  <li>High Strength Material</li>
+                  <li>Corrosion Resistant</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('WATER TANKS', 'Seamless roto-moulded and injection-moulded water storage bottom tanks with integrated submersible water pump mounting and overflow drainage ports.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 06: MOTOR COVERS -->
+              <div class="catalog-item-card" data-cat="coolers">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">MOTOR COVERS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/coolers/cooler_prod_motor_cover.png" alt="Motor Covers">
+                </div>
+                <ul class="card-features-list">
+                  <li>Precision Fit</li>
+                  <li>Vibration &amp; Heat Resistant</li>
+                  <li>Long Lasting</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('MOTOR COVERS', 'High-heat resistant protective motor housing shields engineered to prevent water ingress, damp electrical vibrations, and maximize cooler motor longevity.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 07: CONTROL PANELS & KNOBS -->
+              <div class="catalog-item-card" data-cat="coolers">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">CONTROL PANELS &amp; KNOBS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/coolers/cooler_prod_control_panel.png" alt="Control Panels & Knobs">
+                </div>
+                <ul class="card-features-list">
+                  <li>Smooth &amp; Reliable Operation</li>
+                  <li>Stylish Design</li>
+                  <li>Durable Material</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('CONTROL PANELS & KNOBS', 'Ergonomic 3-speed rotary switch control panels with water pump and swing selectors, clear embossed markings, and tactile rotary knobs.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 08: OTHER CUSTOM PARTS -->
+              <div class="catalog-item-card" data-cat="coolers">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">OTHER CUSTOM PARTS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/coolers/cooler_prod_custom_parts.png" alt="Other Custom Parts">
+                </div>
+                <ul class="card-features-list">
+                  <li>Custom Design</li>
+                  <li>High Precision</li>
+                  <li>Bulk Production</li>
+                  <li>As per OEM Need</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('OTHER CUSTOM COOLER PARTS', 'Comprehensive range of OEM cooler accessories including heavy-duty motor mounting arms, castor wheel brackets, water distributors, and custom-tooled plastic parts.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+            </div>
+
+            <!-- Bottom WHY CHOOSE US? Box in Coolers View -->
+            <div class="harness-why-choose-box" style="margin-top: 24px;">
+              <div class="harness-group-header">
+                <span class="group-line"></span>
+                <h3 class="group-title">WHY CHOOSE HADRONS COOLER PARTS?</h3>
+                <span class="group-line"></span>
+              </div>
+
+              <div class="harness-why-grid">
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap"><i data-lucide="shield-check" class="harness-why-icon"></i></div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">UV &amp; Weather Resistant</h4>
+                    <p class="harness-why-desc">Virgin polymer blends built for severe heat &amp; continuous operation.</p>
+                  </div>
+                </div>
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap"><i data-lucide="fan" class="harness-why-icon"></i></div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">High Airflow Dynamics</h4>
+                    <p class="harness-why-desc">Computational fluid dynamics engineered for max air throw &amp; low dB noise.</p>
+                  </div>
+                </div>
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap"><i data-lucide="factory" class="harness-why-icon"></i></div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Large Scale Injection Moulding</h4>
+                    <p class="harness-why-desc">High-tonnage European injection moulding machines for OEM volume batches.</p>
+                  </div>
+                </div>
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap"><i data-lucide="clipboard-check" class="harness-why-icon"></i></div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">100% Quality Checked</h4>
+                    <p class="harness-why-desc">Tensile strength, leak test, and dynamic balance verified before dispatch.</p>
+                  </div>
+                </div>
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap"><i data-lucide="users" class="harness-why-icon"></i></div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">OEM Custom Tooling</h4>
+                    <p class="harness-why-desc">Complete custom mould development tailored to your brand specifications.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- View 8: Dedicated Power Cords (6A & 16A) Catalog (6 Flagship Products) -->
+          <div id="viewPowerCord" style="display:none;">
+            
+            <div class="harness-group-header">
+              <span class="group-line"></span>
+              <h3 class="group-title">POWER CORDS (6A &amp; 16A) RANGE</h3>
+              <span class="group-line"></span>
+            </div>
+
+            <!-- 6 Product Cards Grid (3 columns x 2 rows responsive grid) -->
+            <div class="ac-products-grid" style="grid-template-columns: repeat(3, 1fr);">
+              
+              <!-- Card 01: INDIA 3 PIN POWER CORDS -->
+              <div class="catalog-item-card" data-cat="powercord">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">INDIA 3 PIN<br>POWER CORDS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/power_cords/cord_01_india.png?v=pc_v1" alt="India 3 Pin Power Cords">
+                </div>
+                <ul class="card-features-list">
+                  <li>6A / 16A Options</li>
+                  <li>250V AC, 50Hz</li>
+                  <li>ISI Certified</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('INDIA 3 PIN POWER CORDS', 'Heavy-duty BIS/IS 1293 certified 3-pin moulded power cords available in 6A and 16A ratings with 100% electrolytic pure copper conductors, fire-retardant PVC insulation, and unbreakable molded strain relief boots.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 02: IEC C13 POWER CORDS -->
+              <div class="catalog-item-card" data-cat="powercord">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">IEC C13<br>POWER CORDS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/power_cords/cord_02_c13.png?v=pc_v1" alt="IEC C13 Power Cords">
+                </div>
+                <ul class="card-features-list">
+                  <li>For PCs, Monitors &amp; UPS</li>
+                  <li>10A, 250V AC</li>
+                  <li>Universal Compatibility</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('IEC C13 POWER CORDS', 'Standard IEC 60320 C13 power cords designed for computers, desktop workstations, LED monitors, office equipment, and uninterruptible power supply (UPS) units.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 03: IEC C5 / C7 POWER CORDS -->
+              <div class="catalog-item-card" data-cat="powercord">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">IEC C5 / C7<br>POWER CORDS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/power_cords/cord_03_c5_c7.png?v=pc_v1" alt="IEC C5 and C7 Power Cords">
+                </div>
+                <ul class="card-features-list">
+                  <li>For Laptops &amp; Adapters</li>
+                  <li>2.5A / 6A Options</li>
+                  <li>Compact &amp; Reliable</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('IEC C5 / C7 POWER CORDS', 'Compact 3-conductor Cloverleaf (C5/Mickey Mouse) and 2-conductor Figure-8 (C7) moulded power cords engineered for laptop AC adapters, audio devices, and consumer electronics.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 04: EUROPEAN POWER CORDS -->
+              <div class="catalog-item-card" data-cat="powercord">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">EUROPEAN<br>POWER CORDS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/power_cords/cord_04_european.png?v=pc_v1" alt="European Power Cords">
+                </div>
+                <ul class="card-features-list">
+                  <li>VDE Approved</li>
+                  <li>16A, 250V AC</li>
+                  <li>High Safety Standards</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('EUROPEAN POWER CORDS', 'CE and VDE certified European CEE 7/7 Schuko right-angle moulded power supply cords with dual earthing contacts for high-reliability export appliances and equipment.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 05: USA 3 PIN POWER CORDS -->
+              <div class="catalog-item-card" data-cat="powercord">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">USA 3 PIN<br>POWER CORDS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/power_cords/cord_05_usa.png?v=pc_v1" alt="USA 3 Pin Power Cords">
+                </div>
+                <ul class="card-features-list">
+                  <li>NEMA 5-15P</li>
+                  <li>10A, 125V AC</li>
+                  <li>Heavy Duty Build</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('USA 3 PIN POWER CORDS', 'UL/CSA certified North American standard NEMA 5-15P 3-prong grounded power supply cords with heavy-duty SVT/SJT flexible jacket for North American OEM export products.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 06: CUSTOM POWER CORDS -->
+              <div class="catalog-item-card" data-cat="powercord">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">CUSTOM<br>POWER CORDS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/power_cords/cord_06_custom.png?v=pc_v1" alt="Custom Power Cords">
+                </div>
+                <ul class="card-features-list">
+                  <li>Custom Lengths</li>
+                  <li>Custom Connectors</li>
+                  <li>Branding &amp; Packaging</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('CUSTOM POWER CORDS', 'OEM customized power cords built to exact customer specifications: custom cord lengths (1m to 10m), specific terminal crimping, outer sheath jacket colors, custom embossed brand logos, and retail packaging.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+            </div>
+
+            <!-- Bottom WHY CHOOSE US? Box in Power Cords View -->
+            <div class="harness-why-choose-box" style="margin-top: 24px;">
+              <div class="harness-group-header">
+                <span class="group-line"></span>
+                <h3 class="group-title">WHY CHOOSE HADRONS POWER CORDS?</h3>
+                <span class="group-line"></span>
+              </div>
+
+              <div class="harness-why-grid">
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap"><i data-lucide="shield-check" class="harness-why-icon"></i></div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">100% Spark &amp; Hi-Pot Tested</h4>
+                    <p class="harness-why-desc">High-voltage withstand testing ensures total electrical isolation &amp; zero dielectric breakdown.</p>
+                  </div>
+                </div>
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap"><i data-lucide="zap" class="harness-why-icon"></i></div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Electrolytic Pure Copper</h4>
+                    <p class="harness-why-desc">100% high-conductivity annealed copper conductors for minimal voltage drop &amp; cool operation.</p>
+                  </div>
+                </div>
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap"><i data-lucide="award" class="harness-why-icon"></i></div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Global Certification Compliance</h4>
+                    <p class="harness-why-desc">Manufactured in accordance with BIS IS 1293, IEC 60320, CE, VDE, and RoHS directives.</p>
+                  </div>
+                </div>
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap"><i data-lucide="link" class="harness-why-icon"></i></div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Integrated Strain Relief</h4>
+                    <p class="harness-why-desc">Precision molded flex-fatigue relief collars prevent cable breakage at entry points.</p>
+                  </div>
+                </div>
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap"><i data-lucide="users" class="harness-why-icon"></i></div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">OEM Custom Branding</h4>
+                    <p class="harness-why-desc">Custom logo embossing on plugs, customized cord lengths, and tailored OEM supply batches.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- View 9: Dedicated Data Center Power Cords Catalog (6 Flagship Products) -->
+          <div id="viewDataCenter" style="display:none;">
+            
+            <div class="harness-group-header">
+              <span class="group-line"></span>
+              <h3 class="group-title">OUR DATA CENTER POWER CORD RANGE</h3>
+              <span class="group-line"></span>
+            </div>
+
+            <!-- 6 Product Cards Grid (3 columns x 2 rows responsive grid) -->
+            <div class="ac-products-grid" style="grid-template-columns: repeat(3, 1fr);">
+              
+              <!-- Card 01: IEC C13 & C14 POWER CORDS -->
+              <div class="catalog-item-card" data-cat="datacenter">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">IEC C13 &amp; C14<br>POWER CORDS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/datacenter/dc_prod_01_c13_c14.png?v=dc_v1" alt="IEC C13 and C14 Power Cords">
+                </div>
+                <ul class="card-features-list">
+                  <li>10A / 16A Options</li>
+                  <li>250V AC, 50/60Hz</li>
+                  <li>PDU &amp; Server Compatible</li>
+                  <li>Locking &amp; Non-Locking</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('IEC C13 & C14 POWER CORDS', 'High-density server rack IEC 60320 C13 to C14 jumper power cords engineered for high-performance server power distribution units (PDUs), blade servers, routers, and switches in modern data center racks.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 02: IEC C19 & C20 POWER CORDS -->
+              <div class="catalog-item-card" data-cat="datacenter">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">IEC C19 &amp; C20<br>POWER CORDS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/datacenter/dc_prod_02_c19_c20.png?v=dc_v1" alt="IEC C19 and C20 Power Cords">
+                </div>
+                <ul class="card-features-list">
+                  <li>16A / 20A Options</li>
+                  <li>High Temperature Rating</li>
+                  <li>PDU &amp; UPS Compatible</li>
+                  <li>Heavy Duty Performance</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('IEC C19 & C20 POWER CORDS', 'Heavy-duty high-current 16A/20A IEC 60320 C19 to C20 power cords designed for high-draw enterprise servers, power distribution units, core switches, and enterprise data center UPS backup infrastructure.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 03: PDU / UPS POWER CORDS -->
+              <div class="catalog-item-card" data-cat="datacenter">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">PDU / UPS<br>POWER CORDS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/datacenter/dc_prod_03_pdu_ups.png?v=dc_v1" alt="PDU / UPS Power Cords">
+                </div>
+                <ul class="card-features-list">
+                  <li>Locking Connectors</li>
+                  <li>Prevents Accidental Disconnection</li>
+                  <li>High Retention Strength</li>
+                  <li>Mission Critical Use</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('PDU / UPS POWER CORDS', 'Patented dual-locking mechanism PDU and UPS power cords with positive click release tabs to prevent accidental disconnects, human maintenance errors, and costly server rack downtime.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 04: CORD SETS FOR RACK & SERVERS -->
+              <div class="catalog-item-card" data-cat="datacenter">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">CORD SETS FOR<br>RACK &amp; SERVERS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/datacenter/dc_prod_04_rack_server.png?v=dc_v1" alt="Cord Sets for Rack and Servers">
+                </div>
+                <ul class="card-features-list">
+                  <li>Custom Lengths</li>
+                  <li>Tidy &amp; Organized Cabling</li>
+                  <li>Easy Identification</li>
+                  <li>Velcro / Cable Tie Options</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('CORD SETS FOR RACK & SERVERS', 'Custom-cut rack length server cords with color-coded high-flexibility jacketing and integrated Hadrons reusable hook-and-loop velcro straps for clean airflow routing and rapid port tracing.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 05: UK BS 1363 POWER CORDS -->
+              <div class="catalog-item-card" data-cat="datacenter">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">UK BS 1363<br>POWER CORDS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/datacenter/dc_prod_05_uk_bs1363.png?v=dc_v1" alt="UK BS 1363 Power Cords">
+                </div>
+                <ul class="card-features-list">
+                  <li>13A / 250V AC</li>
+                  <li>Fuse Protected</li>
+                  <li>BS 1363 Certified</li>
+                  <li>Data Center Grade</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('UK BS 1363 POWER CORDS', 'British Standard BS 1363 certified 3-pin fused data center power cords fitted with integrated ceramic safety fuses and high-temperature PVC sheath for UK/Commonwealth data center export deployments.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 06: CUSTOM DATA CENTER POWER SOLUTIONS -->
+              <div class="catalog-item-card" data-cat="datacenter">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">CUSTOM DATA CENTER<br>POWER SOLUTIONS</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/datacenter/dc_prod_06_custom_dc.png?v=dc_v1" alt="Custom Data Center Power Solutions">
+                </div>
+                <ul class="card-features-list">
+                  <li>Custom Connectors</li>
+                  <li>Custom Lengths</li>
+                  <li>Private Labeling</li>
+                  <li>Bulk Production Capacity</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('CUSTOM DATA CENTER POWER SOLUTIONS', 'Bespoke data center power harness configurations, custom multi-drop server whips, specialized locking connectors, proprietary terminal pinouts, and custom OEM private label barcoding.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+            </div>
+
+            <!-- Bottom WHY CHOOSE US? Box in Data Center View -->
+            <div class="harness-why-choose-box" style="margin-top: 24px;">
+              <div class="harness-group-header">
+                <span class="group-line"></span>
+                <h3 class="group-title">WHY CHOOSE HADRONS DATA CENTER CORDS?</h3>
+                <span class="group-line"></span>
+              </div>
+
+              <div class="harness-why-grid">
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap"><i data-lucide="shield-check" class="harness-why-icon"></i></div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Zero Downtime Reliability</h4>
+                    <p class="harness-why-desc">Engineered with high retention locking collars to eliminate accidental disconnects.</p>
+                  </div>
+                </div>
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap"><i data-lucide="thermometer" class="harness-why-icon"></i></div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">High Thermal Resistance (105°C)</h4>
+                    <p class="harness-why-desc">Tested to withstand continuous high heat loads in enclosed enterprise server racks.</p>
+                  </div>
+                </div>
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap"><i data-lucide="zap" class="harness-why-icon"></i></div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">100% Spark &amp; Continuity Tested</h4>
+                    <p class="harness-why-desc">Each cable undergoes multi-stage automated Hi-Pot testing for zero defects.</p>
+                  </div>
+                </div>
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap"><i data-lucide="award" class="harness-why-icon"></i></div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">International Certifications</h4>
+                    <p class="harness-why-desc">Full compliance with IEC 60320, UL, VDE, CE, and RoHS stringent standards.</p>
+                  </div>
+                </div>
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap"><i data-lucide="users" class="harness-why-icon"></i></div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Custom Server Harnessing</h4>
+                    <p class="harness-why-desc">Precise length custom assemblies, color coding, and OEM private branding options.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- View 10: Dedicated 2 Wheeler EV Chargers Catalog (4 Flagship Products) -->
+          <div id="viewEV" style="display:none;">
+            
+            <div class="harness-group-header">
+              <span class="group-line"></span>
+              <h3 class="group-title">OUR 2 WHEELER CHARGER RANGE</h3>
+              <span class="group-line"></span>
+            </div>
+
+            <!-- 4 Product Cards Grid (4 columns responsive grid) -->
+            <div class="ac-products-grid" style="grid-template-columns: repeat(4, 1fr);">
+              
+              <!-- Card 01: STANDARD CHARGER (2A / 4A) -->
+              <div class="catalog-item-card" data-cat="ev">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">STANDARD CHARGER<br>(2A / 4A)</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/ev/ev_prod_01_standard.png?v=ev_v1" alt="Standard 2 Wheeler EV Charger 2A / 4A">
+                </div>
+                <ul class="card-features-list">
+                  <li>Compact &amp; Lightweight</li>
+                  <li>2A / 4A Options</li>
+                  <li>Easy Plug &amp; Play</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('STANDARD CHARGER (2A / 4A)', 'Compact and lightweight 48V/60V 2A-4A standard electric two-wheeler battery charger engineered for domestic home overnight charging, with intelligent CC/CV charging curves and overload protection.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 02: FAST CHARGER (4A – 8A) -->
+              <div class="catalog-item-card" data-cat="ev">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">FAST CHARGER<br>(4A – 8A)</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/ev/ev_prod_02_fast.png?v=ev_v1" alt="Fast 2 Wheeler EV Charger 4A - 8A">
+                </div>
+                <ul class="card-features-list">
+                  <li>Faster Charging</li>
+                  <li>High Efficiency</li>
+                  <li>Auto Cut-Off Protection</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('FAST CHARGER (4A – 8A)', 'Advanced high-current 4A to 8A fast electric vehicle charger designed for quick turnaround top-up charging for commuter e-scooters and commercial delivery fleets with auto cut-off protection.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 03: SMART CHARGER (WITH INDICATORS) -->
+              <div class="catalog-item-card" data-cat="ev">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">SMART CHARGER<br>(WITH INDICATORS)</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/ev/ev_prod_03_smart.png?v=ev_v1" alt="Smart 2 Wheeler EV Charger With Indicators">
+                </div>
+                <ul class="card-features-list">
+                  <li>LED Status Indication</li>
+                  <li>Overcharge Protection</li>
+                  <li>Wide Voltage Range</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('SMART CHARGER (WITH INDICATORS)', 'Intelligent micro-controller based smart EV charger featuring multi-stage dynamic LED diagnostic indicators (Charging, 80%, 100% Full, Fault), anti-sparking protection, and automatic battery health diagnosis.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 04: WEATHER PROOF CHARGER -->
+              <div class="catalog-item-card" data-cat="ev">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">WEATHER PROOF<br>CHARGER</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/ev/ev_prod_04_weatherproof.png?v=ev_v1" alt="Weather Proof 2 Wheeler EV Charger">
+                </div>
+                <ul class="card-features-list">
+                  <li>IP65 Rated</li>
+                  <li>Dust &amp; Water Resistant</li>
+                  <li>Built for All Conditions</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('WEATHER PROOF CHARGER', 'Heavy-duty IP65 rated rugged weatherproof EV charger designed for monsoon downpours, outdoor parking bays, and dusty Indian road conditions with fully sealed internal potting.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+            </div>
+
+            <!-- Bottom APPLICATIONS & TRUSTED BY LEADING OEMs Box in EV View -->
+            <div class="harness-why-choose-box" style="margin-top: 24px; padding: 24px 28px;">
+              <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;">
+                
+                <!-- Left: 5 EV Applications -->
+                <div style="flex: 1 1 540px;">
+                  <span style="font-size: 0.75rem; font-weight: 800; color: #2563EB; letter-spacing: 1px; text-transform: uppercase;">APPLICATIONS</span>
+                  <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 12px;">
+                    <div style="text-align: center; width: 90px;">
+                      <div style="width: 44px; height: 44px; margin: 0 auto 6px; background: #EFF6FF; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #2563EB;">
+                        <i data-lucide="bike"></i>
+                      </div>
+                      <span style="font-size: 0.72rem; font-weight: 700; color: #1E293B; line-height: 1.2; display: block;">Electric Scooters</span>
+                    </div>
+                    <div style="text-align: center; width: 90px;">
+                      <div style="width: 44px; height: 44px; margin: 0 auto 6px; background: #EFF6FF; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #2563EB;">
+                        <i data-lucide="zap"></i>
+                      </div>
+                      <span style="font-size: 0.72rem; font-weight: 700; color: #1E293B; line-height: 1.2; display: block;">Electric Bikes</span>
+                    </div>
+                    <div style="text-align: center; width: 90px;">
+                      <div style="width: 44px; height: 44px; margin: 0 auto 6px; background: #EFF6FF; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #2563EB;">
+                        <i data-lucide="truck"></i>
+                      </div>
+                      <span style="font-size: 0.72rem; font-weight: 700; color: #1E293B; line-height: 1.2; display: block;">E-Rickshaws</span>
+                    </div>
+                    <div style="text-align: center; width: 100px;">
+                      <div style="width: 44px; height: 44px; margin: 0 auto 6px; background: #EFF6FF; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #2563EB;">
+                        <i data-lucide="package-check"></i>
+                      </div>
+                      <span style="font-size: 0.72rem; font-weight: 700; color: #1E293B; line-height: 1.2; display: block;">Last Mile Delivery</span>
+                    </div>
+                    <div style="text-align: center; width: 100px;">
+                      <div style="width: 44px; height: 44px; margin: 0 auto 6px; background: #EFF6FF; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #2563EB;">
+                        <i data-lucide="battery-charging"></i>
+                      </div>
+                      <span style="font-size: 0.72rem; font-weight: 700; color: #1E293B; line-height: 1.2; display: block;">Fleet Charging</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Right: OEM Partner Trust Box -->
+                <div style="flex: 1 1 320px; border-left: 2px solid #E2E8F0; padding-left: 24px; display: flex; align-items: center; gap: 16px;">
+                  <div style="width: 50px; height: 50px; border-radius: 12px; background: linear-gradient(135deg, #1D4ED8 0%, #3B82F6 100%); color: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);">
+                    <i data-lucide="handshake" style="width: 26px; height: 26px;"></i>
+                  </div>
+                  <div>
+                    <h4 style="font-size: 0.95rem; font-weight: 800; color: #1E3A8A; margin: 0 0 4px 0; text-transform: uppercase;">TRUSTED BY LEADING OEMs</h4>
+                    <p style="font-size: 0.75rem; color: #475569; margin: 0 0 6px 0; line-height: 1.35;">Delivering reliable charging solutions to India's leading two-wheeler OEMs and global EV partners.</p>
+                    <span style="font-size: 0.72rem; font-weight: 800; color: #2563EB; letter-spacing: 0.5px; text-transform: uppercase;">YOUR PERFORMANCE. OUR PRODUCTS.</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- View 11: Dedicated Large Injection Moulded Parts Catalog (5 Flagship Products) -->
+          <div id="viewMoulded" style="display:none;">
+            
+            <div class="harness-group-header">
+              <span class="group-line"></span>
+              <h3 class="group-title">PRODUCTS WE MANUFACTURE</h3>
+              <span class="group-line"></span>
+            </div>
+
+            <!-- 5 Product Cards Grid (5 columns on desktop or 3+2 responsive grid) -->
+            <div class="ac-products-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+              
+              <!-- Card 01: INVERTER BATTERY MOULDED CASE -->
+              <div class="catalog-item-card" data-cat="moulded">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">INVERTER BATTERY<br>MOULDED CASE</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/moulded/moulded_prod_01_inverter.png?v=mould_v1" alt="Inverter Battery Moulded Case">
+                </div>
+                <ul class="card-features-list">
+                  <li>Heavy Duty Build</li>
+                  <li>Long Life Reliability</li>
+                  <li>Robust Ergonomic Design</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('INVERTER BATTERY MOULDED CASE', 'Heavy-duty precision injection moulded polypropylene (PP) copolymer battery container and heat-sealed lid designed for tall tubular inverter battery storage systems.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 02: SOLAR BATTERY MOULDED CASE -->
+              <div class="catalog-item-card" data-cat="moulded">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">SOLAR BATTERY<br>MOULDED CASE</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/moulded/moulded_prod_02_solar.png?v=mould_v1" alt="Solar Battery Moulded Case">
+                </div>
+                <ul class="card-features-list">
+                  <li>UV Stabilized Material</li>
+                  <li>High Tensile Strength</li>
+                  <li>Exceptional Durability</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('SOLAR BATTERY MOULDED CASE', 'UV-stabilized virgin polymer solar battery container with integrated vent-plug sockets and float indicator ports, built for extreme thermal fluctuations and outdoor solar installations.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 03: UPS BATTERY MOULDED CASE -->
+              <div class="catalog-item-card" data-cat="moulded">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">UPS BATTERY<br>MOULDED CASE</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/moulded/moulded_prod_03_ups.png?v=mould_v1" alt="UPS Battery Moulded Case">
+                </div>
+                <ul class="card-features-list">
+                  <li>Flame Retardant Grade</li>
+                  <li>High Impact Resistant</li>
+                  <li>Zero Leakage Design</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('UPS BATTERY MOULDED CASE', 'UL94-V0 flame-retardant industrial battery enclosure engineered with reinforced internal ribbing for mission-critical UPS and data center backup power arrays.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 04: AUTOMOTIVE BATTERY MOULDED CASE -->
+              <div class="catalog-item-card" data-cat="moulded">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">AUTOMOTIVE BATTERY<br>MOULDED CASE</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/moulded/moulded_prod_04_auto.png?v=mould_v1" alt="Automotive Battery Moulded Case">
+                </div>
+                <ul class="card-features-list">
+                  <li>Vibration Resistant</li>
+                  <li>100% Leak Proof</li>
+                  <li>High Impact Strength</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('AUTOMOTIVE BATTERY MOULDED CASE', 'High-impact automotive starter battery container with micro-porous flame arrestor inserts and ultrasonic sealed cover for heavy commercial vehicles, cars, and tractors.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Card 05: TELECOM & POWER ENCLOSURES -->
+              <div class="catalog-item-card" data-cat="moulded">
+                <div class="card-top-header">
+                  <h4 class="card-header-title">TELECOM &amp; POWER<br>ENCLOSURES</h4>
+                </div>
+                <div class="card-product-img-wrap">
+                  <img src="assets/moulded/moulded_prod_05_telecom.png?v=mould_v1" alt="Telecom and Power Enclosures">
+                </div>
+                <ul class="card-features-list">
+                  <li>Weatherproof IP66/67</li>
+                  <li>High Precision Moulding</li>
+                  <li>Industrial Reliability</li>
+                </ul>
+                <button class="card-details-btn" onclick="openModal('TELECOM & POWER ENCLOSURES', 'IP66/IP67 rated precision injection moulded electrical junction boxes, telecom equipment housings, and power distribution outdoor enclosures with stainless steel hardware.')">
+                  <span>VIEW DETAILS</span> <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+            </div>
+
+            <!-- Bottom WHY CHOOSE US? Box in Large Moulded View -->
+            <div class="harness-why-choose-box" style="margin-top: 24px;">
+              <div class="harness-group-header">
+                <span class="group-line"></span>
+                <h3 class="group-title">WHY CHOOSE HADRONS INJECTION MOULDED PARTS?</h3>
+                <span class="group-line"></span>
+              </div>
+
+              <div class="harness-why-grid">
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap"><i data-lucide="factory" class="harness-why-icon"></i></div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">High Tonnage European Presses</h4>
+                    <p class="harness-why-desc">State-of-the-art injection moulding machines up to 1200T clamping force for large parts.</p>
+                  </div>
+                </div>
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap"><i data-lucide="shield-check" class="harness-why-icon"></i></div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">100% Virgin Engineering Polymers</h4>
+                    <p class="harness-why-desc">PPCP, ABS, Polycarbonate, and UV-stabilized masterbatches for extreme structural integrity.</p>
+                  </div>
+                </div>
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap"><i data-lucide="check-circle-2" class="harness-why-icon"></i></div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Zero Leakage &amp; Impact Tested</h4>
+                    <p class="harness-why-desc">Rigorous drop tests, hydraulic pressure tests, and acid compatibility quality assurance.</p>
+                  </div>
+                </div>
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap"><i data-lucide="layers" class="harness-why-icon"></i></div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">Precision Mould Development</h4>
+                    <p class="harness-why-desc">In-house CAD/CAM tooling and multi-cavity mould maintenance for tight dimensional tolerance.</p>
+                  </div>
+                </div>
+                <div class="harness-why-item">
+                  <div class="harness-why-icon-wrap"><i data-lucide="users" class="harness-why-icon"></i></div>
+                  <div class="harness-why-text">
+                    <h4 class="harness-why-title">OEM Custom Branding</h4>
+                    <p class="harness-why-desc">Custom logo mould inserts, customized color schemes, and batch packaging for OEM clients.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </main>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. Bottom Applications Track: BUILT FOR PERFORMANCE
+       ========================================================================= -->
+  <section class="products-applications-track">
+    <div class="container">
+      <div class="applications-track-flex">
+        
+        <!-- Left Text Intro -->
+        <div class="apps-track-intro">
+          <h3 class="apps-track-title">BUILT FOR PERFORMANCE.<br><span>MADE FOR EVERY CONNECTION.</span></h3>
+          <p class="apps-track-desc">
+            From homes to industries, our products power every connection with safety, quality and reliability.
+          </p>
+        </div>
+
+        <!-- Right 8 Connected Nodes -->
+        <div class="apps-nodes-wrapper">
+          <div class="apps-track-line"></div>
+          
+          <div class="apps-nodes-grid">
+            
+            <div class="app-node-item">
+              <div class="app-node-icon-header">
+                <i data-lucide="home"></i> <span>HOMES</span>
+              </div>
+              <div class="app-node-img-circle">
+                <img src="assets/product_page/app_homes.png" alt="Homes Power Applications">
+              </div>
+            </div>
+
+            <div class="app-node-item">
+              <div class="app-node-icon-header">
+                <i data-lucide="building"></i> <span>OFFICES</span>
+              </div>
+              <div class="app-node-img-circle">
+                <img src="assets/product_page/app_offices.png" alt="Offices Power Applications">
+              </div>
+            </div>
+
+            <div class="app-node-item">
+              <div class="app-node-icon-header">
+                <i data-lucide="factory"></i> <span>INDUSTRIES</span>
+              </div>
+              <div class="app-node-img-circle">
+                <img src="assets/product_page/app_industries.png" alt="Industries Power Applications">
+              </div>
+            </div>
+
+            <div class="app-node-item">
+              <div class="app-node-icon-header">
+                <i data-lucide="server"></i> <span>IT &amp; DATA CENTERS</span>
+              </div>
+              <div class="app-node-img-circle">
+                <img src="assets/product_page/app_datacenter.png" alt="Data Centers Power Applications">
+              </div>
+            </div>
+
+            <div class="app-node-item">
+              <div class="app-node-icon-header">
+                <i data-lucide="cross"></i> <span>HOSPITALS</span>
+              </div>
+              <div class="app-node-img-circle">
+                <img src="assets/product_page/app_hospitals.png" alt="Hospitals Power Applications">
+              </div>
+            </div>
+
+            <div class="app-node-item">
+              <div class="app-node-icon-header">
+                <i data-lucide="graduation-cap"></i> <span>EDUCATION</span>
+              </div>
+              <div class="app-node-img-circle">
+                <img src="assets/product_page/app_education.png" alt="Education Power Applications">
+              </div>
+            </div>
+
+            <div class="app-node-item">
+              <div class="app-node-icon-header">
+                <i data-lucide="shopping-bag"></i> <span>RETAIL &amp; HOSPITALITY</span>
+              </div>
+              <div class="app-node-img-circle">
+                <img src="assets/product_page/app_retail.png" alt="Retail and Hospitality Applications">
+              </div>
+            </div>
+
+            <div class="app-node-item">
+              <div class="app-node-icon-header">
+                <i data-lucide="bike"></i> <span>EV CHARGING</span>
+              </div>
+              <div class="app-node-img-circle">
+                <img src="assets/product_page/app_ev.png" alt="EV Charging Applications">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. Corporate Footer
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <div class="footer-logo-wrap">
+            <img src="assets/hadrons_official_logo.png" alt="Hadrons Logo" class="footer-logo">
+            <div class="footer-brand-text">
+              <span class="footer-brand-title">HADRONS</span>
+              <span class="footer-brand-subtitle">ELECTRICALS</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Hadrons Electricals is an established Indian electrical and engineering manufacturer producing high-safety copper wires & cables, modular switches, power cords, EV chargers, and OEM components.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://linkedin.com" target="_blank" class="footer-social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45c-.91 0-1.64.73-1.64 1.64s.73 1.64 1.64 1.64 1.64-.73 1.64-1.64-.73-1.64-1.64-1.64Z"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" class="footer-social-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02Z"/></svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="footer-social-btn" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="footer-social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://wa.me/9188267400" target="_blank" class="footer-social-btn" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.29z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Product Ecosystem</a>
+            <a href="evolution.html">Our Evolution</a>
+            <a href="quality.html">Quality Standards</a>
+            <a href="oem.html">OEM &amp; Custom</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Product Portfolio</h4>
+          <div class="footer-links">
+            <a href="products.html">Wires & Cables</a>
+            <a href="products.html">Wiring Harness & Battery Cables</a>
+            <a href="products.html">Extension Boards</a>
+            <a href="products.html">Modular Switches</a>
+            <a href="products.html">Laptop Chargers</a>
+            <a href="products.html">Power Cords (6A & 16A)</a>
+            <a href="products.html">2 Wheeler EV Chargers</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contact Us</h4>
+          <div style="display: flex; flex-direction: column; gap: 14px; font-size: 0.9rem;">
+            <div>
+              <strong style="color: var(--hadrons-white); display: block;">Sales Helpline:</strong>
+              <span>+91 8826722400</span>
+            </div>
+            <div>
+              <strong style="color: var(--hadrons-white); display: block;">Official Email:</strong>
+              <span>gaurav.gautam@hadronpower.com</span>
+            </div>
+            <div>
+              <strong style="color: var(--hadrons-white); display: block;">WhatsApp Support:</strong>
+              <span>+91 88267400</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hadrons Electricals Pvt. Ltd. All rights reserved.</p>
+        <p>
+          <a href="privacy-policy.html" style="color: var(--hadrons-blue-silver); text-decoration: none;">Privacy Policy</a> • 
+          <a href="terms.html" style="color: var(--hadrons-blue-silver); text-decoration: none;">Terms of Service</a> • 
+          <a href="compliance.html" style="color: var(--hadrons-blue-silver); text-decoration: none;">BIS / IS / IEC Compliant</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       6. Technical Spec & Product Detail Modal
+       ========================================================================= -->
+  <div class="modal-overlay" id="productModal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+        <div style="background: var(--hadrons-blue-ice); color: var(--hadrons-blue-royal); width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+          <i data-lucide="shield-check"></i>
+        </div>
+        <h3 id="modalTitle" style="font-size: 1.45rem; color: var(--hadrons-navy-deep); font-weight: 700;">Product Title</h3>
+      </div>
+      <p id="modalDesc" style="color: var(--text-body); font-size: 1rem; line-height: 1.6; margin-bottom: 24px;">
+        Product details and technical specifications will be loaded here.
+      </p>
+
+      <div style="background: var(--hadrons-bg-light); padding: 16px; border-radius: 10px; margin-bottom: 24px; border: 1px solid var(--border-blue);">
+        <h4 style="font-size: 0.9rem; text-transform: uppercase; color: var(--hadrons-navy-deep); margin-bottom: 8px; font-weight: 700;">Quality & Compliance Standards:</h4>
+        <ul style="font-size: 0.88rem; color: var(--text-muted); list-style: disc; padding-left: 20px; line-height: 1.7;">
+          <li>100% High-Purity Electrolytic Copper & Virgin Insulation Compounds</li>
+          <li>FRLS Fire Retardant Low Smoke Self-Extinguishing Grade</li>
+          <li>ISO 9001:2015 & BIS Certification Compliant</li>
+        </ul>
+      </div>
+
+      <div class="footer-social-links">
+            <a href="https://linkedin.com" target="_blank" class="footer-social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45c-.91 0-1.64.73-1.64 1.64s.73 1.64 1.64 1.64 1.64-.73 1.64-1.64-.73-1.64-1.64-1.64Z"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" class="footer-social-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02Z"/></svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="footer-social-btn" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="footer-social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://wa.me/9188267400" target="_blank" class="footer-social-btn" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.29z"/></svg>
+            </a>
+          </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js?v=350"></script>
+  <script>
+    lucide.createIcons();
+
+    // Sidebar Category Filter
+    function filterCatalog(category, btnElement) {
+      document.querySelectorAll('.sidebar-cat-btn').forEach(btn => btn.classList.remove('active'));
+      if (btnElement) {
+        btnElement.classList.add('active');
+      } else {
+        const targetBtn = document.querySelector(`.sidebar-cat-btn[data-cat="${category}"]`);
+        if (targetBtn) targetBtn.classList.add('active');
+      }
+
+      const topAll = document.getElementById('topBannerAll');
+      const topWires = document.getElementById('topBannerWires');
+      const topHarness = document.getElementById('topBannerHarness');
+      const topExtension = document.getElementById('topBannerExtension');
+      const topLaptop = document.getElementById('topBannerLaptop');
+      const topAC = document.getElementById('topBannerAC');
+      const topCoolers = document.getElementById('topBannerCoolers');
+      const topPowerCord = document.getElementById('topBannerPowerCord');
+      const topDataCenter = document.getElementById('topBannerDataCenter');
+      const topEV = document.getElementById('topBannerEV');
+      const topMoulded = document.getElementById('topBannerMoulded');
+
+      const viewAll = document.getElementById('viewAllProducts');
+      const viewWires = document.getElementById('viewWiresCables');
+      const viewHarness = document.getElementById('viewHarnessCables');
+      const viewExtension = document.getElementById('viewExtensionBoards');
+      const viewLaptop = document.getElementById('viewLaptopChargers');
+      const viewAC = document.getElementById('viewACGrills');
+      const viewCoolers = document.getElementById('viewCoolers');
+      const viewPowerCord = document.getElementById('viewPowerCord');
+      const viewDataCenter = document.getElementById('viewDataCenter');
+      const viewEV = document.getElementById('viewEV');
+      const viewMoulded = document.getElementById('viewMoulded');
+
+      // Hide all top banners and specific views by default
+      if (topAll) topAll.style.display = 'none';
+      if (topWires) topWires.style.display = 'none';
+      if (topHarness) topHarness.style.display = 'none';
+      if (topExtension) topExtension.style.display = 'none';
+      if (topLaptop) topLaptop.style.display = 'none';
+      if (topAC) topAC.style.display = 'none';
+      if (topCoolers) topCoolers.style.display = 'none';
+      if (topPowerCord) topPowerCord.style.display = 'none';
+      if (topDataCenter) topDataCenter.style.display = 'none';
+      if (topEV) topEV.style.display = 'none';
+      if (topMoulded) topMoulded.style.display = 'none';
+
+      if (viewWires) viewWires.style.display = 'none';
+      if (viewHarness) viewHarness.style.display = 'none';
+      if (viewExtension) viewExtension.style.display = 'none';
+      if (viewLaptop) viewLaptop.style.display = 'none';
+      if (viewAC) viewAC.style.display = 'none';
+      if (viewCoolers) viewCoolers.style.display = 'none';
+      if (viewPowerCord) viewPowerCord.style.display = 'none';
+      if (viewDataCenter) viewDataCenter.style.display = 'none';
+      if (viewEV) viewEV.style.display = 'none';
+      if (viewMoulded) viewMoulded.style.display = 'none';
+      if (viewAll) viewAll.style.display = 'none';
+
+      if (category === 'wires') {
+        if (topWires) topWires.style.display = 'block';
+        if (viewWires) {
+          viewWires.style.display = 'flex';
+          const wireCards = viewWires.querySelectorAll('.catalog-item-card');
+          wireCards.forEach(c => c.style.display = 'flex');
+        }
+      } else if (category === 'harness') {
+        if (topHarness) topHarness.style.display = 'block';
+        if (viewHarness) {
+          viewHarness.style.display = 'flex';
+        }
+      } else if (category === 'extension') {
+        if (topExtension) topExtension.style.display = 'block';
+        if (viewExtension) {
+          viewExtension.style.display = 'block';
+        }
+      } else if (category === 'chargers' || category === 'laptop') {
+        if (topLaptop) topLaptop.style.display = 'block';
+        if (viewLaptop) {
+          viewLaptop.style.display = 'block';
+        }
+      } else if (category === 'fans' || category === 'ac') {
+        if (topAC) topAC.style.display = 'block';
+        if (viewAC) {
+          viewAC.style.display = 'block';
+        }
+      } else if (category === 'coolers') {
+        if (topCoolers) topCoolers.style.display = 'block';
+        if (viewCoolers) {
+          viewCoolers.style.display = 'block';
+        }
+      } else if (category === 'powercord' || category === 'cords') {
+        if (topPowerCord) topPowerCord.style.display = 'block';
+        if (viewPowerCord) {
+          viewPowerCord.style.display = 'block';
+        }
+      } else if (category === 'datacenter') {
+        if (topDataCenter) topDataCenter.style.display = 'block';
+        if (viewDataCenter) {
+          viewDataCenter.style.display = 'block';
+        }
+      } else if (category === 'ev') {
+        if (topEV) topEV.style.display = 'block';
+        if (viewEV) {
+          viewEV.style.display = 'block';
+        }
+      } else if (category === 'moulded') {
+        if (topMoulded) topMoulded.style.display = 'block';
+        if (viewMoulded) {
+          viewMoulded.style.display = 'block';
+        }
+      } else {
+        if (topAll) topAll.style.display = 'block';
+        if (viewAll) {
+          viewAll.style.display = 'block';
+          const cards = viewAll.querySelectorAll('.catalog-item-card');
+          cards.forEach(card => {
+            const cat = card.getAttribute('data-cat');
+            if (category === 'all' || cat === category) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        }
+      }
+      if (window.lucide) lucide.createIcons();
+    }
+
+    // Auto-select category from URL or Hash
+    window.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const cat = urlParams.get('cat') || window.location.hash.replace('#', '');
+      if (cat) {
+        const btn = document.querySelector(`.sidebar-cat-btn[data-cat="${cat}"]`);
+        if (btn) filterCatalog(cat, btn);
+      }
+    });
+  </script>
+
+    <!-- Floating WhatsApp Quick Connect Button (Pure Circular FAB) -->
+  <a href="https://wa.me/918826722400?text=Hello%20Hadrons%20Electricals,%20I%20have%20an%20inquiry" target="_blank" class="whatsapp-floating-btn" aria-label="Chat with Hadrons Electricals on WhatsApp" title="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.29z"/></svg>
+  </a>
+
+</body>
+</html>

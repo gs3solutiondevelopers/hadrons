@@ -15,5 +15,8 @@
     "extension-boards"
   ],
   "author": "Hadrons Electricals",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sharp": "^0.35.4"
+  }
 }

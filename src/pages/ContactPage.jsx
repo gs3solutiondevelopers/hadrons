@@ -85,52 +85,41 @@ export default function ContactPage() {
               </div>
 
               {/* Title with Gradient Text */}
-              <h1 className="page-hero-title" style={{ fontSize: '2.4rem', fontWeight: 900, lineHeight: 1.25, color: 'var(--hadrons-navy-deep)', margin: '0 0 16px 0' }}>
+              <h1 className="page-hero-title" style={{ fontWeight: 900, lineHeight: 1.25, color: 'var(--hadrons-navy-deep)', margin: '0 0 16px 0' }}>
                 CONNECT WITH OUR <span style={{ background: 'linear-gradient(135deg, #0066FF 0%, #0A1E4A 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>ENGINEERING TEAM</span>
               </h1>
 
-              <p className="page-hero-lead" style={{ fontSize: '1.05rem', color: '#1E293B', fontWeight: 600, lineHeight: 1.6, marginBottom: '12px' }}>
+              <p className="page-hero-lead" style={{ color: '#1E293B', fontWeight: 600, lineHeight: 1.6, marginBottom: '12px' }}>
                 Have a project requirement for wires, extension boards, modular switches, EV chargers, or custom OEM assemblies?
               </p>
               
-              <p className="page-hero-desc" style={{ fontSize: '0.94rem', color: '#64748B', lineHeight: 1.65, marginBottom: '24px' }}>
+              <p className="page-hero-desc" style={{ color: '#64748B', lineHeight: 1.65, marginBottom: '24px' }}>
                 Reach out to our central corporate sales desk or submit your technical specifications below for an expedited engineering response.
               </p>
 
               {/* 3 Key Value Highlight Chips */}
-              <div className="contact-hero-chips" style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginBottom: '28px' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: '#FFFFFF', border: '1px solid #E2ECF8', padding: '8px 14px', borderRadius: '10px', boxShadow: '0 2px 8px rgba(10,30,74,0.04)' }}>
+              <div className="contact-hero-chips">
+                <div className="chip-item">
                   <Zap size={16} style={{ color: '#0066FF' }} />
-                  <span style={{ fontSize: '0.85rem', fontWeight: 700, color: '#0A1E4A' }}>Fast 24-Hour Response</span>
+                  <span>Fast 24-Hour Response</span>
                 </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: '#FFFFFF', border: '1px solid #E2ECF8', padding: '8px 14px', borderRadius: '10px', boxShadow: '0 2px 8px rgba(10,30,74,0.04)' }}>
+                <div className="chip-item">
                   <ShieldCheck size={16} style={{ color: '#00D26A' }} />
-                  <span style={{ fontSize: '0.85rem', fontWeight: 700, color: '#0A1E4A' }}>BIS &amp; ISO Certified</span>
+                  <span>BIS &amp; ISO Certified</span>
                 </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: '#FFFFFF', border: '1px solid #E2ECF8', padding: '8px 14px', borderRadius: '10px', boxShadow: '0 2px 8px rgba(10,30,74,0.04)' }}>
+                <div className="chip-item">
                   <MessageSquare size={16} style={{ color: '#25D366' }} />
-                  <span style={{ fontSize: '0.85rem', fontWeight: 700, color: '#0A1E4A' }}>Direct WhatsApp Support</span>
+                  <span>Direct WhatsApp Support</span>
                 </div>
               </div>
 
               {/* Dual Action CTA Buttons */}
-              <div className="contact-hero-actions" style={{ display: 'flex', flexWrap: 'wrap', gap: '14px' }}>
+              <div className="contact-hero-actions">
                 <button 
                   type="button" 
                   className="btn btn-primary"
                   onClick={() => {
                     document.getElementById('contactFormSection')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  style={{
-                    padding: '12px 24px',
-                    borderRadius: '50px',
-                    fontSize: '0.92rem',
-                    fontWeight: 700,
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '8px',
-                    boxShadow: '0 6px 18px rgba(0, 102, 255, 0.25)',
-                    cursor: 'pointer'
                   }}
                 >
                   <span>SUBMIT INQUIRY FORM</span>
@@ -141,20 +130,7 @@ export default function ContactPage() {
                   href="https://wa.me/918826722400?text=Hello%20Hadrons%20Electricals,%20I%20am%20interested%20in%20an%20engineering%20consultation." 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  style={{
-                    padding: '12px 24px',
-                    borderRadius: '50px',
-                    fontSize: '0.92rem',
-                    fontWeight: 700,
-                    background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
-                    color: '#FFFFFF',
-                    textDecoration: 'none',
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '8px',
-                    boxShadow: '0 6px 18px rgba(37, 211, 102, 0.25)',
-                    transition: 'transform 0.2s ease'
-                  }}
+                  className="btn-whatsapp-cta"
                 >
                   <MessageSquare size={16} />
                   <span>CHAT ON WHATSAPP (+91 8826722400)</span>

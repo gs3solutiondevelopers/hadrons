@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "postbuild": "node -e \"import('fs').then(fs => fs.copyFileSync('public/.htaccess', 'dist/.htaccess'))\"",
+    "postbuild": "node -e \"import('fs').then(fs => { fs.copyFileSync('public/.htaccess', 'dist/.htaccess'); fs.cpSync('public/assets', 'dist/assets', {recursive: true}); })\"",
     "preview": "vite preview"
   },
   "keywords": [

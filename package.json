@@ -1,11 +1,13 @@
 {
   "name": "hadrons-electricals",
   "version": "1.0.0",
-  "description": "Hadrons Electricals Official Corporate Website - Deep Blue Identity",
-  "main": "index.html",
+  "description": "Hadrons Electricals Official Corporate Website - React App",
+  "type": "module",
   "scripts": {
-    "start": "npx serve . -p 3000",
-    "dev": "npx serve . -p 3000"
+    "dev": "vite",
+    "build": "vite build",
+    "postbuild": "node -e \"import('fs').then(fs => fs.copyFileSync('public/.htaccess', 'dist/.htaccess'))\"",
+    "preview": "vite preview"
   },
   "keywords": [
     "electrical",
@@ -17,6 +19,14 @@
   "author": "Hadrons Electricals",
   "license": "ISC",
   "dependencies": {
+    "lucide-react": "^0.439.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.1",
     "sharp": "^0.35.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.2"
   }
 }

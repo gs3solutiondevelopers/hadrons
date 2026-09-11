@@ -157,54 +157,54 @@ export default function HomePage() {
             {/* Row 1: 6 Cards */}
             <div className="hero-cards-row row-6-cards">
               
-              <div className="hero-card" onClick={() => handleFilterClick('wires-cables')}>
+              <div className="hero-card" onClick={() => handleFilterClick('wires')}>
                 <div className="hero-card-img-wrap">
-                  <img src="/assets/images/products/prod_wires.webp" alt="Wires & Cables" className="hero-card-img" />
+                  <img src="/assets/images/products/wires_cables_sheet.webp" alt="Wires & Cables" className="hero-card-img" />
                 </div>
                 <div className="hero-card-title">
                   WIRES &amp;<br />CABLES
                 </div>
               </div>
 
-              <div className="hero-card" onClick={() => handleFilterClick('extension-boards')}>
+              <div className="hero-card" onClick={() => handleFilterClick('extension')}>
                 <div className="hero-card-img-wrap">
-                  <img src="/assets/images/products/prod_extension.webp" alt="Extension Boards" className="hero-card-img" />
+                  <img src="/assets/images/products/extension_boards_hero.webp" alt="Extension Boards" className="hero-card-img" />
                 </div>
                 <div className="hero-card-title">
                   EXTENSION<br />BOARDS
                 </div>
               </div>
 
-              <div className="hero-card" onClick={() => handleFilterClick('products')}>
+              <div className="hero-card" onClick={() => handleFilterClick('switches')}>
                 <div className="hero-card-img-wrap">
-                  <img src="/assets/images/products/prod_switches.webp" alt="Modular Switches" className="hero-card-img" />
+                  <img src="/assets/images/products/modular_switches_sheet.webp" alt="Modular Switches" className="hero-card-img" />
                 </div>
                 <div className="hero-card-title">
                   MODULAR<br />SWITCHES
                 </div>
               </div>
 
-              <div className="hero-card" onClick={() => handleFilterClick('power-cords')}>
+              <div className="hero-card" onClick={() => handleFilterClick('chargers')}>
                 <div className="hero-card-img-wrap">
-                  <img src="/assets/images/products/prod_laptop.webp" alt="Laptop Chargers" className="hero-card-img" />
+                  <img src="/assets/images/products/laptop_chargers_hero.webp" alt="Laptop Chargers" className="hero-card-img" />
                 </div>
                 <div className="hero-card-title">
                   LAPTOP<br />CHARGERS
                 </div>
               </div>
 
-              <div className="hero-card" onClick={() => handleFilterClick('ac-components')}>
+              <div className="hero-card" onClick={() => handleFilterClick('fans')}>
                 <div className="hero-card-img-wrap">
-                  <img src="/assets/images/products/prod_ac_grill.webp" alt="AC Grills & Fans" className="hero-card-img" />
+                  <img src="/assets/images/products/ac_components_hero.webp" alt="AC Grills & Fans" className="hero-card-img" />
                 </div>
                 <div className="hero-card-title">
                   AC GRILLS<br />&amp; FANS
                 </div>
               </div>
 
-              <div className="hero-card" onClick={() => handleFilterClick('ac-components')}>
+              <div className="hero-card" onClick={() => handleFilterClick('coolers')}>
                 <div className="hero-card-img-wrap">
-                  <img src="/assets/images/products/prod_cooler.webp" alt="Coolers (Body & Fans)" className="hero-card-img" />
+                  <img src="/assets/images/products/cooler_parts_hero.webp" alt="Coolers (Body & Fans)" className="hero-card-img" />
                 </div>
                 <div className="hero-card-title">
                   COOLERS<br />(BODY &amp; FANS)
@@ -216,45 +216,45 @@ export default function HomePage() {
             {/* Row 2: 5 Cards */}
             <div className="hero-cards-row row-5-cards">
               
-              <div className="hero-card" onClick={() => handleFilterClick('power-cords')}>
+              <div className="hero-card" onClick={() => handleFilterClick('powercord')}>
                 <div className="hero-card-img-wrap">
-                  <img src="/assets/images/products/prod_power_cord.webp" alt="Power Cord 3 Pin" className="hero-card-img" />
+                  <img src="/assets/images/products/power_cords_hero.webp" alt="Power Cord 3 Pin" className="hero-card-img" />
                 </div>
                 <div className="hero-card-title">
                   POWER CORD<br />3 PIN
                 </div>
               </div>
 
-              <div className="hero-card" onClick={() => handleFilterClick('power-cords')}>
+              <div className="hero-card" onClick={() => handleFilterClick('datacenter')}>
                 <div className="hero-card-img-wrap">
-                  <img src="/assets/images/products/prod_datacenter.webp" alt="Data Center Power Cord" className="hero-card-img" />
+                  <img src="/assets/images/products/datacenter_cords_hero.webp" alt="Data Center Power Cord" className="hero-card-img" />
                 </div>
                 <div className="hero-card-title">
                   DATA CENTER<br />POWER CORD
                 </div>
               </div>
 
-              <div className="hero-card" onClick={() => handleFilterClick('power-cords')}>
+              <div className="hero-card" onClick={() => handleFilterClick('mobile_chargers')}>
                 <div className="hero-card-img-wrap">
-                  <img src="/assets/images/products/prod_usb.webp" alt="USB & Data Cables" className="hero-card-img" />
+                  <img src="/assets/images/products/mobile_chargers_hero.webp" alt="Mobile Chargers (USB & Type-C)" className="hero-card-img" />
                 </div>
                 <div className="hero-card-title">
-                  USB &amp;<br />DATA CABLES
+                  MOBILE<br />CHARGERS
                 </div>
               </div>
 
-              <div className="hero-card" onClick={() => handleFilterClick('ev-chargers')}>
+              <div className="hero-card" onClick={() => handleFilterClick('battery_modules')}>
                 <div className="hero-card-img-wrap">
-                  <img src="/assets/images/products/prod_gan.webp" alt="Fast/PD Charger 65W (GaN)" className="hero-card-img" />
+                  <img src="/assets/images/products/solar_battery_modules.webp" alt="Solar & Inverter Battery Outer Modules" className="hero-card-img" />
                 </div>
                 <div className="hero-card-title">
-                  FAST/PD<br />CHARGER<br />65W (GaN)
+                  BATTERY<br />OUTER MODULES
                 </div>
               </div>
 
-              <div className="hero-card" onClick={() => handleFilterClick('ev-chargers')}>
+              <div className="hero-card" onClick={() => handleFilterClick('ev')}>
                 <div className="hero-card-img-wrap">
-                  <img src="/assets/images/products/prod_ev_2w.webp" alt="Electrical Charger For 2 Wheelers" className="hero-card-img" />
+                  <img src="/assets/images/products/ev_2w_charger_hero.webp" alt="Electrical Charger For 2 Wheelers" className="hero-card-img" />
                 </div>
                 <div className="hero-card-title">
                   ELECTRICAL CHARGER<br />FOR 2 WHEELERS
@@ -293,7 +293,7 @@ export default function HomePage() {
             <div className="product-card">
               <span className="product-badge">01</span>
               <div className="product-img-wrapper">
-                <img src="/assets/images/products/prod_wires.webp" alt="Wires & Cables" />
+                <img src="/assets/images/products/wires_cables_sheet.webp" alt="Wires & Cables" />
               </div>
               <div className="product-body">
                 <div className="product-icon-wrap">
@@ -303,7 +303,7 @@ export default function HomePage() {
                 <h3 className="product-title">Wires &amp; Cables</h3>
                 <p className="product-desc">High-purity electrolytic copper multi-core industrial cables and building wires with FRLS PVC insulation.</p>
                 <div className="product-footer">
-                  <Link to="/wires-cables" className="product-action">
+                  <Link to="/products?cat=wires" className="product-action">
                     <span>View Full Catalog</span> <ArrowRight size={16} />
                   </Link>
                 </div>
@@ -314,7 +314,7 @@ export default function HomePage() {
             <div className="product-card">
               <span className="product-badge">02</span>
               <div className="product-img-wrapper">
-                <img src="/assets/images/products/prod_switches.webp" alt="Modular Switches" onError={(e) => { e.target.src = '/assets/images/products/prod_extension.webp'; }} />
+                <img src="/assets/images/products/modular_switches_sheet.webp" alt="Modular Switches" onError={(e) => { e.target.src = '/assets/images/products/extension_boards_hero.webp'; }} />
               </div>
               <div className="product-body">
                 <div className="product-icon-wrap">
@@ -324,7 +324,7 @@ export default function HomePage() {
                 <h3 className="product-title">Modular Switches</h3>
                 <p className="product-desc">Sleek, ergonomic white glossy modular switch panels and sockets with silver contact tips for 100,000+ clicks.</p>
                 <div className="product-footer">
-                  <Link to="/products" className="product-action">
+                  <Link to="/products?cat=switches" className="product-action">
                     <span>View Full Catalog</span> <ArrowRight size={16} />
                   </Link>
                 </div>
@@ -335,7 +335,7 @@ export default function HomePage() {
             <div className="product-card">
               <span className="product-badge">03</span>
               <div className="product-img-wrapper">
-                <img src="/assets/images/products/prod_datacenter.webp" alt="Data Center Power Cord" />
+                <img src="/assets/images/products/power_cords_hero.webp" alt="Data Center Power Cord" />
               </div>
               <div className="product-body">
                 <div className="product-icon-wrap">
@@ -345,7 +345,7 @@ export default function HomePage() {
                 <h3 className="product-title">Power Cords &amp; Data Center</h3>
                 <p className="product-desc">IEC 60320 C13/C19 server rack PDU locking cables, and ISI-certified 6A/16A moulded 3-pin appliance power cords.</p>
                 <div className="product-footer">
-                  <Link to="/products?filter=power-cords" className="product-action">
+                  <Link to="/products?cat=powercord" className="product-action">
                     <span>View Full Catalog</span> <ArrowRight size={16} />
                   </Link>
                 </div>
@@ -356,7 +356,7 @@ export default function HomePage() {
             <div className="product-card">
               <span className="product-badge">04</span>
               <div className="product-img-wrapper">
-                <img src="/assets/images/products/prod_ev_2w.webp" alt="EV Charging Station" />
+                <img src="/assets/images/products/ev_2w_charger_hero.webp" alt="EV Charging Station" />
               </div>
               <div className="product-body">
                 <div className="product-icon-wrap">
@@ -366,7 +366,7 @@ export default function HomePage() {
                 <h3 className="product-title">EV Charging Solutions</h3>
                 <p className="product-desc">Smart AC wallbox EV chargers with IP65 weatherproof housing and dynamic load balancing for electric two-wheelers.</p>
                 <div className="product-footer">
-                  <Link to="/products?filter=ev-chargers" className="product-action">
+                  <Link to="/products?cat=ev" className="product-action">
                     <span>View Full Catalog</span> <ArrowRight size={16} />
                   </Link>
                 </div>

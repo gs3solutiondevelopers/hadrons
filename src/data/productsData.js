@@ -9,8 +9,8 @@ export const PRODUCT_CATEGORIES = [
   { id: 'coolers',    label: 'Coolers (Body & Fans)' },
   { id: 'powercord',  label: 'Power Cord (6A & 16A)' },
   { id: 'datacenter', label: 'Data Center Power Cords' },
-  { id: 'ev',         label: '2 Wheeler EV Chargers' },
-  { id: 'moulded',    label: 'Large Injection Moulded Components' }
+  { id: 'mobile_chargers', label: 'Mobile Chargers (USB & Type-C PD)' },
+  { id: 'battery_modules', label: 'Solar & Inverter Battery Outer Modules' }
 ];
 
 export const PRODUCTS_DATA = [];

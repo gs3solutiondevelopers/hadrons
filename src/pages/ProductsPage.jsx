@@ -39,7 +39,9 @@ import {
   GraduationCap, 
   ShoppingBag, 
   BatteryCharging,
-  Package
+  Package,
+  FileDown,
+  Smartphone
 } from 'lucide-react';
 import { PRODUCT_CATEGORIES } from '../data/productsData';
 import FilterTrack from '../components/FilterTrack';
@@ -48,18 +50,20 @@ import ImageLightboxModal from '../components/ImageLightboxModal';
 
 // Icon map for sidebar per category id
 const CAT_ICONS = {
-  all:        <Grid size={16} />,
-  wires:      <Zap size={16} />,
-  harness:    <Cable size={16} />,
-  extension:  <Plug size={16} />,
-  switches:   <ToggleRight size={16} />,
-  chargers:   <Laptop size={16} />,
-  fans:       <Wind size={16} />,
-  coolers:    <Fan size={16} />,
-  powercord:  <Power size={16} />,
-  datacenter: <Server size={16} />,
-  ev:         <Bike size={16} />,
-  moulded:    <Box size={16} />
+  all:             <Grid size={16} />,
+  wires:           <Zap size={16} />,
+  harness:         <Cable size={16} />,
+  extension:       <Plug size={16} />,
+  switches:        <ToggleRight size={16} />,
+  chargers:        <Laptop size={16} />,
+  fans:            <Wind size={16} />,
+  coolers:         <Fan size={16} />,
+  powercord:       <Power size={16} />,
+  datacenter:      <Server size={16} />,
+  mobile_chargers: <Smartphone size={16} />,
+  battery_modules: <BatteryCharging size={16} />,
+  ev:              <Bike size={16} />,
+  moulded:         <Box size={16} />
 };
 
 export default function ProductsPage() {
@@ -77,14 +81,14 @@ export default function ProductsPage() {
     }
   };
 
-  // 11 Ecosystem Flagship Cards
+  // Flagship Cards
   const flagshipProducts = [
     {
       id: 'wires',
       catId: 'wires',
       badgeNum: '01',
       title: 'WIRES & CABLES',
-      img: '/assets/images/product_page/prod_01_wires.webp',
+      img: '/assets/images/products/wires_cables_sheet.webp',
       fallbackImg: '/assets/images/wires_cables.webp',
       features: ['High conductivity copper', 'Flame retardant PVC', 'Durable & safe', '10 Specialized Cable Categories'],
       btnText: 'VIEW CABLE TYPES',
@@ -96,7 +100,7 @@ export default function ProductsPage() {
       badgeNum: '02',
       title: 'WIRING HARNESS & BATTERY CABLE',
       isNew: true,
-      img: '/assets/images/product_page/prod_02_harness.webp',
+      img: '/assets/images/products/harness_battery_cables_hero.webp',
       fallbackImg: '/assets/images/wiring_harness.webp',
       features: ['Customised wiring harness', 'High performance battery cables', 'For automotive & earth movers industry', 'Reliable & durable'],
       btnText: 'VIEW DETAILS',
@@ -107,7 +111,7 @@ export default function ProductsPage() {
       catId: 'extension',
       badgeNum: '03',
       title: 'EXTENSION BOARDS',
-      img: '/assets/images/product_page/prod_03_extension.webp',
+      img: '/assets/images/products/extension_boards_hero.webp',
       fallbackImg: '/assets/images/product_page/prod_03_extension.webp',
       features: ['Multiple socket options', 'Safety shutters', 'Overload protection', 'Stylish & durable design'],
       btnText: 'VIEW DETAILS',
@@ -118,7 +122,7 @@ export default function ProductsPage() {
       catId: 'switches',
       badgeNum: '04',
       title: 'MODULAR SWITCHES',
-      img: '/assets/images/product_page/prod_04_switches.webp',
+      img: '/assets/images/products/modular_switches_sheet.webp',
       fallbackImg: '/assets/images/product_page/prod_04_switches.webp',
       features: ['Premium finish', 'Long life performance', 'Safe & reliable', 'Modular design'],
       btnText: 'VIEW DETAILS',
@@ -129,7 +133,7 @@ export default function ProductsPage() {
       catId: 'chargers',
       badgeNum: '05',
       title: 'LAPTOP CHARGERS',
-      img: '/assets/images/product_page/prod_05_laptop.webp',
+      img: '/assets/images/products/laptop_chargers_hero.webp',
       fallbackImg: '/assets/images/chargers_cables.webp',
       features: ['Fast & efficient charging', 'Multiple power ratings', 'Overvoltage protection', 'Compact & reliable'],
       btnText: 'VIEW DETAILS',
@@ -140,7 +144,7 @@ export default function ProductsPage() {
       catId: 'fans',
       badgeNum: '06',
       title: 'AC GRILLS & FANS',
-      img: '/assets/images/product_page/prod_06_ac_fans.webp',
+      img: '/assets/images/products/ac_components_hero.webp',
       fallbackImg: '/assets/images/product_page/prod_06_ac_fans.webp',
       features: ['High air flow design', 'Strong & durable', 'Precision moulded', 'Multiple sizes'],
       btnText: 'VIEW DETAILS',
@@ -151,7 +155,7 @@ export default function ProductsPage() {
       catId: 'coolers',
       badgeNum: '07',
       title: 'COOLERS (BODY & FANS)',
-      img: '/assets/images/product_page/prod_07_coolers.webp',
+      img: '/assets/images/products/cooler_parts_hero.webp',
       fallbackImg: '/assets/images/product_page/prod_07_coolers.webp',
       features: ['Sturdy & stylish bodies', 'Efficient cooling', 'High quality material', 'Customised solutions'],
       btnText: 'VIEW DETAILS',
@@ -162,7 +166,7 @@ export default function ProductsPage() {
       catId: 'powercord',
       badgeNum: '08',
       title: 'POWER CORD (6A & 16A)',
-      img: '/assets/images/product_page/prod_08_power_cord.webp',
+      img: '/assets/images/products/power_cords_hero.webp',
       fallbackImg: '/assets/images/product_page/prod_08_power_cord.webp',
       features: ['6A & 16A options', '3 Pin - with earthing', 'High quality PVC', 'Safe & durable'],
       btnText: 'VIEW DETAILS',
@@ -173,18 +177,42 @@ export default function ProductsPage() {
       catId: 'datacenter',
       badgeNum: '09',
       title: 'DATA CENTER POWER CORDS',
-      img: '/assets/images/product_page/prod_09_datacenter.webp',
+      img: '/assets/images/products/datacenter_cords_hero.webp',
       fallbackImg: '/assets/images/product_page/prod_09_datacenter.webp',
       features: ['IEC C13, C19 options', 'High current capacity', 'Flame retardant', 'Reliable performance'],
       btnText: 'VIEW DETAILS',
       detailModal: { title: 'Data Center Power Cords', desc: 'IEC 60320 server rack PDU power cables with locking connectors and heavy copper conductors for high-reliability data center infrastructure.' }
     },
     {
+      id: 'mobile_chargers',
+      catId: 'mobile_chargers',
+      badgeNum: '10',
+      title: 'MOBILE CHARGERS (USB & TYPE-C PD)',
+      isNew: true,
+      img: '/assets/images/products/mobile_chargers_hero.webp',
+      fallbackImg: '/assets/images/products/mobile_chargers_hero.webp',
+      features: ['Fast PD & USB Charging', 'Multi-layer Overvoltage Protection', 'Compact & Durable Design', 'Universal Smartphone Support'],
+      btnText: 'VIEW DETAILS',
+      detailModal: { title: 'Mobile Chargers (USB & Type-C PD)', desc: 'High-speed smart mobile wall adapters and Type-C Power Delivery (PD) fast chargers engineered with intelligent IC power management and flame-retardant enclosures.' }
+    },
+    {
+      id: 'battery_modules',
+      catId: 'battery_modules',
+      badgeNum: '11',
+      title: 'SOLAR & INVERTER BATTERY OUTER MODULES',
+      isNew: true,
+      img: '/assets/images/products/solar_battery_modules.webp',
+      fallbackImg: '/assets/images/products/solar_battery_modules.webp',
+      features: ['Heavy-Duty Polymer Moulded', 'Shockproof & Flame Retardant', 'UV & Thermal Resistant', 'Custom Fit for Solar/Inverter Batteries'],
+      btnText: 'VIEW DETAILS',
+      detailModal: { title: 'Solar & Inverter Battery Outer Modules', desc: 'Precision-moulded polymer outer covers, handles, and battery casing modules engineered for solar PV battery storage, home inverters, and industrial energy storage.' }
+    },
+    {
       id: 'ev',
       catId: 'ev',
-      badgeNum: '10',
+      badgeNum: '12',
       title: '2 WHEELER EV CHARGERS',
-      img: '/assets/images/product_page/prod_10_ev_charger.webp',
+      img: '/assets/images/products/ev_2w_charger_hero.webp',
       fallbackImg: '/assets/images/ev_chargers.webp',
       features: ['Safe & smart charging', 'Overload protection', 'Compact & portable', 'Compatible with multiple EVs'],
       btnText: 'VIEW DETAILS',
@@ -193,7 +221,7 @@ export default function ProductsPage() {
     {
       id: 'moulded',
       catId: 'moulded',
-      badgeNum: '11',
+      badgeNum: '13',
       title: 'LARGE INJECTION MOULDED COMPONENTS',
       img: '/assets/images/product_page/prod_11_moulded.webp',
       fallbackImg: '/assets/images/moulded_parts.webp',
@@ -591,6 +619,31 @@ export default function ProductsPage() {
           </div>
         </section>
       )}
+
+      {/* Official PDF Catalogs Download Section */}
+      <section className="catalog-download-section" style={{ background: 'linear-gradient(135deg, #051937, #004d7a)', color: '#FFF', padding: '24px 0', margin: '0 0 10px 0' }}>
+        <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '16px' }}>
+          <div>
+            <h3 style={{ fontSize: '1.25rem', fontWeight: 700, margin: 0, color: '#FFF', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <FileDown size={22} style={{ color: '#00D2FF' }} /> OFFICIAL PRODUCT CATALOGUES &amp; BROCHURES
+            </h3>
+            <p style={{ margin: '4px 0 0 0', fontSize: '0.9rem', color: '#B0C4DE' }}>
+              Download official PDF catalogues for technical specifications, wire gauges, and OEM dimensions.
+            </p>
+          </div>
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            <a href="/catalogs/hadrons_wires_cables_catalogue.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ background: '#FFF', color: '#0A1E4A', fontWeight: 600, fontSize: '0.85rem', padding: '10px 16px' }}>
+              <FileDown size={16} /> Wires &amp; Cables PDF
+            </a>
+            <a href="/catalogs/hadrons_ac_grills_fans_catalogue.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ background: '#FFF', color: '#0A1E4A', fontWeight: 600, fontSize: '0.85rem', padding: '10px 16px' }}>
+              <FileDown size={16} /> AC &amp; Fan Grills PDF
+            </a>
+            <a href="/catalogs/hadrons_wiring_harness_catalogue.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ background: '#FFF', color: '#0A1E4A', fontWeight: 600, fontSize: '0.85rem', padding: '10px 16px' }}>
+              <FileDown size={16} /> Wiring Harness PDF
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* =========================================================================
            2. Horizontal Category Filter Track (Scrollable Bar)

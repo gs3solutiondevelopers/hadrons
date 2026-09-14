@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
+import LeadershipPage from './pages/LeadershipPage';
 import ProductsPage from './pages/ProductsPage';
 import WiresCablesPage from './pages/WiresCablesPage';
 import EvolutionPage from './pages/EvolutionPage';
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="about" element={<AboutPage />} />
+          <Route path="leadership" element={<LeadershipPage />} />
           <Route path="products" element={<ProductsPage />} />
           <Route path="wires-cables" element={<WiresCablesPage />} />
           <Route path="evolution" element={<EvolutionPage />} />

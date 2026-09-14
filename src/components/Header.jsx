@@ -10,12 +10,14 @@ import {
   Phone, 
   ArrowRight, 
   Menu, 
-  X 
+  X,
+  Award 
 } from 'lucide-react';
 
 const NAV_ITEMS = [
   { path: '/', label: 'Home', icon: Home },
   { path: '/about', label: 'About Us', icon: User },
+  { path: '/leadership', label: 'Leadership', icon: Award },
   { path: '/products', label: 'Products', icon: Package },
   { path: '/evolution', label: 'Our Evolution', icon: Sparkles },
   { path: '/quality', label: 'Quality', icon: ShieldCheck },

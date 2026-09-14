@@ -11,7 +11,8 @@ import {
   Factory, 
   Zap, 
   Smile, 
-  Globe 
+  Globe,
+  ArrowRight 
 } from 'lucide-react';
 
 export default function AboutPage() {
@@ -162,11 +163,11 @@ export default function AboutPage() {
       </section>
 
       {/* =========================================================================
-           5. OUR PHILOSOPHY Section
+           5. Philosophy & Values Section
            ========================================================================= */}
       <section className="about-philosophy-section">
         <div className="container">
-          <div className="philosophy-card-wrap">
+          <div className="philosophy-grid">
             
             {/* Left Image with Hologram Hands */}
             <div className="philosophy-image-wrap">
@@ -211,6 +212,11 @@ export default function AboutPage() {
               <p className="philosophy-footer-text">
                 Our objective is to build Hadrons Electricals into a trusted Indian manufacturing partner for electrical, electronic, EV, connectivity, and precision moulded products, serving customers in India and international markets.
               </p>
+
+              <Link to="/leadership" className="btn btn-primary" style={{ marginTop: '20px', display: 'inline-flex' }}>
+                <span>MEET OUR EXECUTIVE LEADERSHIP</span>
+                <ArrowRight size={18} />
+              </Link>
             </div>
 
           </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useSearchParams, Link } from 'react-router-dom';
+import { useSearchParams, Link, useNavigate } from 'react-router-dom';
 import { 
   ShieldCheck, 
   Gem, 
@@ -67,6 +67,7 @@ const CAT_ICONS = {
 };
 
 export default function ProductsPage() {
+  const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const activeCategory = searchParams.get('cat') || 'all';
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -712,7 +713,10 @@ export default function ProductsPage() {
                 <div id="viewAllProducts">
                   <div className="catalog-row catalog-row-5" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(230px, 1fr))', gap: '20px' }}>
                     {flagshipProducts.map((p) => (
-                      <div key={p.id} className="catalog-item-card">
+                      <div key={p.id} className="catalog-item-card" style={{ cursor: 'pointer' }} onClick={(e) => {
+                        if (e.target.closest('.card-product-img-wrap')) return;
+                        navigate(`/product-details?id=${p.id}`);
+                      }}>
                         <div className="card-top-header">
                           <span className="card-num-badge">{p.badgeNum}</span>
                           <h4 className="card-header-title">
@@ -721,7 +725,10 @@ export default function ProductsPage() {
                         </div>
                         <div 
                           className="card-product-img-wrap" 
-                          onClick={() => setLightboxImage({ src: p.img, title: p.title })}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setLightboxImage({ src: p.img, title: p.title });
+                          }}
                           title="Click to zoom in image"
                         >
                           <img src={p.img} alt={p.title} onError={(e) => { e.target.src = p.fallbackImg; }} />
@@ -733,15 +740,12 @@ export default function ProductsPage() {
                         </ul>
                         <button 
                           className="card-details-btn" 
-                          onClick={() => {
-                            if (p.id === 'wires' || p.id === 'harness') {
-                              handleCategoryChange(p.id);
-                            } else {
-                              setSelectedProduct(p.detailModal);
-                            }
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            navigate(`/product-details?id=${p.id}`);
                           }}
                         >
-                          <span>{p.btnText}</span> <ArrowRight size={16} />
+                          <span>VIEW DETAILS</span> <ArrowRight size={16} />
                         </button>
                       </div>
                     ))}
@@ -754,14 +758,17 @@ export default function ProductsPage() {
                 <div id="viewWiresCables" style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
                   <div className="catalog-row catalog-row-5" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '20px' }}>
                     {wireProducts.map((p) => (
-                      <div key={p.badge} className="catalog-item-card">
+                      <div key={p.badge} className="catalog-item-card" style={{ cursor: 'pointer' }} onClick={() => navigate('/product-details?id=wires')}>
                         <div className="card-top-header">
                           <span className="card-num-badge">{p.badge}</span>
                           <h4 className="card-header-title">{p.title}</h4>
                         </div>
                         <div 
                           className="card-product-img-wrap" 
-                          onClick={() => setLightboxImage({ src: p.img, title: p.title })}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setLightboxImage({ src: p.img, title: p.title });
+                          }}
                           title="Click to zoom in image"
                         >
                           <img src={p.img} alt={p.title} onError={(e) => { e.target.src = '/assets/images/wires_cables.webp'; }} />
@@ -771,7 +778,13 @@ export default function ProductsPage() {
                             <li key={idx}>{f}</li>
                           ))}
                         </ul>
-                        <button className="card-details-btn" onClick={() => setSelectedProduct({ title: p.title, desc: p.desc })}>
+                        <button 
+                          className="card-details-btn" 
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            navigate('/product-details?id=wires');
+                          }}
+                        >
                           <span>VIEW DETAILS</span> <ArrowRight size={16} />
                         </button>
                       </div>
@@ -785,14 +798,17 @@ export default function ProductsPage() {
                 <div id="viewCategorySelected">
                   <div className="catalog-row" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 320px))', gap: '24px' }}>
                     {flagshipProducts.filter(p => p.catId === activeCategory || activeCategory.includes(p.catId)).map((p) => (
-                      <div key={p.id} className="catalog-item-card" style={{ maxWidth: '320px' }}>
+                      <div key={p.id} className="catalog-item-card" style={{ maxWidth: '320px', cursor: 'pointer' }} onClick={() => navigate(`/product-details?id=${p.id}`)}>
                         <div className="card-top-header">
                           <span className="card-num-badge">{p.badgeNum}</span>
                           <h4 className="card-header-title">{p.title}</h4>
                         </div>
                         <div 
                           className="card-product-img-wrap" 
-                          onClick={() => setLightboxImage({ src: p.img, title: p.title })}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setLightboxImage({ src: p.img, title: p.title });
+                          }}
                           title="Click to zoom in image"
                         >
                           <img src={p.img} alt={p.title} onError={(e) => { e.target.src = p.fallbackImg; }} />
@@ -802,7 +818,13 @@ export default function ProductsPage() {
                             <li key={idx}>{f}</li>
                           ))}
                         </ul>
-                        <button className="card-details-btn" onClick={() => setSelectedProduct(p.detailModal)}>
+                        <button 
+                          className="card-details-btn" 
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            navigate(`/product-details?id=${p.id}`);
+                          }}
+                        >
                           <span>VIEW SPECIFICATIONS &amp; INQUIRE</span> <ArrowRight size={16} />
                         </button>
                       </div>

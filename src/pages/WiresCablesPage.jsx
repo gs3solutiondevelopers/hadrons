@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ShieldCheck, Gem, Leaf, MapPin, ArrowRight } from 'lucide-react';
 import ProductModal from '../components/ProductModal';
 
 export default function WiresCablesPage() {
+  const navigate = useNavigate();
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   const wireProducts = [
@@ -151,7 +152,7 @@ export default function WiresCablesPage() {
 
           <div className="wires-cards-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '20px' }}>
             {wireProducts.map((p) => (
-              <div key={p.badge} className="catalog-item-card">
+              <div key={p.badge} className="catalog-item-card" style={{ cursor: 'pointer' }} onClick={() => navigate('/product-details?id=wires')}>
                 <div className="card-top-header">
                   <span className="card-num-badge">{p.badge}</span>
                   <h4 className="card-header-title">{p.title}</h4>
@@ -164,7 +165,7 @@ export default function WiresCablesPage() {
                     <li key={idx}>{f}</li>
                   ))}
                 </ul>
-                <button className="card-details-btn" onClick={() => setSelectedProduct(p)}>
+                <button className="card-details-btn" onClick={(e) => { e.stopPropagation(); navigate('/product-details?id=wires'); }}>
                   <span>VIEW DETAILS</span> <ArrowRight size={16} />
                 </button>
               </div>

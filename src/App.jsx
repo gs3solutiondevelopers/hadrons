@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import LeadershipPage from './pages/LeadershipPage';
 import ProductsPage from './pages/ProductsPage';
+import ProductDetailsPage from './pages/ProductDetailsPage';
 import WiresCablesPage from './pages/WiresCablesPage';
 import EvolutionPage from './pages/EvolutionPage';
 import QualityPage from './pages/QualityPage';
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="about" element={<AboutPage />} />
           <Route path="leadership" element={<LeadershipPage />} />
           <Route path="products" element={<ProductsPage />} />
+          <Route path="product-details" element={<ProductDetailsPage />} />
           <Route path="wires-cables" element={<WiresCablesPage />} />
           <Route path="evolution" element={<EvolutionPage />} />
           <Route path="quality" element={<QualityPage />} />

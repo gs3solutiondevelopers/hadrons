@@ -1,12 +1,15 @@
 import React, { useEffect } from 'react';
 import { X, ZoomIn, MessageSquare, ArrowRight } from 'lucide-react';
 
-export default function ImageLightboxModal({ imageSrc, title, onClose }) {
+export default function ImageLightboxModal({ imageSrc, imageUrl, title, onClose }) {
+  const activeSrc = typeof imageSrc === 'string' ? imageSrc : (imageSrc?.src || imageUrl?.src || imageUrl);
+  const activeTitle = title || imageSrc?.title || imageUrl?.title || 'Product Image';
+
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') onClose();
     };
-    if (imageSrc) {
+    if (activeSrc) {
       document.body.style.overflow = 'hidden';
       window.addEventListener('keydown', handleKeyDown);
     }
@@ -14,12 +17,12 @@ export default function ImageLightboxModal({ imageSrc, title, onClose }) {
       document.body.style.overflow = 'unset';
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [imageSrc, onClose]);
+  }, [activeSrc, onClose]);
 
-  if (!imageSrc) return null;
+  if (!activeSrc) return null;
 
   const handleWhatsAppInquiry = () => {
-    const message = encodeURIComponent(`Hello Hadrons Electricals, I am interested in viewing more details and requesting a quote for: ${title || 'Product'}.`);
+    const message = encodeURIComponent(`Hello Hadrons Electricals, I am interested in viewing more details and requesting a quote for: ${activeTitle}.`);
     window.open(`https://wa.me/918826722400?text=${message}`, '_blank');
   };
 
@@ -65,7 +68,7 @@ export default function ImageLightboxModal({ imageSrc, title, onClose }) {
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--hadrons-navy-deep)' }}>
             <ZoomIn size={20} style={{ color: 'var(--hadrons-blue-primary)' }} />
             <h3 style={{ margin: 0, fontSize: '1.2rem', fontWeight: 700, color: 'var(--hadrons-navy-deep)' }}>
-              {title || 'High Resolution Product Preview'}
+              {activeTitle}
             </h3>
           </div>
           <button 
@@ -93,8 +96,8 @@ export default function ImageLightboxModal({ imageSrc, title, onClose }) {
         {/* High Res Zoomed Image */}
         <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', padding: '12px 0' }}>
           <img 
-            src={imageSrc} 
-            alt={title || 'Product Zoomed View'} 
+            src={activeSrc} 
+            alt={activeTitle} 
             style={{
               maxWidth: '100%',
               maxHeight: '60vh',

@@ -7,6 +7,9 @@ import LeadershipPage from './pages/LeadershipPage';
 import ProductsPage from './pages/ProductsPage';
 import ProductDetailsPage from './pages/ProductDetailsPage';
 import WiresCablesPage from './pages/WiresCablesPage';
+import CoolerBodiesPage from './pages/CoolerBodiesPage';
+import CoolerFansPage from './pages/CoolerFansPage';
+import LaptopChargersPage from './pages/LaptopChargersPage';
 import EvolutionPage from './pages/EvolutionPage';
 import QualityPage from './pages/QualityPage';
 import CompliancePage from './pages/CompliancePage';
@@ -27,6 +30,10 @@ export default function App() {
           <Route path="products" element={<ProductsPage />} />
           <Route path="product-details" element={<ProductDetailsPage />} />
           <Route path="wires-cables" element={<WiresCablesPage />} />
+          <Route path="cooler-bodies" element={<CoolerBodiesPage />} />
+          <Route path="cooler-fans" element={<CoolerFansPage />} />
+          <Route path="laptop-chargers" element={<LaptopChargersPage />} />
+          <Route path="laptop-charger-range" element={<LaptopChargersPage />} />
           <Route path="evolution" element={<EvolutionPage />} />
           <Route path="quality" element={<QualityPage />} />
           <Route path="compliance" element={<CompliancePage />} />

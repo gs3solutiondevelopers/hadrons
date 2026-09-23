@@ -22,7 +22,10 @@ import {
   FileText, 
   Phone, 
   Mail, 
-  Send 
+  Send,
+  Building2,
+  Cpu,
+  BarChart2
 } from 'lucide-react';
 import ProductModal from '../components/ProductModal';
 import FilterTrack from '../components/FilterTrack';
@@ -211,7 +214,141 @@ export default function HomePage() {
       </section>
 
       {/* =========================================================================
-           5. Quality Standards & Certifications
+           3. Company Evolution Points & A DIVERSIFIED PRODUCT PORTFOLIO Grid
+           ========================================================================= */}
+      <section className="about-portfolio-section">
+        <div className="container">
+          <div className="about-portfolio-grid">
+            
+            {/* Left Side: 3 Key Overview Points */}
+            <div className="about-overview-points">
+              
+              {/* Point 1 */}
+              <div className="overview-point-item">
+                <div className="overview-icon-wrap">
+                  <Building2 size={24} />
+                </div>
+                <div className="overview-text">
+                  <p>
+                    Over the years, Hadrons Electricals has evolved into a diversified manufacturing company serving multiple industries. Our product portfolio now extends across electrical wires and cables, networking and data cables, chargers, EV charging solutions, extension boards, and precision plastic moulded components for AC and air-cooler applications.
+                  </p>
+                </div>
+              </div>
+
+              {/* Point 2 */}
+              <div className="overview-point-item">
+                <div className="overview-icon-wrap">
+                  <Cpu size={24} />
+                </div>
+                <div className="overview-text">
+                  <p>
+                    The company combines the experience of its leadership with modern manufacturing capabilities and a strong focus on product development, quality, customization, and customer service.
+                  </p>
+                </div>
+              </div>
+
+              {/* Point 3 */}
+              <div className="overview-point-item">
+                <div className="overview-icon-wrap">
+                  <BarChart2 size={24} />
+                </div>
+                <div className="overview-text">
+                  <h4 className="overview-today-title">TODAY</h4>
+                  <p>
+                    Hadrons Electricals continues to build a diversified product portfolio and manufacturing platform with a focus on quality, innovation, customization, and scalable production.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            {/* Right Side: A DIVERSIFIED PRODUCT PORTFOLIO Card */}
+            <div className="about-portfolio-card">
+              <h3 className="portfolio-card-title">A DIVERSIFIED PRODUCT PORTFOLIO</h3>
+              
+              <div className="portfolio-items-grid">
+                
+                {/* Card 1: Electrical Wires & Cables */}
+                <Link to="/products?filter=wires-cables" className="portfolio-mini-card">
+                  <h5 className="mini-card-title">ELECTRICAL<br />WIRES &amp; CABLES</h5>
+                  <div className="mini-card-img-wrap">
+                    <img 
+                      src="/assets/images/about/portfolio_wires.webp" 
+                      alt="Electrical Wires and Cables" 
+                      onError={(e) => { e.target.src = '/assets/images/products/prod_wires.webp'; }} 
+                    />
+                  </div>
+                </Link>
+
+                {/* Card 2: Networking & Data Cables */}
+                <Link to="/products?filter=datacenter" className="portfolio-mini-card">
+                  <h5 className="mini-card-title">NETWORKING &amp;<br />DATA CABLES</h5>
+                  <div className="mini-card-img-wrap">
+                    <img 
+                      src="/assets/images/about/portfolio_networking.webp" 
+                      alt="Networking and Data Cables" 
+                      onError={(e) => { e.target.src = '/assets/images/products/prod_usb.webp'; }} 
+                    />
+                  </div>
+                </Link>
+
+                {/* Card 3: Chargers */}
+                <Link to="/products?filter=chargers" className="portfolio-mini-card">
+                  <h5 className="mini-card-title">CHARGERS</h5>
+                  <div className="mini-card-img-wrap">
+                    <img 
+                      src="/assets/images/about/portfolio_chargers.webp" 
+                      alt="Chargers and Power Adapters" 
+                      onError={(e) => { e.target.src = '/assets/images/products/prod_laptop.webp'; }} 
+                    />
+                  </div>
+                </Link>
+
+                {/* Card 4: EV Charging Solutions */}
+                <Link to="/products?filter=ev" className="portfolio-mini-card">
+                  <h5 className="mini-card-title">EV CHARGING<br />SOLUTIONS</h5>
+                  <div className="mini-card-img-wrap">
+                    <img 
+                      src="/assets/images/about/portfolio_ev.webp" 
+                      alt="EV Charging Solutions" 
+                      onError={(e) => { e.target.src = '/assets/images/products/prod_ev_2w.webp'; }} 
+                    />
+                  </div>
+                </Link>
+
+                {/* Card 5: Extension Boards */}
+                <Link to="/products?filter=extension" className="portfolio-mini-card">
+                  <h5 className="mini-card-title">EXTENSION<br />BOARDS</h5>
+                  <div className="mini-card-img-wrap">
+                    <img 
+                      src="/assets/images/about/portfolio_extension.webp" 
+                      alt="Extension Boards" 
+                      onError={(e) => { e.target.src = '/assets/images/products/prod_extension.webp'; }} 
+                    />
+                  </div>
+                </Link>
+
+                {/* Card 6: Precision Plastic Moulded Components */}
+                <Link to="/products?filter=moulded" className="portfolio-mini-card">
+                  <h5 className="mini-card-title">PRECISION PLASTIC<br />MOULDED COMPONENTS<br /><span>(AC &amp; AIR-COOLER)</span></h5>
+                  <div className="mini-card-img-wrap">
+                    <img 
+                      src="/assets/images/about/portfolio_moulding.webp" 
+                      alt="Precision Plastic Moulded Components" 
+                      onError={(e) => { e.target.src = '/assets/images/products/prod_ac_grill.webp'; }} 
+                    />
+                  </div>
+                </Link>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================================
+           4. Quality Standards & Certifications
            ========================================================================= */}
       <section className="quality-section" id="quality">
         <div className="container">

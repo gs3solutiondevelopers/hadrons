@@ -76,7 +76,7 @@ export const PRODUCTS_DATA = [
     title: 'EXTENSION BOARDS',
     categoryLabel: 'Power Distribution & Surge Protection',
     tagline: 'Surge Protected Multi-Socket Strips • Unbreakable Fire-Retardant Body',
-    img: '/assets/images/products/extension_boards_hero.webp',
+    img: '/assets/images/extension/extension_hero_main.webp?v=3',
     features: [
       'Surge & Spike Protection with Built-in Master Circuit Breaker',
       'Child-Safety Shutters on All Universal Sockets',
@@ -128,7 +128,7 @@ export const PRODUCTS_DATA = [
     title: 'LAPTOP CHARGERS',
     categoryLabel: 'Power Adapters & Electronics',
     tagline: 'High Efficiency Switching Power Adapters • Multi-Stage Protection',
-    img: '/assets/images/products/laptop_chargers_hero.webp',
+    img: '/assets/images/laptop/laptop_hero_main.webp?v=3',
     features: [
       'Universal & OEM Replacement Laptop Power Adapters',
       'Over-Voltage, Over-Current, Short-Circuit & Heat Protection',
@@ -154,7 +154,7 @@ export const PRODUCTS_DATA = [
     title: 'AC GRILLS & FANS',
     categoryLabel: 'HVAC & Air Conditioner Components',
     tagline: 'Precision Plastic Fan Grills • Aerodynamic Air Distribution Louvers',
-    img: '/assets/images/products/ac_components_hero.webp',
+    img: '/assets/images/ac/ac_hero_main.webp?v=2',
     features: [
       'Aerodynamically Balanced Grills for Low Noise & High Airflow',
       'High-Impact UV Stabilized Engineering Plastics',
@@ -179,7 +179,7 @@ export const PRODUCTS_DATA = [
     title: 'COOLERS (BODY & FANS)',
     categoryLabel: 'Air Cooler Plastic Parts & Assemblies',
     tagline: 'UV-Stabilized Plastic Cooler Bodies • High Thrust Blower Fan Assemblies',
-    img: '/assets/images/products/cooler_parts_hero.webp',
+    img: '/assets/images/coolers/cooler_hero_main.webp?v=3',
     features: [
       'Complete Air Cooler Plastic Body Shells & Front Panels',
       'High-Thrust Aerodynamic Plastic Fan Blades & Blower Impellers',
@@ -204,7 +204,7 @@ export const PRODUCTS_DATA = [
     title: 'POWER CORD (6A & 16A)',
     categoryLabel: 'Appliance Power Connectivity',
     tagline: 'ISI-Certified 3-Pin Moulded Cords • Solid Nickel-Plated Brass Pins',
-    img: '/assets/images/products/power_cords_hero.webp',
+    img: '/assets/images/power_cords/power_cords_hero_main.webp?v=4',
     features: [
       'ISI Certified 3-Pin Moulded Plugs with Earthing Connection',
       'Heavy Copper Conductors with Flexible PVC Insulation',
@@ -229,7 +229,7 @@ export const PRODUCTS_DATA = [
     title: 'DATA CENTER POWER CORDS',
     categoryLabel: 'Mission-Critical Server Infrastructure',
     tagline: 'IEC 60320 C13/C14 & C19/C20 Locking Server Rack PDU Cables',
-    img: '/assets/images/products/datacenter_cords_hero.webp',
+    img: '/assets/images/datacenter/datacenter_hero_main.webp?v=3',
     features: [
       'IEC 60320 Locking Connectors to Prevent Accidental Disconnection',
       'Heavy-Gauge High-Purity Copper Conductors for Continuous 24/7 Power',
@@ -254,7 +254,7 @@ export const PRODUCTS_DATA = [
     title: 'MOBILE CHARGERS (USB & TYPE-C PD)',
     categoryLabel: 'Smart Fast Charging Adapters',
     tagline: 'Type-C Power Delivery (PD) • Intelligent Overvoltage IC Protection',
-    img: '/assets/images/products/mobile_chargers_hero.webp',
+    img: '/assets/images/chargers/mobile_chargers_hero_main.webp?v=3',
     features: [
       'Fast PD (Power Delivery) & Quick Charge (QC 3.0/4.0) Wall Chargers',
       'Multi-Layer IC Safety against Overvoltage, Short-Circuit & Overheating',
@@ -279,7 +279,7 @@ export const PRODUCTS_DATA = [
     title: 'SOLAR & INVERTER BATTERY OUTER MODULES',
     categoryLabel: 'Energy Storage Polymer Enclosures',
     tagline: 'Heavy-Duty Injection Moulded Covers • Shockproof & Thermal Resistant Body',
-    img: '/assets/images/products/solar_battery_modules.webp',
+    img: '/assets/images/battery/battery_hero_main.webp?v=3',
     features: [
       'Precision Injection Moulded Battery Outer Covers & Carrying Handles',
       'High Impact Strength & Acid-Resistant Polypropylene (PP) Polymer',
@@ -304,7 +304,7 @@ export const PRODUCTS_DATA = [
     title: '2 WHEELER EV CHARGERS',
     categoryLabel: 'Electric Mobility Charging Stations',
     tagline: 'Smart AC Chargers for Electric 2-Wheelers • IP65 Weatherproof Housing',
-    img: '/assets/images/products/ev_2w_charger_hero.webp',
+    img: '/assets/images/ev/ev_hero_main.webp?v=3',
     features: [
       'Smart Portable & Wallbox AC Chargers for Electric Two-Wheelers',
       'Automatic Cut-Off on Full Charge to Extend Battery Life',
@@ -329,7 +329,7 @@ export const PRODUCTS_DATA = [
     title: 'LARGE INJECTION MOULDED COMPONENTS',
     categoryLabel: 'High-Tonnage CNC Plastic Tooling',
     tagline: 'High Dimensional Accuracy • Engineering Polymers to CAD Blueprints',
-    img: '/assets/images/product_page/prod_11_moulded.webp',
+    img: '/assets/images/moulded/moulded_hero_main.webp?v=3',
     features: [
       'High-Tonnage CNC Plastic Injection Moulding up to 800 Tons',
       'Precision Moulding for Electrical Cabinets, Appliances & HVAC Bodies',

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import LeadershipVisionBanner from '../components/LeadershipVisionBanner';
 import { 
   Award, 
   ShieldCheck, 
@@ -50,6 +51,20 @@ export default function LeadershipPage() {
         'Indian & International Market Growth'
       ],
       initials: 'GG'
+    },
+    {
+      name: 'Tarun Gautam',
+      title: 'Director',
+      badge: 'OPERATIONS & MANUFACTURING EXCELLENCE',
+      experience: 'Operations Planning, Production Management & Quality Systems',
+      bio: `Tarun Gautam is a Director at Hadrons Electricals Private Limited and plays a key role in operations planning, production management, quality systems, supply chain management, and process improvement. Working closely with the leadership team, Tarun ensures operational excellence, efficient execution, and scalable manufacturing capabilities to meet the evolving needs of customers and markets. His focus includes enhancing production efficiency, strengthening quality control, implementing best manufacturing practices, and developing robust systems that support consistent product quality and on-time delivery. Tarun is committed to building a skilled workforce, upgrading infrastructure, and adopting modern technologies to drive continuous improvement and long-term sustainability.`,
+      focus: [
+        'Operations Planning & Process Improvement',
+        'Robust Quality Control & Standards',
+        'Best Manufacturing Practices & On-Time Delivery',
+        'Modern Infrastructure & Workforce Development'
+      ],
+      initials: 'TG'
     }
   ];
 
@@ -130,6 +145,11 @@ export default function LeadershipPage() {
           </div>
         </div>
       </section>
+
+      {/* =========================================================================
+           1.5. Leadership Vision & Ecosystem Interactive Banner Section
+           ========================================================================= */}
+      <LeadershipVisionBanner />
 
       {/* =========================================================================
            2. Company Background Section (Split Grid with Metrics Cards)
@@ -268,7 +288,7 @@ export default function LeadershipPage() {
               Experience that builds trust. Innovation that drives the future.
             </p>
             <p className="synergy-desc">
-              Hadrons Electricals brings together more than four decades of industry experience through its Founder &amp; Chairman, <strong>Dr. Mahinder Gautam</strong>, with the next generation of leadership represented by Director <strong>Gaurav Gautam</strong>. Together, the leadership team combines deep industry knowledge, manufacturing experience, customer understanding, and a forward-looking approach to technology and new product development. This combination forms the foundation of Hadrons Electricals&rsquo; journey from an established electrical manufacturer to a diversified engineering and manufacturing company.
+              Hadrons Electricals brings together more than four decades of industry experience through its Founder &amp; Chairman, <strong>Dr. Mahinder Gautam</strong>, with the next generation of leadership represented by Directors <strong>Gaurav Gautam</strong> and <strong>Tarun Gautam</strong>. Together, the leadership team combines deep industry knowledge, manufacturing experience, customer understanding, and a forward-looking approach to technology and new product development. This combination forms the foundation of Hadrons Electricals&rsquo; journey from an established electrical manufacturer to a diversified engineering and manufacturing company.
             </p>
           </div>
 

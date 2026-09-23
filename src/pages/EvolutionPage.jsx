@@ -137,7 +137,7 @@ export default function EvolutionPage() {
               </div>
 
               <div className="roadmap-image-card">
-                <img src="/assets/images/evolution/evo_2014_wires.webp" alt="Copper Wire & Cables 2014" className="roadmap-prod-img" />
+                <img src="/assets/images/evolution/cable-Photoroom.png" alt="Copper Wire & Cables 2014" className="roadmap-prod-img" />
               </div>
             </div>
 
@@ -177,14 +177,14 @@ export default function EvolutionPage() {
               </div>
 
               <div className="roadmap-image-card">
-                <img src="/assets/images/evolution/evo_2018_datacable.webp" alt="Data Cable & Power Cord 2018" className="roadmap-prod-img" />
+                <img src="/assets/images/evolution/power_c.png" alt="Data Cable & Power Cord 2018" className="roadmap-prod-img" />
               </div>
             </div>
 
             {/* 2020 Milestone */}
             <div className="roadmap-row">
               <div className="roadmap-image-card">
-                <img src="/assets/images/evolution/evo_2020_charger.webp" alt="Mobile Charger 2020" className="roadmap-prod-img" />
+                <img src="/assets/images/evolution/4-Photoroom.png" alt="Mobile Charger 2020" className="roadmap-prod-img" />
               </div>
 
               <div className="roadmap-node-center">

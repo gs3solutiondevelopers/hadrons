@@ -25,14 +25,14 @@ export default function WiresCablesPage() {
     {
       title: 'Multi Core Cables',
       badge: '03',
-      img: '/assets/images/wires/wire_03_multicore.webp',
+      img: '/assets/images/wires/wire_03_multicore.webp?v=6',
       features: ['2 Core to 61 Core', 'Control & power applications', 'PVC / FR / FRLS options', 'IS: 1554 (Part 1)'],
       description: 'Heavy-duty industrial round PVC sheathed multi-core power and control cables engineered with color-coded cores and high current endurance.'
     },
     {
       title: 'Armoured Cables',
       badge: '04',
-      img: '/assets/images/wires/wire_04_armoured.webp',
+      img: '/assets/images/wires/wire_04_armoured.webp?v=6',
       features: ['Robust & mechanical protection', 'Power & control applications', 'PVC / XLPE insulation', 'IS: 7098 (Part 1)'],
       description: 'Galvanized steel wire and strip armoured cables providing extreme mechanical protection against crushing and underground harsh environment for power utilities.'
     },
@@ -152,22 +152,14 @@ export default function WiresCablesPage() {
 
           <div className="wires-cards-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '20px' }}>
             {wireProducts.map((p) => (
-              <div key={p.badge} className="catalog-item-card" style={{ cursor: 'pointer' }} onClick={() => navigate('/product-details?id=wires')}>
+              <div key={p.badge} className="catalog-item-card" style={{ cursor: 'pointer', paddingBottom: '16px' }} onClick={() => navigate('/product-details?id=wires')}>
                 <div className="card-top-header">
                   <span className="card-num-badge">{p.badge}</span>
                   <h4 className="card-header-title">{p.title}</h4>
                 </div>
-                <div className="card-product-img-wrap">
-                  <img src={p.img} alt={p.title} onError={(e) => { e.target.src = '/assets/images/wires_cables.webp'; }} />
+                <div className="card-product-img-wrap" style={{ height: '250px', padding: '12px', margin: '0' }}>
+                  <img src={p.img} alt={p.title} style={{ width: '100%', height: '100%', objectFit: 'contain' }} onError={(e) => { e.target.src = '/assets/images/wires_cables.webp'; }} />
                 </div>
-                <ul className="card-features-list">
-                  {p.features.map((f, idx) => (
-                    <li key={idx}>{f}</li>
-                  ))}
-                </ul>
-                <button className="card-details-btn" onClick={(e) => { e.stopPropagation(); navigate('/product-details?id=wires'); }}>
-                  <span>VIEW DETAILS</span> <ArrowRight size={16} />
-                </button>
               </div>
             ))}
           </div>
